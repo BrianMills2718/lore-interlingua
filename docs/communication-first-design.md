@@ -36,6 +36,22 @@ Do not assume viewers watch episodes in sequence. Prefer brief contextual onboar
 
 A learned convention earns promotion only through repeated, legible use and eventually comprehension testing—not because it appears formally elegant.
 
+## First-contact legibility and optional literacy education
+
+**Do not make training a prerequisite to watching any episode.** A viewer arriving at episode 500 should still be able to grasp its central process or argument without first watching a separate tutorial about the notation. Regular viewers may perceive further detail and read denser combinations because conventions recur.
+
+Design for **progressively discoverable meaning**:
+
+1. **First encounter:** meaning should be reasonably inferable through iconic resemblance, perceptually motivated motion, composition, context, appropriately anchored labels, and narration. Give unfamiliar concepts enough on-scene scaffolding; avoid requiring prior viewing.
+2. **Repeated encounter:** maintain stable conventions so viewers accumulate implicit familiarity, reducing explanatory overhead without sacrificing clarity for newcomers.
+3. **Optional explicit instruction:** offer standalone episodes about the visual language, its design principles, and its notation. These deepen literacy and support advanced use, but are not required to follow ordinary lore episodes.
+
+**Critical qualification:** no representation can be guaranteed intuitive to *everyone*, across cultural backgrounds, abilities, and unfamiliar doctrines. Some relations are too abstract for unambiguous depiction. In these cases use text, narration, examples, or a short local key without treating that choice as failure.
+
+**Testing requirement:** use both first-time viewers with no notation training and returning viewers. Ask what they believe a sequence means before revealing the intended answer, and compare interpretations. Determine whether basic comprehension is achievable immediately and whether repeated exposure improves precision, speed, or recall. Do not assume exposure alone produces literacy.
+
+The desired progression is **immediate narrative comprehension plus optional, accumulating technical fluency**, not a course that the audience must complete before understanding the stories.
+
 ## Allocation of communicative work
 
 | Mode | Often best for |
@@ -57,7 +73,7 @@ A film about divine creation and sustenance can combine continuing dynamic relat
 
 ## Evaluation criteria
 
-1. Can first-time viewers understand the mechanism or doctrine without a slide-deck-length explanation?
+1. Can first-time viewers understand the mechanism or doctrine without mandatory prior training or a slide-deck-length explanation?
 2. Do experienced viewers understand reused conventions with less verbal scaffolding?
 3. Do visuals communicate information that static text or static diagrams would not express as clearly?
 4. Where text remains, is it doing real communicative work rather than compensating for arbitrary visuals?
