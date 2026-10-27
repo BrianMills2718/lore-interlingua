@@ -1,0 +1,32 @@
+{
+  "id": "visual-experiment-002-seven-rays",
+  "title": "One Life, Seven Qualities",
+  "tradition": "alice-bailey",
+  "attribution": "A visual interpretation of Alice Bailey's Seven Rays",
+  "sources": [
+    {"work":"Esoteric Psychology I","section":"The Seven Rays Enumerated","url":"https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_introductory_remarks/3_the_seven_rays_enumerated"},
+    {"work":"Esoteric Psychology I","section":"The Rays and Life-Quality-Appearance","url":"https://www.lucistrust.org/online_books/esoteric_psychology_volume_i"}
+  ],
+  "semantic_references": ["B01", "B02", "B03"],
+  "fps": 24, "duration_seconds": 24, "resolution": [1024, 576],
+  "rays": [
+    {"number":1,"name":"Will / Power","group":"aspect","texture":"solid"},
+    {"number":2,"name":"Love-Wisdom","group":"aspect","texture":"double"},
+    {"number":3,"name":"Active Intelligence","group":"aspect","texture":"segmented"},
+    {"number":4,"name":"Harmony through Conflict","group":"attribute","texture":"alternating"},
+    {"number":5,"name":"Concrete Knowledge","group":"attribute","texture":"dots"},
+    {"number":6,"name":"Devotion / Idealism","group":"attribute","texture":"paired"},
+    {"number":7,"name":"Ceremonial Order","group":"attribute","texture":"dash"}
+  ],
+  "events": [
+    {"from":3,"to":9.5,"claim":"B01","action":"differentiate","render_conventions":["stable-identity-source","differentiated-relation","nondepleting-source"],"guard":"No literal units travel or depart; appearance order is pedagogical, not metaphysical chronology."},
+    {"from":9,"to":16.5,"claim":"B02","action":"partition","render_conventions":["persistent-group-boundary","numbered-membership"],"guard":"Three aspects and four attributes are not hostile factions or successive ages."},
+    {"from":16,"to":24,"claim":"B03","action":"qualify","render_conventions":["quality-modifies-recipient","attached-property-mark"],"guard":"Visual differences show nonmaterial qualification; sample shapes, textures and colors are not Bailey's canonical correspondences."}
+  ],
+  "comparison_to_001": {
+    "retained": ["identity-bearing node", "persistent boundary", "differentiated relation", "source and recipient roles"],
+    "modified": ["No travelling particles", "No nourished recipient glow", "No one-to-one physical energy transfer", "No iconic celestial globe required"],
+    "candidates": ["quality texture signature", "nondiminishing source", "numerical group scope", "recipient property mark"]
+  },
+  "art_direction": {"style":"restrained celestial atlas", "colors_are_semantic":false, "motion_is_literal_cosmological_time":false, "artists_choices":["colors", "line textures", "layout", "typography", "timing", "abstract form appearance"]}
+}
