@@ -1,0 +1,24 @@
+{
+  "id":"visual-experiment-001",
+  "status":"produced-not-human-tested",
+  "assets":{"video":"visual-experiment-001.mp4","storyboard":"contact-sheet.jpg","semantic_spec":"scene.json","renderer":"render.py"},
+  "observations":[
+    {"area":"source_fidelity","result":"pass-with-guards","evidence":"G02/G03/G04 referenced; Moon as recipient; planet-to-life-to-Earth mediation; multiple recipients."},
+    {"area":"technical_render","result":"pass","evidence":"672 frames, 1024x576, 24 fps, 28-second H.264 MP4."},
+    {"area":"consistent_visual_conventions","result":"candidate","evidence":"Incoming pulses, attached organic-life boundary, differentiated outputs, recipient response."},
+    {"area":"viewer_comprehension","result":"untested","evidence":"No independent viewer experiment performed."},
+    {"area":"generalization_to_other_lore","result":"untested","evidence":"Only Gurdjieff scene implemented; no cross-tradition renderer demonstration."}
+  ],
+  "risks":[
+    "Particles can misleadingly imply transported material where source says influence.",
+    "Moon-brightness cue could imply literal rapid growth rather than dependence.",
+    "Colors and pulse shapes are locally differentiated; no universal mapping has been demonstrated.",
+    "Captions make the argument clear but mask possible weaknesses in independent visual decoding."
+  ],
+  "decisions":[
+    "Retain semantics-grammar-art-direction separation.",
+    "Do not promote a visual primitive on the basis of one attractive animation.",
+    "Do not claim the film was generated entirely from the ontology."
+  ],
+  "next_test":"Captionless recognition of reception vs transfer vs dependence; compare a static baseline; repeat on a non-material cosmological claim."
+}
