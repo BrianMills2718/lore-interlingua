@@ -1,0 +1,56 @@
+{
+  "id": "visual-experiment-001-lunar-nourishment",
+  "title": "The Earth as Transmitter",
+  "duration_seconds": 28,
+  "fps": 24,
+  "resolution": [1024, 576],
+  "tradition": "gurdjieff",
+  "attribution": "A visual interpretation of Gurdjieff's cosmology",
+  "primary_source": {
+    "work": "P. D. Ouspensky, In Search of the Miraculous",
+    "locator": "chapter 7; discussions of organic life as Earth's organ of perception and radiation",
+    "url": "https://www.gurdjieff-hawaii.org/?page_id=160"
+  },
+  "semantic_references": ["G02", "G03", "G04"],
+  "entities": {
+    "sun": {"semantic_ref": "Sun", "visual_role": "celestial-source-or-recipient", "depiction": "iconic"},
+    "planetary_world": {"semantic_ref": "planetary_world", "visual_role": "celestial-source-or-recipient", "depiction": "iconic"},
+    "earth": {"semantic_ref": "Earth", "visual_role": "receiving-body", "depiction": "iconic"},
+    "organic_life": {"semantic_ref": "organic_life", "visual_role": "mediator-and-radiator", "depiction": "conventional-boundary"},
+    "moon": {"semantic_ref": "Moon", "visual_role": "recipient-and-dependent", "depiction": "iconic"}
+  },
+  "events": [
+    {
+      "from": 3.0, "to": 9.0, "claim": "G02", "action": "receive_and_mediate",
+      "semantics": "Planetary influences are received by organic life and mediated to Earth.",
+      "render_conventions": ["bounded-recipient", "incoming-propagation", "attached-receiver-mark"],
+      "guard": "Particle markers stand for directed influence, not confirmed literal corpuscles."
+    },
+    {
+      "from": 9.0, "to": 15.0, "claim": "G02/G03", "action": "differentiate_output",
+      "semantics": "Organic life participates in receiving and emitting distinct radiations.",
+      "render_conventions": ["persistent-medium", "transformation-by-boundary-crossing", "split-by-recipient"],
+      "guard": "Do not imply input and output are materially identical or mechanically converted 1:1."
+    },
+    {
+      "from": 15.0, "to": 22.0, "claim": "G04", "action": "nourish",
+      "semantics": "The Moon depends on radiations from organic life for nourishment and maintenance.",
+      "render_conventions": ["outgoing-propagation", "recipient-response", "persistent-dependence"],
+      "guard": "Moon luminosity is an illustrative response, not rapid physical growth."
+    },
+    {
+      "from": 22.0, "to": 28.0, "claim": "G03", "action": "differentiate_recipients",
+      "semantics": "Different radiations are directed toward the Sun, planets, and Moon.",
+      "render_conventions": ["multiple-destinations", "variant-pulse-shape"],
+      "guard": "Destinations are simultaneous cosmic functions, not a simple ladder of eating."
+    }
+  ],
+  "art_direction": {
+    "layout": "Earth central; Sun and planet upper left; Moon right; all paths annotated by captions",
+    "visual_style": "restrained celestial atlas; low-contrast orbital guides; warm and cool accents",
+    "caption_style": "short narrative statements instead of technical notation",
+    "timing": "28-second sequence with editorial pauses",
+    "colors_are_semantic": false,
+    "exception": "Globe textures, celestial scales, and choreography are artistic choices, not ontology claims."
+  }
+}
