@@ -56,6 +56,10 @@ python scripts/validate.py
 - **No false mechanics:** material transfer, existential dependence, logical implication, and moral obligation must not all render as the same causal flow.
 - **Research provenance:** keep source locations and interpretation notes in the corpus, without requiring intrusive on-screen disclaimers.
 
+## Visual experiments
+
+- **[Experiment 001 — The Earth as Transmitter](experiments/001-lunar-nourishment/README.md)**: art-directed, source-grounded 28-second animation of Gurdjieff's lunar nourishment with semantic scene manifest, reusable renderer, storyboard, assessment and tests. The video is [in the repository](experiments/001-lunar-nourishment/visual-experiment-001.mp4).
+
 ## Proposed next milestone
 
 Build three small animations from the same semantics-to-visuals pipeline. Test (1) experience versus awareness, (2) choosing versus having the ability to do otherwise, and (3) cosmic nourishment versus existential grounding. Evaluate intelligibility with people unfamiliar with the ontology before expanding its primitive vocabulary.
