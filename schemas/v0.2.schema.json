@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Comparative Cosmology Interlingua v0.2 Corpus",
+  "type": "object",
+  "required": [
+    "version",
+    "sorts",
+    "predicates",
+    "claims",
+    "sources"
+  ],
+  "properties": {
+    "version": {
+      "const": "0.2.0"
+    },
+    "sorts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "predicates": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "object"
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "translation_stages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "expr": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "predicate",
+            "roles"
+          ],
+          "properties": {
+            "op": {
+              "const": "atom"
+            },
+            "predicate": {
+              "type": "string"
+            },
+            "roles": {
+              "type": "object"
+            },
+            "parameters": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "items"
+          ],
+          "properties": {
+            "op": {
+              "enum": [
+                "and",
+                "or"
+              ]
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/expr"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "item"
+          ],
+          "properties": {
+            "op": {
+              "const": "not"
+            },
+            "item": {
+              "$ref": "#/$defs/expr"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "item",
+            "domain",
+            "mode"
+          ],
+          "properties": {
+            "op": {
+              "const": "modal"
+            },
+            "item": {
+              "$ref": "#/$defs/expr"
+            },
+            "domain": {
+              "enum": [
+                "alethic",
+                "deontic",
+                "epistemic",
+                "agential"
+              ]
+            },
+            "mode": {
+              "enum": [
+                "possible",
+                "necessary",
+                "obligatory",
+                "permitted",
+                "known",
+                "believed",
+                "can"
+              ]
+            },
+            "agent": {
+              "type": "string"
+            },
+            "background": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "entity"
+          ],
+          "properties": {
+            "op": {
+              "const": "exists"
+            },
+            "entity": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "op",
+            "antecedent",
+            "consequent"
+          ],
+          "properties": {
+            "op": {
+              "const": "implies"
+            },
+            "antecedent": {
+              "$ref": "#/$defs/expr"
+            },
+            "consequent": {
+              "$ref": "#/$defs/expr"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "tradition",
+        "statement",
+        "scope",
+        "symbols",
+        "expression",
+        "evidence",
+        "visual_guard"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "tradition": {
+          "type": "string"
+        },
+        "statement": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "symbols": {
+          "type": "object",
+          "additionalProperties": {
+            "enum": [
+              "entity",
+              "episode",
+              "action",
+              "content",
+              "option",
+              "capacity",
+              "quality",
+              "norm",
+              "principle",
+              "world",
+              "collection",
+              "system",
+              "process",
+              "state",
+              "quantity"
+            ]
+          }
+        },
+        "expression": {
+          "$ref": "#/$defs/expr"
+        },
+        "evidence": {
+          "type": "object",
+          "required": [
+            "kind",
+            "sources",
+            "locator"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "migrated_v0_1",
+                "source_paraphrase",
+                "constructed_case"
+              ]
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "locator": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "visual_guard": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

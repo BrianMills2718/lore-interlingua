@@ -1,0 +1,1697 @@
+{
+  "version": "0.2.0",
+  "sorts": [
+    "entity",
+    "episode",
+    "action",
+    "content",
+    "option",
+    "capacity",
+    "quality",
+    "norm",
+    "principle",
+    "world",
+    "collection",
+    "system",
+    "process",
+    "state",
+    "quantity"
+  ],
+  "predicates": {
+    "is_a": {
+      "subject": "entity",
+      "kind": "quality"
+    },
+    "has_quality": {
+      "bearer": "entity",
+      "quality": "quality"
+    },
+    "undergoes": {
+      "subject": "entity",
+      "episode": "episode"
+    },
+    "experiences": {
+      "subject": "entity",
+      "episode": "episode"
+    },
+    "aware_of": {
+      "subject": "entity",
+      "target": "any"
+    },
+    "has_content": {
+      "episode": "episode",
+      "content": "content"
+    },
+    "attends_to": {
+      "subject": "entity",
+      "target": "any"
+    },
+    "available_for_use": {
+      "content": "content",
+      "subject": "entity"
+    },
+    "represents": {
+      "representation": "content",
+      "target": "any"
+    },
+    "evaluates": {
+      "subject": "entity",
+      "option": "option"
+    },
+    "selects": {
+      "subject": "entity",
+      "option": "option"
+    },
+    "performs": {
+      "subject": "entity",
+      "action": "action"
+    },
+    "realizes_option": {
+      "action": "action",
+      "option": "option"
+    },
+    "causes": {
+      "source": "any",
+      "outcome": "any"
+    },
+    "agent_causes": {
+      "agent": "entity",
+      "action": "action"
+    },
+    "precedes": {
+      "before": "any",
+      "after": "any"
+    },
+    "cooccurs": {
+      "left": "any",
+      "right": "any"
+    },
+    "has_capacity": {
+      "subject": "entity",
+      "capacity": "capacity"
+    },
+    "offers_reason": {
+      "content": "content",
+      "option": "option"
+    },
+    "responds_to_reason": {
+      "subject": "entity",
+      "reason": "content"
+    },
+    "uses_tool": {
+      "subject": "entity",
+      "tool": "entity"
+    },
+    "learns_by": {
+      "subject": "entity",
+      "process": "process"
+    },
+    "envisages": {
+      "subject": "entity",
+      "option": "option"
+    },
+    "governs": {
+      "norm": "norm",
+      "action": "action"
+    },
+    "answerable_to": {
+      "subject": "entity",
+      "norm": "norm"
+    },
+    "morally_responsible": {
+      "subject": "entity",
+      "action": "action"
+    },
+    "attributes": {
+      "observer": "entity",
+      "target": "entity",
+      "property": "quality"
+    },
+    "supports": {
+      "support": "any",
+      "dependent": "any"
+    },
+    "part_of": {
+      "part": "entity",
+      "whole": "entity"
+    },
+    "grounds": {
+      "ground": "entity",
+      "dependent": "entity"
+    },
+    "transfers": {
+      "origin": "entity",
+      "destination": "entity",
+      "carrier": "entity"
+    },
+    "mediates": {
+      "source": "entity",
+      "mediator": "entity",
+      "recipient": "entity"
+    },
+    "differentiates": {
+      "source": "entity",
+      "outputs": "list:entity"
+    },
+    "ranks": {
+      "members": "list:entity"
+    },
+    "groups": {
+      "whole": "collection",
+      "members": "list:entity"
+    },
+    "qualifies": {
+      "influence": "entity",
+      "bearer": "entity",
+      "quality": "quality"
+    },
+    "transitions": {
+      "subject": "entity",
+      "from": "state",
+      "to": "state"
+    },
+    "orients_to": {
+      "subject": "entity",
+      "target": "entity"
+    },
+    "has_mode": {
+      "subject": "entity",
+      "mode": "quality"
+    }
+  },
+  "sources": {
+    "G-O": {
+      "title": "P. D. Ouspensky, In Search of the Miraculous (reports of Gurdjieff)",
+      "url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html"
+    },
+    "B-R": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — The Seven Rays Enumerated",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_introductory_remarks/3_the_seven_rays_enumerated"
+    },
+    "B-Q": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — The Rays and Life-Quality-Appearance",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_two_chapter_the_seven_creative_builders_the_seven_rays/i_the_rays_and_lifequalityappearance"
+    },
+    "B-P": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — Question 4",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_ii_certain_questions_and_their_answers/question_4_what_value_is_it_know_about_the_seven_rays"
+    },
+    "P-E": {
+      "title": "Plotinus, Enneads V.1, translation with Greek text",
+      "url": "https://forage.com/plotinus/enneads/5-1-on-the-three-primary-hypostases/"
+    },
+    "P-S": {
+      "title": "Stanford Encyclopedia of Philosophy, Plotinus (context and interpretation)",
+      "url": "https://plato.stanford.edu/entries/plotinus/"
+    },
+    "P-V": {
+      "title": "Plotinus, Enneads V.3 (self-knowing intellect and self-awareness), MacKenna translation",
+      "url": "https://www.ccel.org/ccel/plotinus/enneads.v.iii.html"
+    },
+    "P-IV": {
+      "title": "Plotinus, Enneads V.4 (contemplative experience)",
+      "url": "https://www.ccel.org/ccel/plotinus/enneads.v.iv.html"
+    },
+    "D-T": {
+      "title": "Dennett Tower of Generate-and-Test, summarized in peer-reviewed discussion",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8666905/"
+    },
+    "D-P": {
+      "title": "Dennett, Conditions of Personhood (1976) as discussed in Cambridge journal article",
+      "url": "https://www.cambridge.org/core/journals/social-philosophy-and-policy/article/abs/connected-selfownership-and-our-obligations-to-others/3396A63EB50E94D89BC97091EAF9106E"
+    },
+    "D-O": {
+      "title": "Dennett, Conditions of Personhood (original essay scan)",
+      "url": "https://philarchive.org/archive/DENCOP"
+    },
+    "B-S": {
+      "title": "Alice Bailey, Esoteric Psychology I, question 1 (soul/personality distinctions)",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_ii_certain_questions_and_their_answers/question_1_what_is_the_soul_can_we_define_it_what_is_its_nature_part2"
+    },
+    "B-T": {
+      "title": "Lucis Trust, The Science of the Seven Rays, discussion of Bailey",
+      "url": "https://www.lucistrust.org/arcane_school/talks_and_articles/the_science_the_seven_rays"
+    },
+    "SEP-F": {
+      "title": "Stanford Encyclopedia of Philosophy, Free Will",
+      "url": "https://plato.stanford.edu/entries/freewill/"
+    },
+    "SEP-M": {
+      "title": "Stanford Encyclopedia of Philosophy, Moral Responsibility",
+      "url": "https://plato.stanford.edu/entries/moral-responsibility/"
+    },
+    "SEP-C": {
+      "title": "Stanford Encyclopedia of Philosophy, Consciousness",
+      "url": "https://plato.stanford.edu/entries/consciousness/"
+    }
+  },
+  "claims": [
+    {
+      "id": "G01",
+      "tradition": "gurdjieff",
+      "statement": "The Ray of Creation orders worlds from the Absolute to the Moon, with increasingly numerous governing laws.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "Absolute": "entity",
+        "all_worlds": "entity",
+        "Milky_Way": "entity",
+        "Sun": "entity",
+        "planetary_world": "entity",
+        "Earth": "entity",
+        "Moon": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "ranks",
+        "roles": {
+          "members": [
+            "Absolute",
+            "all_worlds",
+            "Milky_Way",
+            "Sun",
+            "planetary_world",
+            "Earth",
+            "Moon"
+          ]
+        },
+        "parameters": {
+          "axis": "orders_of_laws",
+          "values": [
+            1,
+            3,
+            6,
+            12,
+            24,
+            48,
+            96
+          ],
+          "order": "ascending_constraint"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapter 5 (Ray of Creation)"
+      },
+      "visual_guard": "Do not equate higher position with larger physical size.; The integers refer to claimed orders of laws, not empirically observed counts."
+    },
+    {
+      "id": "G02",
+      "tradition": "gurdjieff",
+      "statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "planetary_world": "entity",
+        "organic_life": "entity",
+        "Earth": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "mediates",
+        "roles": {
+          "source": "planetary_world",
+          "mediator": "organic_life",
+          "recipient": "Earth"
+        },
+        "parameters": {
+          "kind": "influence",
+          "time": "ongoing"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapter 7 (organic life as transmitting station)"
+      },
+      "visual_guard": "Do not assume particles or physical stuff is transported."
+    },
+    {
+      "id": "G03",
+      "tradition": "gurdjieff",
+      "statement": "Organic life emits differentiated radiations toward Sun, planets, and Moon; their requirements differ.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "radiation_from_organic_life": "entity",
+        "solar_directed_radiation": "entity",
+        "planetary_directed_radiation": "entity",
+        "lunar_directed_radiation": "entity",
+        "organic_life": "entity",
+        "Sun": "entity",
+        "planetary_world": "entity",
+        "Moon": "entity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "differentiates",
+            "roles": {
+              "source": "radiation_from_organic_life",
+              "outputs": [
+                "solar_directed_radiation",
+                "planetary_directed_radiation",
+                "lunar_directed_radiation"
+              ]
+            },
+            "parameters": {
+              "basis": "destination_specific_kind"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "transfers",
+            "roles": {
+              "origin": "organic_life",
+              "destination": "Sun",
+              "carrier": "solar_directed_radiation"
+            },
+            "parameters": {
+              "time": "ongoing"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "transfers",
+            "roles": {
+              "origin": "organic_life",
+              "destination": "planetary_world",
+              "carrier": "planetary_directed_radiation"
+            },
+            "parameters": {
+              "time": "ongoing"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "transfers",
+            "roles": {
+              "origin": "organic_life",
+              "destination": "Moon",
+              "carrier": "lunar_directed_radiation"
+            },
+            "parameters": {
+              "time": "ongoing"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapter 7"
+      },
+      "visual_guard": "Represent radiations as text-specified carriers, not as known physical radiation."
+    },
+    {
+      "id": "G04",
+      "tradition": "gurdjieff",
+      "statement": "The Moon is maintained by energies associated with terrestrial organic life.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "Moon": "entity",
+        "organic_life": "entity",
+        "nourishing_energy": "entity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "supports",
+            "roles": {
+              "support": "organic_life",
+              "dependent": "Moon"
+            },
+            "parameters": {
+              "dimension": "cosmic_maintenance"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "transfers",
+            "roles": {
+              "origin": "organic_life",
+              "destination": "Moon",
+              "carrier": "nourishing_energy"
+            },
+            "parameters": {
+              "time": "ongoing"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapter 9 and earlier discussion in chapter 3"
+      },
+      "visual_guard": "Does not imply Gurdjieff described a vampiric humanoid spirit."
+    },
+    {
+      "id": "B01",
+      "tradition": "bailey",
+      "statement": "One divine Life is described as expressing itself through seven rays or builders.",
+      "scope": "bailey",
+      "symbols": {
+        "one_Life": "entity",
+        "ray_1": "entity",
+        "ray_2": "entity",
+        "ray_3": "entity",
+        "ray_4": "entity",
+        "ray_5": "entity",
+        "ray_6": "entity",
+        "ray_7": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "differentiates",
+        "roles": {
+          "source": "one_Life",
+          "outputs": [
+            "ray_1",
+            "ray_2",
+            "ray_3",
+            "ray_4",
+            "ray_5",
+            "ray_6",
+            "ray_7"
+          ]
+        },
+        "parameters": {
+          "basis": "distinct_qualifications"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "B-R"
+        ],
+        "locator": "The Seven Rays Enumerated, pp. 22–26"
+      },
+      "visual_guard": "Do not show seven units of matter detached from a depleted source.; The rays are also personified as Builders; do not force a single interpretation."
+    },
+    {
+      "id": "B02",
+      "tradition": "bailey",
+      "statement": "The seven rays are categorized as three Rays of Aspect and four Rays of Attribute.",
+      "scope": "bailey",
+      "symbols": {
+        "partitioned_set_B02": "collection",
+        "ray_1": "entity",
+        "ray_2": "entity",
+        "ray_3": "entity",
+        "ray_4": "entity",
+        "ray_5": "entity",
+        "ray_6": "entity",
+        "ray_7": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "groups",
+        "roles": {
+          "whole": "partitioned_set_B02",
+          "members": [
+            "ray_1",
+            "ray_2",
+            "ray_3",
+            "ray_4",
+            "ray_5",
+            "ray_6",
+            "ray_7"
+          ]
+        },
+        "parameters": {
+          "original_groups": {
+            "aspect": [
+              "ray_1",
+              "ray_2",
+              "ray_3"
+            ],
+            "attribute": [
+              "ray_4",
+              "ray_5",
+              "ray_6",
+              "ray_7"
+            ]
+          }
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "B-Q"
+        ],
+        "locator": "The Rays and Life-Quality-Appearance, pp. 158–162"
+      },
+      "visual_guard": "Do not interpret the two groups as mutually hostile."
+    },
+    {
+      "id": "B03",
+      "tradition": "bailey",
+      "statement": "Rays condition the qualities manifested by forms throughout kingdoms of nature.",
+      "scope": "bailey",
+      "symbols": {
+        "ray_type": "entity",
+        "manifested_form": "entity",
+        "ray_specific_character": "quality"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "qualifies",
+        "roles": {
+          "influence": "ray_type",
+          "bearer": "manifested_form",
+          "quality": "ray_specific_character"
+        },
+        "parameters": {
+          "time": "ongoing"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "B-Q"
+        ],
+        "locator": "The Rays and Life-Quality-Appearance, pp. 157–159"
+      },
+      "visual_guard": "An effect on the bearer is not necessarily material transferred from the ray."
+    },
+    {
+      "id": "B04",
+      "tradition": "bailey",
+      "statement": "A person’s soul ray and personality ray may differ and jointly shape expression, with soul ray potentially becoming dominant.",
+      "scope": "bailey",
+      "symbols": {
+        "soul_ray": "entity",
+        "person": "entity",
+        "soul_disposition": "quality",
+        "personality_ray": "entity",
+        "personality_disposition": "quality",
+        "relative_ray_dominance": "entity",
+        "personality_dominance": "state",
+        "soul_dominance": "state"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "qualifies",
+            "roles": {
+              "influence": "soul_ray",
+              "bearer": "person",
+              "quality": "soul_disposition"
+            },
+            "parameters": {}
+          },
+          {
+            "op": "atom",
+            "predicate": "qualifies",
+            "roles": {
+              "influence": "personality_ray",
+              "bearer": "person",
+              "quality": "personality_disposition"
+            },
+            "parameters": {}
+          },
+          {
+            "op": "atom",
+            "predicate": "transitions",
+            "roles": {
+              "subject": "relative_ray_dominance",
+              "from": "personality_dominance",
+              "to": "soul_dominance"
+            },
+            "parameters": {
+              "time": "developmental"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "B-P"
+        ],
+        "locator": "Question 4, p. 129"
+      },
+      "visual_guard": "Do not imply every individual has the same rays or stages."
+    },
+    {
+      "id": "P01",
+      "tradition": "plotinus",
+      "statement": "Intellect (Nous) depends for its existence on the One; this is not an event occurring at a particular time.",
+      "scope": "plotinus",
+      "symbols": {
+        "the_One": "entity",
+        "Intellect": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "grounds",
+        "roles": {
+          "ground": "the_One",
+          "dependent": "Intellect"
+        },
+        "parameters": {
+          "time": "atemporal"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "P-E",
+          "P-S"
+        ],
+        "locator": "Enneads V.1.6–7; SEP §2"
+      },
+      "visual_guard": "Do not render a physical flow or loss of material by the One."
+    },
+    {
+      "id": "P02",
+      "tradition": "plotinus",
+      "statement": "Soul is grounded in Intellect, which remains itself rather than dividing off a piece.",
+      "scope": "plotinus",
+      "symbols": {
+        "Intellect": "entity",
+        "Soul": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "grounds",
+        "roles": {
+          "ground": "Intellect",
+          "dependent": "Soul"
+        },
+        "parameters": {
+          "time": "atemporal"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "P-E"
+        ],
+        "locator": "Enneads V.1.3"
+      },
+      "visual_guard": "No detachment, depletion, or literal physical descent."
+    },
+    {
+      "id": "P03",
+      "tradition": "plotinus",
+      "statement": "Soul gives life to the sensible cosmos without being partitioned into physical pieces.",
+      "scope": "plotinus",
+      "symbols": {
+        "Soul": "entity",
+        "sensible_cosmos": "entity",
+        "living_character": "quality",
+        "life_of_sensible_cosmos": "entity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "qualifies",
+            "roles": {
+              "influence": "Soul",
+              "bearer": "sensible_cosmos",
+              "quality": "living_character"
+            },
+            "parameters": {
+              "time": "ongoing"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "grounds",
+            "roles": {
+              "ground": "Soul",
+              "dependent": "life_of_sensible_cosmos"
+            },
+            "parameters": {
+              "time": "atemporal"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "P-E"
+        ],
+        "locator": "Enneads V.1.2"
+      },
+      "visual_guard": "Do not depict Soul as a stock of energy consumed by bodies."
+    },
+    {
+      "id": "P04",
+      "tradition": "plotinus",
+      "statement": "The soul turns its contemplation toward Intellect as its source and means of perfection.",
+      "scope": "plotinus",
+      "symbols": {
+        "Soul": "entity",
+        "Intellect": "entity"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "orients_to",
+        "roles": {
+          "subject": "Soul",
+          "target": "Intellect"
+        },
+        "parameters": {
+          "dimension": "contemplation"
+        }
+      },
+      "evidence": {
+        "kind": "migrated_v0_1",
+        "sources": [
+          "P-E"
+        ],
+        "locator": "Enneads V.1.3"
+      },
+      "visual_guard": "Do not turn the orientation of thought into literal travel through space."
+    },
+    {
+      "id": "G05",
+      "tradition": "gurdjieff",
+      "statement": "Ordinary reactions may proceed mechanically, without a unified deliberate will.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "person": "entity",
+        "provocation": "episode",
+        "retaliation": "action",
+        "unified_will": "capacity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "undergoes",
+            "roles": {
+              "subject": "person",
+              "episode": "provocation"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "causes",
+            "roles": {
+              "source": "provocation",
+              "outcome": "retaliation"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "performs",
+            "roles": {
+              "subject": "person",
+              "action": "retaliation"
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "atom",
+              "predicate": "has_capacity",
+              "roles": {
+                "subject": "person",
+                "capacity": "unified_will"
+              }
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapters 3 and 6, mechanical man / lack of unity"
+      },
+      "visual_guard": "Do not infer that no internal experience occurs."
+    },
+    {
+      "id": "G06",
+      "tradition": "gurdjieff",
+      "statement": "In self-remembering, attention is directed both toward an observed object and toward oneself.",
+      "scope": "gurdjieff",
+      "symbols": {
+        "person": "entity",
+        "observed": "entity",
+        "attention_to_world": "episode",
+        "attention_to_self": "episode"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "attends_to",
+            "roles": {
+              "subject": "person",
+              "target": "observed"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "attends_to",
+            "roles": {
+              "subject": "person",
+              "target": "person"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "cooccurs",
+            "roles": {
+              "left": "attention_to_world",
+              "right": "attention_to_self"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "G-O"
+        ],
+        "locator": "chapter 7, Ouspensky’s divided-attention description"
+      },
+      "visual_guard": "Overlapping attention is not a claim of two numerically distinct minds."
+    },
+    {
+      "id": "B05",
+      "tradition": "bailey",
+      "statement": "The personality comprises multiple lower vehicles or aspects rather than being identical to the soul.",
+      "scope": "bailey",
+      "symbols": {
+        "personality": "entity",
+        "soul": "entity",
+        "physical_vehicle": "entity",
+        "emotional_vehicle": "entity",
+        "mental_vehicle": "entity",
+        "personality_composite": "quality"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "has_quality",
+            "roles": {
+              "bearer": "personality",
+              "quality": "personality_composite"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "part_of",
+            "roles": {
+              "part": "physical_vehicle",
+              "whole": "personality"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "part_of",
+            "roles": {
+              "part": "emotional_vehicle",
+              "whole": "personality"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "part_of",
+            "roles": {
+              "part": "mental_vehicle",
+              "whole": "personality"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "B-S"
+        ],
+        "locator": "Question 1, discussion of personality as a sum of vehicles"
+      },
+      "visual_guard": "Do not assume an empirical anatomical model."
+    },
+    {
+      "id": "B06",
+      "tradition": "bailey",
+      "statement": "In Bailey’s developmental account, a soul ray can increasingly dominate the expression of the personality.",
+      "scope": "bailey",
+      "symbols": {
+        "person": "entity",
+        "soul_ray": "entity",
+        "personality_ray": "entity",
+        "integrated": "quality",
+        "soul_influence": "quality",
+        "personality_dominance": "state",
+        "soul_dominance": "state"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "qualifies",
+            "roles": {
+              "influence": "soul_ray",
+              "bearer": "person",
+              "quality": "soul_influence"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "has_quality",
+            "roles": {
+              "bearer": "person",
+              "quality": "integrated"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "transitions",
+            "roles": {
+              "subject": "person",
+              "from": "personality_dominance",
+              "to": "soul_dominance"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "B-P",
+          "B-T"
+        ],
+        "locator": "Question 4; Lucis Trust discussion of the rays"
+      },
+      "visual_guard": "Qualifying influence is not automatically a physical substance transfer."
+    },
+    {
+      "id": "P05",
+      "tradition": "plotinus",
+      "statement": "Intellect can be understood as knowing itself in the act of intellection.",
+      "scope": "plotinus",
+      "symbols": {
+        "intellect": "entity",
+        "intellection": "episode",
+        "self_as_content": "content"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "aware_of",
+            "roles": {
+              "subject": "intellect",
+              "target": "intellect"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "represents",
+            "roles": {
+              "representation": "self_as_content",
+              "target": "intellect"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "P-V"
+        ],
+        "locator": "Enneads V.3, problems of self-knowledge"
+      },
+      "visual_guard": "Representation is an analytic translation, not Plotinus’s own technical vocabulary."
+    },
+    {
+      "id": "P06",
+      "tradition": "plotinus",
+      "statement": "Plotinus distinguishes continuous inner intellection from its becoming explicitly available to ordinary human awareness.",
+      "scope": "plotinus",
+      "symbols": {
+        "human_soul": "entity",
+        "person": "entity",
+        "intellection": "episode",
+        "thought_content": "content"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "undergoes",
+            "roles": {
+              "subject": "human_soul",
+              "episode": "intellection"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "has_content",
+            "roles": {
+              "episode": "intellection",
+              "content": "thought_content"
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "atom",
+              "predicate": "aware_of",
+              "roles": {
+                "subject": "person",
+                "target": "intellection"
+              }
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "P-V"
+        ],
+        "locator": "Enneads V.3, discussion of intellection and perception"
+      },
+      "visual_guard": "Simplified modeled episode: no universal assertion that such thoughts are always inaccessible."
+    },
+    {
+      "id": "D01",
+      "tradition": "dennett",
+      "statement": "At the intentional stance, an observer interprets a system by attributing intentional properties.",
+      "scope": "dennett",
+      "symbols": {
+        "observer": "entity",
+        "system": "entity",
+        "belief_like": "quality"
+      },
+      "expression": {
+        "op": "atom",
+        "predicate": "attributes",
+        "roles": {
+          "observer": "observer",
+          "target": "system",
+          "property": "belief_like"
+        }
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "D-O"
+        ],
+        "locator": "Intentional stance discussed across Dennett’s work; essay on personhood"
+      },
+      "visual_guard": "Attribution by observer is not logically identical to verified subjective experience."
+    },
+    {
+      "id": "D02",
+      "tradition": "dennett",
+      "statement": "A Popperian creature can evaluate a possible action through internal simulation before acting.",
+      "scope": "dennett",
+      "symbols": {
+        "creature": "entity",
+        "refrain": "option",
+        "possible_attack": "option",
+        "imagined_outcome": "content"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "envisages",
+            "roles": {
+              "subject": "creature",
+              "option": "possible_attack"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "envisages",
+            "roles": {
+              "subject": "creature",
+              "option": "refrain"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "evaluates",
+            "roles": {
+              "subject": "creature",
+              "option": "refrain"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "D-T"
+        ],
+        "locator": "Tower of Generate-and-Test, Popperian level"
+      },
+      "visual_guard": "Simulation of alternatives is not proof that alternatives are metaphysically open."
+    },
+    {
+      "id": "D03",
+      "tradition": "dennett",
+      "statement": "Moral personhood involves capacities and reciprocal normative relationships beyond basic intentional interpretation.",
+      "scope": "dennett",
+      "symbols": {
+        "person": "entity",
+        "rationality": "capacity",
+        "communication": "capacity",
+        "reciprocity": "capacity",
+        "moral_norm": "norm"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "has_capacity",
+            "roles": {
+              "subject": "person",
+              "capacity": "rationality"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "has_capacity",
+            "roles": {
+              "subject": "person",
+              "capacity": "communication"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "has_capacity",
+            "roles": {
+              "subject": "person",
+              "capacity": "reciprocity"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "answerable_to",
+            "roles": {
+              "subject": "person",
+              "norm": "moral_norm"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "source_paraphrase",
+        "sources": [
+          "D-O",
+          "D-P"
+        ],
+        "locator": "Conditions of Personhood (1976), six themes"
+      },
+      "visual_guard": "Illustrative bundle of necessary-theme candidates, NOT Dennett proving sufficiency or a universal ladder."
+    },
+    {
+      "id": "T01",
+      "tradition": "constructed",
+      "statement": "An angry subject notices anger, compares alternatives, and chooses not to retaliate.",
+      "scope": "scenario_angry_person",
+      "symbols": {
+        "person": "entity",
+        "anger": "episode",
+        "awareness_content": "content",
+        "attack": "option",
+        "refrain": "option",
+        "restraint": "action"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "experiences",
+            "roles": {
+              "subject": "person",
+              "episode": "anger"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "aware_of",
+            "roles": {
+              "subject": "person",
+              "target": "anger"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "has_content",
+            "roles": {
+              "episode": "anger",
+              "content": "awareness_content"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "represents",
+            "roles": {
+              "representation": "awareness_content",
+              "target": "anger"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "available_for_use",
+            "roles": {
+              "content": "awareness_content",
+              "subject": "person"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "evaluates",
+            "roles": {
+              "subject": "person",
+              "option": "attack"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "evaluates",
+            "roles": {
+              "subject": "person",
+              "option": "refrain"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "selects",
+            "roles": {
+              "subject": "person",
+              "option": "refrain"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "performs",
+            "roles": {
+              "subject": "person",
+              "action": "restraint"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "realizes_option",
+            "roles": {
+              "action": "restraint",
+              "option": "refrain"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [],
+        "locator": "constructed counterexample"
+      },
+      "visual_guard": "Does not assert libertarian freedom or self-awareness merely from conscious choice."
+    },
+    {
+      "id": "T02",
+      "tradition": "constructed",
+      "statement": "A determinist model may allow deliberation but deny that the agent could have acted otherwise with the complete past and laws fixed.",
+      "scope": "scenario_determinism",
+      "symbols": {
+        "person": "entity",
+        "refrain": "option",
+        "restraint": "action",
+        "attack": "action"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "selects",
+            "roles": {
+              "subject": "person",
+              "option": "refrain"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "performs",
+            "roles": {
+              "subject": "person",
+              "action": "restraint"
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "modal",
+              "domain": "agential",
+              "mode": "can",
+              "item": {
+                "op": "atom",
+                "predicate": "performs",
+                "roles": {
+                  "subject": "person",
+                  "action": "attack"
+                }
+              },
+              "agent": "person"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [],
+        "locator": "constructed determinist countermodel: cannot do otherwise with total prior conditions fixed"
+      },
+      "visual_guard": "Shows lack of alternative ability only; deliberation and a selected actual outcome remain representable."
+    },
+    {
+      "id": "T03",
+      "tradition": "constructed",
+      "statement": "A compatibilist account can ascribe responsibility to an agent whose decision mechanism responds to reasons despite determinism.",
+      "scope": "scenario_compatibilism",
+      "symbols": {
+        "person": "entity",
+        "reason": "content",
+        "restraint": "action"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "responds_to_reason",
+            "roles": {
+              "subject": "person",
+              "reason": "reason"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "performs",
+            "roles": {
+              "subject": "person",
+              "action": "restraint"
+            }
+          },
+          {
+            "op": "atom",
+            "predicate": "morally_responsible",
+            "roles": {
+              "subject": "person",
+              "action": "restraint"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [
+          "SEP-F",
+          "SEP-M"
+        ],
+        "locator": "constructed example informed by reasons-responsiveness accounts"
+      },
+      "visual_guard": "A school of responsibility, not the interlingua’s definition of agency."
+    },
+    {
+      "id": "T04",
+      "tradition": "constructed",
+      "statement": "A libertarian account can assert that the agent possessed genuine alternative possibilities at decision time.",
+      "scope": "scenario_libertarian",
+      "symbols": {
+        "person": "entity",
+        "attack": "action",
+        "restraint": "action"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "modal",
+            "domain": "agential",
+            "mode": "can",
+            "item": {
+              "op": "atom",
+              "predicate": "performs",
+              "roles": {
+                "subject": "person",
+                "action": "attack"
+              }
+            },
+            "agent": "person"
+          },
+          {
+            "op": "modal",
+            "domain": "agential",
+            "mode": "can",
+            "item": {
+              "op": "atom",
+              "predicate": "performs",
+              "roles": {
+                "subject": "person",
+                "action": "restraint"
+              }
+            },
+            "agent": "person",
+            "background": "same_complete_past_and_laws"
+          },
+          {
+            "op": "atom",
+            "predicate": "agent_causes",
+            "roles": {
+              "agent": "person",
+              "action": "restraint"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [
+          "SEP-F"
+        ],
+        "locator": "constructed example informed by agent-causal libertarianism"
+      },
+      "visual_guard": "Do not equate merely imagining actions with being able to realize both."
+    },
+    {
+      "id": "T05",
+      "tradition": "constructed",
+      "statement": "A realm can be possible within a lore while not existing in its actual world.",
+      "scope": "scenario_modality",
+      "symbols": {
+        "unrealized_realm": "entity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "modal",
+            "domain": "alethic",
+            "mode": "possible",
+            "item": {
+              "op": "exists",
+              "entity": "unrealized_realm"
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "exists",
+              "entity": "unrealized_realm"
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [],
+        "locator": "constructed possible-vs-actual distinction"
+      },
+      "visual_guard": "Scope possible to the tradition’s relevant modal space, not objective science."
+    },
+    {
+      "id": "T06",
+      "tradition": "constructed",
+      "statement": "A lore may posit an impersonal cosmic consciousness capable of experience but not deliberate selection.",
+      "scope": "scenario_impersonal_mind",
+      "symbols": {
+        "cosmic_mind": "entity",
+        "experience": "capacity",
+        "selection": "capacity"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "has_capacity",
+            "roles": {
+              "subject": "cosmic_mind",
+              "capacity": "experience"
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "atom",
+              "predicate": "has_capacity",
+              "roles": {
+                "subject": "cosmic_mind",
+                "capacity": "selection"
+              }
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [],
+        "locator": "constructed non-personal consciousness model"
+      },
+      "visual_guard": "Neither denies that other traditions attribute agency to cosmic consciousness."
+    },
+    {
+      "id": "T07",
+      "tradition": "constructed",
+      "statement": "An obligation does not imply that the required action occurs; normative necessity is not causal inevitability.",
+      "scope": "scenario_obligation",
+      "symbols": {
+        "person": "entity",
+        "help": "action",
+        "help_norm": "norm"
+      },
+      "expression": {
+        "op": "and",
+        "items": [
+          {
+            "op": "atom",
+            "predicate": "governs",
+            "roles": {
+              "norm": "help_norm",
+              "action": "help"
+            }
+          },
+          {
+            "op": "modal",
+            "domain": "deontic",
+            "mode": "obligatory",
+            "item": {
+              "op": "atom",
+              "predicate": "performs",
+              "roles": {
+                "subject": "person",
+                "action": "help"
+              }
+            }
+          },
+          {
+            "op": "not",
+            "item": {
+              "op": "atom",
+              "predicate": "performs",
+              "roles": {
+                "subject": "person",
+                "action": "help"
+              }
+            }
+          }
+        ]
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [
+          "SEP-M"
+        ],
+        "locator": "constructed test of ought-versus-is"
+      },
+      "visual_guard": "Do not render obligation as causal compulsion."
+    },
+    {
+      "id": "T08",
+      "tradition": "constructed",
+      "statement": "An implication can describe a rule without asserting that the antecedent causes the consequent.",
+      "scope": "scenario_logical_rule",
+      "symbols": {
+        "soul": "entity",
+        "soul_kind": "quality",
+        "immortal": "quality"
+      },
+      "expression": {
+        "op": "implies",
+        "antecedent": {
+          "op": "atom",
+          "predicate": "is_a",
+          "roles": {
+            "subject": "soul",
+            "kind": "soul_kind"
+          }
+        },
+        "consequent": {
+          "op": "atom",
+          "predicate": "has_quality",
+          "roles": {
+            "bearer": "soul",
+            "quality": "immortal"
+          }
+        }
+      },
+      "evidence": {
+        "kind": "constructed_case",
+        "sources": [],
+        "locator": "constructed conditional illustration"
+      },
+      "visual_guard": "This formula states a conditional within a hypothetical system; it neither causes immortality nor asserts the antecedent."
+    }
+  ],
+  "principles": [
+    "Referent declaration is not existence assertion; a lore may describe possibilities or fictional narrators.",
+    "Assertions are scoped to named worldview/model. Models can disagree without inconsistency in the interlingua.",
+    "Experiencing, being aware of, making content available for reasoning, attending, and reflecting are distinct predicates; equivalences must be asserted inside a model.",
+    "Choosing, reasons-responsiveness, moral accountability and libertarian alternative possibilities are independent predicates.",
+    "Causation is not implication; obligation is not inevitability; existential grounding is not material transfer.",
+    "An observer attributing a belief is distinct from establishing that the observed entity has experience.",
+    "Visualization temporal ordering is not necessarily the depicted world’s temporal ordering.",
+    "Default absence of a proposition is unknown, never false: use explicit negation only for claimed denials.",
+    "Presentation-specific colors/icons must not change conceptual source meanings.",
+    "Tradition-specific definitions and qualifying assumptions must remain inspectable in research even when omitted from narration."
+  ],
+  "translation_stages": [
+    "source assertion + locator",
+    "scope within worldview",
+    "declare referents as typed placeholders",
+    "construct propositions with argument roles",
+    "qualify modality, time and implicit assumptions",
+    "render using compositional grammar / iconic and conventional lexicon"
+  ]
+}

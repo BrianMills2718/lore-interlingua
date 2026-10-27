@@ -1,0 +1,558 @@
+{
+  "project": "Comparative Esoteric Cosmology Visual Interlingua",
+  "version": "0.1.0",
+  "status": "working hypothesis — not validated with audience comprehension tests",
+  "principle": "First translate source claims into typed relations; only then render those relations.",
+  "domain_disclaimer": "The records encode the contents of traditions, not the objective truth of cosmological propositions.",
+  "minimal_data_model": {
+    "claim": "a sourced and paraphrased proposition belonging to one tradition",
+    "referent": "an opaque named placeholder; no claim of physical existence",
+    "operator": "a typed relationship/process with roles",
+    "qualifier": "time, medium, conservation, scope or modality that disambiguates the relation",
+    "source": "a research record; not shown throughout an eventual narrative"
+  },
+  "operators": {
+    "rank": {
+      "slots": [
+        "members",
+        "by",
+        "values",
+        "order"
+      ],
+      "meaning": "ordered levels on a stated comparison dimension"
+    },
+    "mediate": {
+      "slots": [
+        "origin",
+        "mediator",
+        "destination",
+        "kind"
+      ],
+      "meaning": "a source affects a destination through an intermediary"
+    },
+    "differentiate": {
+      "slots": [
+        "origin",
+        "outputs",
+        "basis"
+      ],
+      "meaning": "one basis takes distinguishable forms; no presumption of physical loss"
+    },
+    "transfer": {
+      "slots": [
+        "origin",
+        "destination",
+        "carrier"
+      ],
+      "meaning": "a specified carrier is said to pass between source and recipient"
+    },
+    "depend_on": {
+      "slots": [
+        "dependent",
+        "support",
+        "dimension"
+      ],
+      "meaning": "one thing requires another for a particular function"
+    },
+    "partition": {
+      "slots": [
+        "whole",
+        "groups"
+      ],
+      "meaning": "an exhaustively grouped set, without causal implications"
+    },
+    "qualify": {
+      "slots": [
+        "influence",
+        "bearer",
+        "quality"
+      ],
+      "meaning": "an influence alters or determines a bearer’s qualities"
+    },
+    "change": {
+      "slots": [
+        "subject",
+        "from",
+        "to",
+        "time"
+      ],
+      "meaning": "a described state transition"
+    },
+    "ground": {
+      "slots": [
+        "ground",
+        "dependent",
+        "time"
+      ],
+      "meaning": "one item depends on another for its existence; not equivalent to transfer"
+    },
+    "orient": {
+      "slots": [
+        "subject",
+        "target",
+        "dimension"
+      ],
+      "meaning": "directed attention, aspiration, or reference; not spatial movement"
+    }
+  },
+  "rendering_rules": {
+    "rank": "separate ordered strata with dimension displayed; do not infer spatial containment",
+    "mediate": "two causally directed links through explicit intermediate locus",
+    "differentiate": "fan-out showing distinguishable branches, without shrinking the parent",
+    "transfer": "one or more crossing tokens or stream only where a carrier is asserted",
+    "depend_on": "sustained support link; if no carrier supplied, no particles",
+    "partition": "brackets or grouping boundaries; no motion required",
+    "qualify": "change in a bearer’s texture or internal pattern; hue identifies variant but has no metaphysical meaning",
+    "change": "before/after states with a timed morph only for world-temporal changes",
+    "ground": "static support relationship with stable source; never a particle stream",
+    "orient": "reorientation of a locus/axis of attention, not displacement of object"
+  },
+  "global_invariants": [
+    "identical words never imply equivalent concepts",
+    "different words never imply different concepts without relational analysis",
+    "atemporal grounding must not render as chronological creation",
+    "the visual representation may not add unasserted material transfer",
+    "animation used for viewer reveal must be distinguishable from events within a cosmology",
+    "missing qualifiers remain unknown, not silently filled by the renderer",
+    "colors may distinguish variants but must not encode intrinsic moral status by default"
+  ],
+  "sources": {
+    "G-O": {
+      "title": "P. D. Ouspensky, In Search of the Miraculous (reports of Gurdjieff)",
+      "url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html"
+    },
+    "B-R": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — The Seven Rays Enumerated",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_introductory_remarks/3_the_seven_rays_enumerated"
+    },
+    "B-Q": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — The Rays and Life-Quality-Appearance",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_two_chapter_the_seven_creative_builders_the_seven_rays/i_the_rays_and_lifequalityappearance"
+    },
+    "B-P": {
+      "title": "Alice A. Bailey, Esoteric Psychology I — Question 4",
+      "url": "https://www.lucistrust.org/online_books/esoteric_psychology_volume_i/section_one_chapter_ii_certain_questions_and_their_answers/question_4_what_value_is_it_know_about_the_seven_rays"
+    },
+    "P-E": {
+      "title": "Plotinus, Enneads V.1, translation with Greek text",
+      "url": "https://forage.com/plotinus/enneads/5-1-on-the-three-primary-hypostases/"
+    },
+    "P-S": {
+      "title": "Stanford Encyclopedia of Philosophy, Plotinus (context and interpretation)",
+      "url": "https://plato.stanford.edu/entries/plotinus/"
+    }
+  },
+  "claims": [
+    {
+      "id": "G01",
+      "tradition": "gurdjieff",
+      "claim": "The Ray of Creation orders worlds from the Absolute to the Moon, with increasingly numerous governing laws.",
+      "operators": [
+        {
+          "op": "rank",
+          "members": [
+            "Absolute",
+            "all_worlds",
+            "Milky_Way",
+            "Sun",
+            "planetary_world",
+            "Earth",
+            "Moon"
+          ],
+          "by": "orders_of_laws",
+          "values": [
+            1,
+            3,
+            6,
+            12,
+            24,
+            48,
+            96
+          ],
+          "order": "ascending_constraint"
+        }
+      ],
+      "sources": [
+        "G-O"
+      ],
+      "locator": "chapter 5 (Ray of Creation)",
+      "visual_goal": "seven ordered strata; number/constraint increases toward Moon",
+      "guardrails": [
+        "Do not equate higher position with larger physical size.",
+        "The integers refer to claimed orders of laws, not empirically observed counts."
+      ]
+    },
+    {
+      "id": "G02",
+      "tradition": "gurdjieff",
+      "claim": "Terrestrial organic life mediates planetary influences to the Earth.",
+      "operators": [
+        {
+          "op": "mediate",
+          "origin": "planetary_world",
+          "mediator": "organic_life",
+          "destination": "Earth",
+          "kind": "influence",
+          "time": "ongoing"
+        }
+      ],
+      "sources": [
+        "G-O"
+      ],
+      "locator": "chapter 7 (organic life as transmitting station)",
+      "visual_goal": "planetary field -> terrestrial life -> Earth",
+      "guardrails": [
+        "Do not assume particles or physical stuff is transported."
+      ]
+    },
+    {
+      "id": "G03",
+      "tradition": "gurdjieff",
+      "claim": "Organic life emits differentiated radiations toward Sun, planets, and Moon; their requirements differ.",
+      "operators": [
+        {
+          "op": "differentiate",
+          "origin": "radiation_from_organic_life",
+          "outputs": [
+            "solar_directed_radiation",
+            "planetary_directed_radiation",
+            "lunar_directed_radiation"
+          ],
+          "basis": "destination_specific_kind"
+        },
+        {
+          "op": "transfer",
+          "origin": "organic_life",
+          "destination": "Sun",
+          "carrier": "solar_directed_radiation",
+          "time": "ongoing"
+        },
+        {
+          "op": "transfer",
+          "origin": "organic_life",
+          "destination": "planetary_world",
+          "carrier": "planetary_directed_radiation",
+          "time": "ongoing"
+        },
+        {
+          "op": "transfer",
+          "origin": "organic_life",
+          "destination": "Moon",
+          "carrier": "lunar_directed_radiation",
+          "time": "ongoing"
+        }
+      ],
+      "sources": [
+        "G-O"
+      ],
+      "locator": "chapter 7",
+      "visual_goal": "three destination-specific outbound transmissions; not one uniform ray",
+      "guardrails": [
+        "Represent radiations as text-specified carriers, not as known physical radiation."
+      ]
+    },
+    {
+      "id": "G04",
+      "tradition": "gurdjieff",
+      "claim": "The Moon is maintained by energies associated with terrestrial organic life.",
+      "operators": [
+        {
+          "op": "depend_on",
+          "dependent": "Moon",
+          "support": "organic_life",
+          "dimension": "cosmic_maintenance"
+        },
+        {
+          "op": "transfer",
+          "origin": "organic_life",
+          "destination": "Moon",
+          "carrier": "nourishing_energy",
+          "time": "ongoing"
+        }
+      ],
+      "sources": [
+        "G-O"
+      ],
+      "locator": "chapter 9 and earlier discussion in chapter 3",
+      "visual_goal": "Moon retains state through a sustained incoming channel",
+      "guardrails": [
+        "Does not imply Gurdjieff described a vampiric humanoid spirit."
+      ]
+    },
+    {
+      "id": "B01",
+      "tradition": "bailey",
+      "claim": "One divine Life is described as expressing itself through seven rays or builders.",
+      "operators": [
+        {
+          "op": "differentiate",
+          "origin": "one_Life",
+          "outputs": [
+            "ray_1",
+            "ray_2",
+            "ray_3",
+            "ray_4",
+            "ray_5",
+            "ray_6",
+            "ray_7"
+          ],
+          "basis": "distinct_qualifications",
+          "time": "cosmic_manifestation"
+        }
+      ],
+      "sources": [
+        "B-R"
+      ],
+      "locator": "The Seven Rays Enumerated, pp. 22–26",
+      "visual_goal": "one source with seven branches whose distinct qualities are retained",
+      "guardrails": [
+        "Do not show seven units of matter detached from a depleted source.",
+        "The rays are also personified as Builders; do not force a single interpretation."
+      ]
+    },
+    {
+      "id": "B02",
+      "tradition": "bailey",
+      "claim": "The seven rays are categorized as three Rays of Aspect and four Rays of Attribute.",
+      "operators": [
+        {
+          "op": "partition",
+          "whole": [
+            "ray_1",
+            "ray_2",
+            "ray_3",
+            "ray_4",
+            "ray_5",
+            "ray_6",
+            "ray_7"
+          ],
+          "groups": {
+            "aspect": [
+              "ray_1",
+              "ray_2",
+              "ray_3"
+            ],
+            "attribute": [
+              "ray_4",
+              "ray_5",
+              "ray_6",
+              "ray_7"
+            ]
+          }
+        }
+      ],
+      "sources": [
+        "B-Q"
+      ],
+      "locator": "The Rays and Life-Quality-Appearance, pp. 158–162",
+      "visual_goal": "a seven-element set partitioned into 3 + 4 without reducing to two rays",
+      "guardrails": [
+        "Do not interpret the two groups as mutually hostile."
+      ]
+    },
+    {
+      "id": "B03",
+      "tradition": "bailey",
+      "claim": "Rays condition the qualities manifested by forms throughout kingdoms of nature.",
+      "operators": [
+        {
+          "op": "qualify",
+          "influence": "ray_type",
+          "bearer": "manifested_form",
+          "quality": "ray_specific_character",
+          "time": "ongoing"
+        }
+      ],
+      "sources": [
+        "B-Q"
+      ],
+      "locator": "The Rays and Life-Quality-Appearance, pp. 157–159",
+      "visual_goal": "a form changes a structured expressive property under ray influence",
+      "guardrails": [
+        "An effect on the bearer is not necessarily material transferred from the ray."
+      ]
+    },
+    {
+      "id": "B04",
+      "tradition": "bailey",
+      "claim": "A person’s soul ray and personality ray may differ and jointly shape expression, with soul ray potentially becoming dominant.",
+      "operators": [
+        {
+          "op": "qualify",
+          "influence": "soul_ray",
+          "bearer": "person",
+          "quality": "soul_disposition"
+        },
+        {
+          "op": "qualify",
+          "influence": "personality_ray",
+          "bearer": "person",
+          "quality": "personality_disposition"
+        },
+        {
+          "op": "change",
+          "subject": "relative_ray_dominance",
+          "from": "personality_dominance",
+          "to": "soul_dominance",
+          "time": "developmental"
+        }
+      ],
+      "sources": [
+        "B-P"
+      ],
+      "locator": "Question 4, p. 129",
+      "visual_goal": "two co-present influences modulate one person, then shift relative salience",
+      "guardrails": [
+        "Do not imply every individual has the same rays or stages."
+      ]
+    },
+    {
+      "id": "P01",
+      "tradition": "plotinus",
+      "claim": "Intellect (Nous) depends for its existence on the One; this is not an event occurring at a particular time.",
+      "operators": [
+        {
+          "op": "ground",
+          "ground": "the_One",
+          "dependent": "Intellect",
+          "time": "atemporal",
+          "source_depletion": "none"
+        }
+      ],
+      "sources": [
+        "P-E",
+        "P-S"
+      ],
+      "locator": "Enneads V.1.6–7; SEP §2",
+      "visual_goal": "stable grounding connection, no departing particles and no chronological birth",
+      "guardrails": [
+        "Do not render a physical flow or loss of material by the One."
+      ]
+    },
+    {
+      "id": "P02",
+      "tradition": "plotinus",
+      "claim": "Soul is grounded in Intellect, which remains itself rather than dividing off a piece.",
+      "operators": [
+        {
+          "op": "ground",
+          "ground": "Intellect",
+          "dependent": "Soul",
+          "time": "atemporal",
+          "source_depletion": "none"
+        }
+      ],
+      "sources": [
+        "P-E"
+      ],
+      "locator": "Enneads V.1.3",
+      "visual_goal": "stable secondary grounding link with unchanged Intellect",
+      "guardrails": [
+        "No detachment, depletion, or literal physical descent."
+      ]
+    },
+    {
+      "id": "P03",
+      "tradition": "plotinus",
+      "claim": "Soul gives life to the sensible cosmos without being partitioned into physical pieces.",
+      "operators": [
+        {
+          "op": "qualify",
+          "influence": "Soul",
+          "bearer": "sensible_cosmos",
+          "quality": "living_character",
+          "time": "ongoing"
+        },
+        {
+          "op": "ground",
+          "ground": "Soul",
+          "dependent": "life_of_sensible_cosmos",
+          "time": "atemporal",
+          "source_depletion": "none"
+        }
+      ],
+      "sources": [
+        "P-E"
+      ],
+      "locator": "Enneads V.1.2",
+      "visual_goal": "many living things participate in one undivided source",
+      "guardrails": [
+        "Do not depict Soul as a stock of energy consumed by bodies."
+      ]
+    },
+    {
+      "id": "P04",
+      "tradition": "plotinus",
+      "claim": "The soul turns its contemplation toward Intellect as its source and means of perfection.",
+      "operators": [
+        {
+          "op": "orient",
+          "subject": "Soul",
+          "target": "Intellect",
+          "dimension": "contemplation",
+          "time": "nonphysical"
+        }
+      ],
+      "sources": [
+        "P-E"
+      ],
+      "locator": "Enneads V.1.3",
+      "visual_goal": "alignment of attention toward Intellect, not physical upward travel",
+      "guardrails": [
+        "Do not turn the orientation of thought into literal travel through space."
+      ]
+    }
+  ],
+  "comparison_tests": [
+    {
+      "pair": [
+        "G03",
+        "B01"
+      ],
+      "common": "differentiation and directed expression",
+      "different": "G03 posits destination-specific radiations; B01 posits seven divine rays/builders; not equivalent physical carriers"
+    },
+    {
+      "pair": [
+        "B01",
+        "P01"
+      ],
+      "common": "a dependent plurality or subordinate principle with a supreme source",
+      "different": "Bailey has seven differentiations; Plotinus asserts atemporal grounding of Intellect and denies loss from the One"
+    },
+    {
+      "pair": [
+        "G04",
+        "P02"
+      ],
+      "common": "one term structurally depends on another",
+      "different": "G04 is functional nourishment using a carrier; P02 is existence-grounding without carrier or depletion"
+    },
+    {
+      "pair": [
+        "B03",
+        "P03"
+      ],
+      "common": "a higher principle bears on the characteristics of lower forms",
+      "different": "B03 confers differentiated ray qualities; P03 connects the presence of life to indivisible Soul"
+    }
+  ],
+  "rejection_tests": [
+    {
+      "error": "P01 shown with glowing particles leaving the One",
+      "why": "imports time and physical transfer into atemporal grounding"
+    },
+    {
+      "error": "B01 seven rays shown as seven chunks removed from one source",
+      "why": "implies depletion unsupported by the mapped claim"
+    },
+    {
+      "error": "G03 and B01 collapsed because both use rays/radiations",
+      "why": "lexical similarity is not operator equivalence"
+    },
+    {
+      "error": "All upward/descending orientation treated as literal location",
+      "why": "hierarchy, valuation, causation and spatial position differ"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "version": "0.2.0",
+  "claims": 29,
+  "claims_by_tradition": {
+    "bailey": 6,
+    "constructed": 8,
+    "dennett": 3,
+    "gurdjieff": 6,
+    "plotinus": 6
+  },
+  "legacy_migrated": 12,
+  "new_records": 17,
+  "schema_errors": 0,
+  "semantic_errors": 0,
+  "negative_validator_test": "passed",
+  "distinct_predicates": 39,
+  "limitations": [
+    "The semantics are typed and structurally validated, not mathematically verified against the source texts.",
+    "Ambiguity/undertranslation can survive machine validation.",
+    "Compositional minimality and visual comprehension have not yet been established."
+  ]
+}
