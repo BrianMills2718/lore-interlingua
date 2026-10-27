@@ -52,6 +52,16 @@ Design for **progressively discoverable meaning**:
 
 The desired progression is **immediate narrative comprehension plus optional, accumulating technical fluency**, not a course that the audience must complete before understanding the stories.
 
+## Two different success criteria: public communication and private exploration
+
+**A public explanatory video** should aim to make a central idea intelligible to an unfamiliar viewer, while allowing advanced or difficult material to remain genuinely difficult. Perfect comprehension is not a realistic obligation, especially for contested philosophical claims.
+
+**A visual-thinking study** can succeed even without immediate understandability. It may expose hidden assumptions, provoke new metaphors, encourage iterative reconceptualization, or bring previously unnoticed tensions into focus. Its immediate output can be a better question rather than a better explanation.
+
+Repeated viewing and partial understanding are legitimate modes of learning. We are developing instruments for `groping toward understanding`, not a guaranteed decoding machine.
+
+These modes share tools but do not share an identical quality metric. A private exploratory sketch should not fail just because it is not yet legible to a broad audience; a public explanatory video should not excuse ungrounded confusion as intrinsically profound.
+
 ## Allocation of communicative work
 
 | Mode | Often best for |
