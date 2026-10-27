@@ -1,0 +1,60 @@
+{
+  "experiment": "005-sustaining-being-visual-thinking",
+  "mode": "exploratory-artistic-inquiry",
+  "status": "provisional_not_standard",
+  "source": [
+    {
+      "work": "Catechism of the Catholic Church",
+      "sections": "295-302",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_one/article_1/paragraph_4_the_creator.index.html"
+    }
+  ],
+  "fixed_meaning": [
+    "Free creation ex nihilo, not preexisting matter",
+    "Creation is not necessary emanation of divine substance",
+    "Continuing divine sustenance of creaturely existence",
+    "Creaturely activity and distinct existence"
+  ],
+  "alternatives": [
+    {
+      "id": "page",
+      "expressive_hypothesis": "Creation as a given, intelligible and developing story",
+      "risks": [
+        "already existing page",
+        "human artisan",
+        "creation only as past event"
+      ]
+    },
+    {
+      "id": "illumination",
+      "expressive_hypothesis": "Persistence and dependence as sustained presence",
+      "risks": [
+        "existence equated with visibility",
+        "physical light and spatialized God"
+      ]
+    },
+    {
+      "id": "held-chord",
+      "expressive_hypothesis": "Constant ground sustaining independent dynamic activity",
+      "risks": [
+        "literal vibration",
+        "mechanical synchronization",
+        "God as sound"
+      ]
+    }
+  ],
+  "promoted_rules": [],
+  "viewer_studies": 0,
+  "verification": {
+    "chrome_render": "passed local browser check",
+    "controls": "pause/scrub/label toggle checked",
+    "doctrinal_fidelity": "interpretive review only; metaphors carry known risks",
+    "semantic_success": "not established"
+  },
+  "exploratory_value": [
+    "Produced distinct questions about presence, time, material transfer and creaturely agency",
+    "Exposed distinct metaphor-induced assumptions",
+    "Demonstrated that formalized source constraints may guide divergent artistic studies"
+  ],
+  "next": "Critique candidate visuals; construct at least one fourth candidate without a physical-transfer or visibility metaphor"
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio 005 · Sustaining Being — Three Visual Hypotheses</title>
+<style>
+:root{--bg:#0b1220;--panel:#111d2a;--ink:#e9e8dd;--sub:#9db1c4;--gold:#dfb971;--line:#2d4656;--moss:#9fbea6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -20%,#1b3045,#09101a 70%);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,Arial,sans-serif}main{max-width:1560px;margin:0 auto;padding:30px 28px 48px}
+.topline{font-size:11px;letter-spacing:.23em;text-transform:uppercase;color:var(--gold);font-weight:650}.headline{font-family:Georgia,'Times New Roman',serif;font-size:clamp(31px,4.0vw,52px);line-height:1.08;margin:12px 0 13px;font-weight:400;letter-spacing:-.04em}.intro{color:#b6c4d3;max-width:970px;margin:0 0 28px;font-size:15px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid #263847;border-bottom:1px solid #263847;padding:12px 0;margin-bottom:25px}.toolbar button,.toolbar label{background:#172635;border:1px solid #375064;border-radius:7px;color:#e8e6da;padding:8px 13px;cursor:pointer;font-size:13px}.toolbar button:focus-visible,.toolbar input:focus-visible,.panel:focus-visible{outline:3px solid #dfb971;outline-offset:3px}.toolbar button:hover{background:#23394a}.toolbar input[type=range]{width:min(320px,34vw);accent-color:#d6b26d}.time{font-variant-numeric:tabular-nums;color:#b8c8d0;font-size:12px;min-width:62px} .toggle{display:inline-flex;gap:7px;align-items:center}.toggle input{accent-color:#c8a86e} .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.panel{border:1px solid #334758;background:#101c2a;border-radius:12px;overflow:hidden;min-width:0}.panel-head{padding:16px 17px 10px}.num{color:var(--gold);font-size:10px;letter-spacing:.15em;text-transform:uppercase}.panel h2{font-size:22px;font-weight:450;font-family:Georgia,serif;margin:3px 0 5px}.concept{color:var(--sub);font-size:12px;margin:0;min-height:35px}.view{width:100%;aspect-ratio:1.32;display:block;background:#080e19}.panel-foot{padding:14px 16px 17px;min-height:175px}.panel-foot strong{color:#dcd9ce;font-size:13px}.panel-foot p{font-size:13px;color:#b4c6d1;margin:5px 0 12px}.risk strong{color:#d5ac94}.risk p{margin-bottom:0}.reading{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;margin-top:24px}.reading>section{border-top:1px solid #344859;padding-top:16px}.reading h3{font:normal 24px Georgia,serif;margin:0 0 10px}.reading p{color:#b6c4d3;font-size:14px;max-width:700px}.questions{padding-left:21px;color:#b6c4d3;line-height:1.8;font-size:14px} .foot{color:#7f98aa;font-size:12px;border-top:1px solid #2c4050;margin-top:25px;padding-top:13px}a{color:#b6d2e5}small{font-size:12px;color:#99afbf}
+@media(max-width:980px){.three{grid-template-columns:1fr}.view{aspect-ratio:1.6}.panel-foot{min-height:0}.reading{grid-template-columns:1fr}.concept{min-height:0}}@media(prefers-reduced-motion:reduce){.note{animation:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="topline">LORE INTERLINGUA / VISUAL THINKING STUDY 005</div>
+<h1 class="headline">How can existence be <em>sustained</em>?</h1>
+<p class="intro">Three simultaneous sketches of one proposition from Catholic theology: God freely brings creatures into being and continues to sustain them, without transferring part of the divine substance. They are exploratory artistic metaphors, not literal depictions of God or definitive explanations of doctrine.</p>
+<div class="toolbar">
+<button id="play" aria-label="Pause animation">Ⅱ Pause</button><button id="reset">↺ Restart</button>
+<label class="toggle"><input type="checkbox" id="labels" checked> Scene labels</label>
+<label class="toggle"><input type="checkbox" id="risk" checked> Interpretive notes</label>
+<input id="seek" type="range" min="0" max="12" value="0" step="0.05" aria-label="Time in animation">
+<span class="time" id="timer">0.0 / 12s</span>
+</div>
+<div class="three">
+<article class="panel"><div class="panel-head"><span class="num">HYPOTHESIS A</span><h2>The Page</h2><p class="concept">An intelligible world appears and changes without taking material from its author.</p></div><canvas class="view" id="scene-a" width="520" height="395" aria-label="Animated manuscript with a tree taking form"></canvas><div class="panel-foot"><strong>What it lets us think</strong><p>Creation as intelligible and freely given; creatures have a story and their own unfolding.</p><div class="risk"><strong>What it may wrongly imply</strong><p>God is a human artisan; the blank page already existed; creation is merely an event in past time.</p></div></div></article>
+<article class="panel"><div class="panel-head"><span class="num">HYPOTHESIS B</span><h2>Illumination</h2><p class="concept">The world has persistent visibility or intelligibility through a source that does not diminish.</p></div><canvas class="view" id="scene-b" width="520" height="395" aria-label="Animated tree emerging from darkness in sustained light"></canvas><div class="panel-foot"><strong>What it lets us think</strong><p>Dependence is continual, not merely an initial act. The created world remains distinguishable from its source.</p><div class="risk"><strong>What it may wrongly imply</strong><p>Being is simply being visible, or God is a physical light located above the world.</p></div></div></article>
+<article class="panel"><div class="panel-head"><span class="num">HYPOTHESIS C</span><h2>The Held Chord</h2><p class="concept">One sustained condition permits multiple creatures to develop their own changing patterns.</p></div><canvas class="view" id="scene-c" width="520" height="395" aria-label="Animated persistent harmonic lines and independent plant-like movement"></canvas><div class="panel-foot"><strong>What it lets us think</strong><p>Sustaining is compatible with creaturely activity. Source and creatures are not identical.</p><div class="risk"><strong>What it may wrongly imply</strong><p>God is a vibration or sound; creaturely activity is mechanically synchronized to a divine frequency.</p></div></div></article>
+</div>
+<div class="reading"><section><h3>One claim; three hypotheses</h3><p>All three hold fixed: <b>free creation, no pre-existing material, no loss of divine substance, continuing dependence, and genuine creaturely activity</b>. Each metaphor inevitably adds further suggestions. The research task is to notice those suggestions and decide which illuminate the concept and which deform it.</p><p>This is a sketchbook for conceptual exploration—not a notation standard, and not a comprehension test already passed.</p></section><section><h3>Questions created by drawing</h3><ol class="questions"><li>How do we show sustaining without depicting a fluid or physical energy beam?</li><li>Does emphasizing a source always make God look spatially located?</li><li>Can a creature appear genuinely active without seeming independent of its source of existence?</li><li>Which visual implications are interesting ambiguity, and which are unacceptable doctrinal distortion?</li></ol></section></div>
+<div class="foot">Sources: <a href="https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_one/article_1/paragraph_4_the_creator.index.html">Catechism of the Catholic Church §§295–302</a>, especially creation ex nihilo (§296), transcendence and presence (§300), and continual sustenance (§301). Exploratory artwork, not official religious iconography. Scene time is pedagogical time, not a claimed chronology of God.</div>
+</main>
+<script>
+'use strict';
+const W=520,H=395,TAU=2*Math.PI;
+const canvases=['scene-a','scene-b','scene-c'].map(id=>document.getElementById(id));const ctxs=canvases.map(c=>c.getContext('2d'));
+const state={t:0,playing:true,labels:true,risk:true,last:0,rate:1};const ease=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)}; const clamp=x=>Math.max(0,Math.min(1,x));
+function text(ctx,txt,x,y,size=14,color='#dcded5',align='left',font='system-ui'){ctx.save();ctx.fillStyle=color;ctx.textAlign=align;ctx.font=`${size}px ${font}`;ctx.fillText(txt,x,y);ctx.restore()}
+function line(ctx,x,y,x2,y2,col='#abb9ae',w=2){ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x2,y2);ctx.strokeStyle=col;ctx.lineWidth=w;ctx.stroke()}
+function roundRect(ctx,x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
+function circle(ctx,x,y,r,col,stroke){ctx.beginPath();ctx.arc(x,y,r,0,TAU);if(col){ctx.fillStyle=col;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1.5;ctx.stroke()}}
+function bg(ctx){let g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,'#0c1825');g.addColorStop(1,'#081019');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);ctx.fillStyle='#567587';for(let i=0;i<55;i++){let x=(i*97.17+23)%W,y=(i*73.49+48)%H;ctx.globalAlpha=.09+(i%5)*.02;circle(ctx,x,y,(i%3==0)?1.1:.55,'#8fb1c1')}ctx.globalAlpha=1}
+function branch(ctx,x,y,dir,len,width,depth,progress,seed,colors){if(depth>5||len<2)return;const reveal=clamp(progress*7-depth+0.1);if(!reveal)return;let sway=Math.sin(state.t*.8+seed)*2,dx=Math.cos(dir)*len*reveal,dy=Math.sin(dir)*len*reveal;const ex=x+dx+sway,ey=y+dy;ctx.beginPath();ctx.moveTo(x,y);ctx.quadraticCurveTo(x+dx*.4, y+dy*.3,ex,ey);ctx.lineWidth=width;ctx.lineCap='round';ctx.strokeStyle=colors.wood;ctx.stroke();if(depth===5){circle(ctx,ex,ey,2.2+(Math.sin(seed+state.t)+1)*.5,colors.leaf);return;}if(depth<5){branch(ctx,ex,ey,dir-.48-(seed%3)*.04,len*.73,width*.7,depth+1,progress,seed*1.9+2,colors);branch(ctx,ex,ey,dir+.55+(seed%2)*.02,len*.72,width*.68,depth+1,progress,seed*2.1+5,colors)}}
+function tree(ctx,x,y,progress,colors,scale=1){ctx.save();ctx.translate(x,y);ctx.scale(scale,scale);branch(ctx,0,0,-Math.PI/2,55,7.8,0,progress,1.1,colors);ctx.restore()}
+function backdropFooter(ctx,subtitle){line(ctx,25,352,495,352,'#334753',1);text(ctx,subtitle,25,376,13,'#b4c8d2')}
+function drawA(ctx,t){bg(ctx);const live=ease((t-1)/6);const p0=Math.max(0,(t-1.4)/6.8);
+const gx=58,gy=34,gw=404,gh=303;
+ctx.save();ctx.shadowBlur=29;ctx.shadowColor='rgba(217,170,95,.10)';roundRect(ctx,gx,gy,gw,gh,3,'#1a2530','#5d5960');ctx.restore();
+ctx.strokeStyle='rgba(197,172,117,.16)';for(let i=0;i<14;i++){let yy=gy+17+i*20;line(ctx,gx+30,yy,gx+gw-20,yy,'#34404a',.6)}
+roundRect(ctx,gx+20,gy+17,4,gh-33,2,'#a4885a');
+text(ctx,'A WORLD IS GIVEN',75,75,14,'#d7c099');
+ctx.save();ctx.globalAlpha=live;tree(ctx,275,291,p0,{wood:'#d4b887',leaf:'#a8c6ab'},1.25);ctx.restore();
+// continuous margin mark is intentionally a suggestive metaphor, not a literal conduit
+const ya=92+(t*27)%216;ctx.save();ctx.shadowBlur=14;ctx.shadowColor='#e6c48d';roundRect(ctx,78,ya,4,26,2,'#e2bf7f');ctx.restore();
+if(state.labels){text(ctx,'"CREATURE"',275,320,12,'#b7c9b2','center');text(ctx,'source not depicted as material',75,95,11,'#92a1ae')}
+backdropFooter(ctx,'A  /  STORY  •  unfolding without borrowed matter')}
+function drawB(ctx,t){bg(ctx);let live=ease((t-1)/4.8);
+// diffused light as metaphor; world is distinguishable tree, not source
+const grad=ctx.createRadialGradient(250,0,6,260,180,275);grad.addColorStop(0,'rgba(244,206,136,.37)');grad.addColorStop(.4,'rgba(232,191,121,.16)');grad.addColorStop(1,'rgba(220,183,114,0)');ctx.fillStyle=grad;ctx.fillRect(0,0,W,H);
+const r=125;ctx.save();ctx.shadowBlur=27;ctx.shadowColor='#eec680';circle(ctx,260,-26,r,'rgba(214,166,82,.075)','#9d834c');ctx.restore();
+ctx.save();ctx.globalAlpha=Math.min(1,live+.08);tree(ctx,260,313,live,{wood:'#b1bcab',leaf:'#cddab6'},1.35);ctx.restore();
+ctx.save();ctx.globalAlpha=.12+.12*Math.sin(t*.7);for(let i=0;i<8;i++){const ang=.1+(i/7)*Math.PI*.88;line(ctx,260,-12,260+350*Math.cos(ang),-12+350*Math.sin(ang),'#e2c38a',1)}ctx.restore();
+// independent leaf movement emphasizes real internal change
+const n=Math.floor(Math.max(0,t-4.5)*2.6);for(let i=0;i<Math.min(8,n);i++){const x=222+(i*13)%90,y=166+((i*37)%105)+(t-4.5)*9;circle(ctx,x+Math.sin(t+i)*9,y%330,2.2,'#b9d2b3')}
+if(state.labels){text(ctx,'SUSTAINING PRESENCE',260,44,13,'#e7ca97','center');text(ctx,'DISTINCT CREATURE',260,333,13,'#a8c6b5','center')}
+backdropFooter(ctx,'B  /  LIGHT  •  continuing dependence')}
+function drawC(ctx,t){bg(ctx);let growth=ease((t-1.5)/5.7);
+ctx.save();for(let j=0;j<3;j++){let y=70+j*52;ctx.beginPath();for(let x=25;x<495;x+=3){const yy=y+7*Math.sin(x*.033+j*.65)+2*Math.sin(x*.065+t*.44+j);if(x===25)ctx.moveTo(x,yy);else ctx.lineTo(x,yy)}ctx.strokeStyle=['#d8bb7a','#b5a27b','#8eaaad'][j];ctx.globalAlpha=.77;ctx.lineWidth=2;ctx.stroke()}ctx.restore();
+// persistent horizontal harmonic line - no emission from a source point
+line(ctx,25,250,495,250,'#b1a277',1.0);ctx.save();ctx.globalAlpha=.12;ctx.fillStyle='#a7bfb1';ctx.fillRect(25,249,470,2);ctx.restore();
+ctx.save();ctx.globalAlpha=growth;tree(ctx,260,325,growth,{wood:'#cdb785',leaf:'#b0d6bc'},.90);ctx.restore();
+const pulse=.7+.3*Math.sin(t*.9);for(let i=0;i<5;i++){let x=65+i*98;circle(ctx,x,250,3+2*pulse,'#e6c48b')}
+if(state.labels){text(ctx,'SUSTAINED CONDITION',260,36,13,'#e3c990','center');text(ctx,'A DISTINCT LIFE',260,336,13,'#b2d0b9','center')}
+backdropFooter(ctx,'C  /  HARMONY  •  dependence + activity')}
+function drawAt(t){state.t=t;ctxs.forEach((c,i)=>[drawA,drawB,drawC][i](c,t));document.getElementById('seek').value=t;document.getElementById('timer').textContent=t.toFixed(1)+' / 12s'}
+function tick(ms){if(!state.last)state.last=ms;if(state.playing){let dt=Math.min(.05,(ms-state.last)/1000);state.t+=dt*state.rate;if(state.t>=12)state.t=0;drawAt(state.t)}state.last=ms;requestAnimationFrame(tick)}
+document.getElementById('play').onclick=()=>{state.playing=!state.playing;document.getElementById('play').textContent=state.playing?'Ⅱ Pause':'▶ Play'};
+document.getElementById('reset').onclick=()=>drawAt(0);
+document.getElementById('seek').oninput=e=>{state.playing=false;document.getElementById('play').textContent='▶ Play';drawAt(+e.target.value)};
+document.getElementById('labels').onchange=e=>{state.labels=e.target.checked;drawAt(state.t)};
+document.getElementById('risk').onchange=e=>document.querySelectorAll('.risk').forEach(el=>{el.hidden=!e.target.checked});
+window.renderAt=(time)=>drawAt(time);window.pause=()=>{state.playing=false;document.getElementById('play').textContent='▶ Play'};
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){state.playing=false;document.getElementById('play').textContent='▶ Play';}
+drawAt(0);requestAnimationFrame(tick);
+</script>
+</body>
+</html>
