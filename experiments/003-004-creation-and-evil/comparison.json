@@ -1,0 +1,102 @@
+{
+  "version": "0.1",
+  "question": "How do creation, evil, matter and salvation relate?",
+  "propositions": [
+    {
+      "id": "M01",
+      "tradition": "Manichaeism",
+      "claim": "Two independent primordial realms, Light and Darkness.",
+      "operators": [
+        "independent",
+        "coeval",
+        "differentiate"
+      ],
+      "encoding": "two disconnected bounded realms"
+    },
+    {
+      "id": "M02",
+      "tradition": "Manichaeism",
+      "claim": "Divine light is trapped in matter by primordial conflict.",
+      "operators": [
+        "attack",
+        "capture",
+        "mix"
+      ],
+      "encoding": "points of light ensnared in a bounded lattice"
+    },
+    {
+      "id": "M03",
+      "tradition": "Manichaeism",
+      "claim": "Cosmic mechanisms including the Moon and Sun release light.",
+      "operators": [
+        "release",
+        "mediate",
+        "transfer"
+      ],
+      "encoding": "a trajectory through cosmic waystations"
+    },
+    {
+      "id": "M04",
+      "tradition": "Manichaeism",
+      "claim": "Final salvation separates divine light from dark matter.",
+      "operators": [
+        "separate",
+        "return",
+        "terminate"
+      ],
+      "encoding": "independent realms, cosmic apparatus no longer present"
+    },
+    {
+      "id": "C01",
+      "tradition": "Catholicism",
+      "claim": "One God freely creates the world from nothing, without a coeternal rival.",
+      "operators": [
+        "create_ex_nihilo",
+        "ground"
+      ],
+      "encoding": "created bounded forms appear, no transfer of God's own substance"
+    },
+    {
+      "id": "C02",
+      "tradition": "Catholicism",
+      "claim": "Material creation is originally good.",
+      "operators": [
+        "qualify",
+        "sustain"
+      ],
+      "encoding": "positive and persistent created forms"
+    },
+    {
+      "id": "C03",
+      "tradition": "Catholicism",
+      "claim": "Evil is not a rival primordial reality; moral evil involves misuse of creaturely freedom.",
+      "operators": [
+        "deviate",
+        "privation",
+        "choose"
+      ],
+      "encoding": "damaged relations inside creation, no second independent source"
+    },
+    {
+      "id": "C04",
+      "tradition": "Catholicism",
+      "claim": "Christ redeems, and creation is ultimately renewed rather than abandoned.",
+      "operators": [
+        "redeem",
+        "restore",
+        "preserve_identity"
+      ],
+      "encoding": "same created entities are restored/transfigured"
+    }
+  ],
+  "sources": {
+    "M": "https://www.iranicaonline.org/articles/cosmogony-iii/",
+    "C": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_one/article_1/paragraph_4_the_creator.index.html"
+  },
+  "limitations": [
+    "Visual gold does not denote the same metaphysical kind in both traditions.",
+    "The Catholic cross is conventional iconography, not a mechanically specified causal operation.",
+    "Manichaean celestial stations are simplified; traditions and recensions vary.",
+    "Motion and layout are artistic representations, not claims about physical astronomy."
+  ]
+}
