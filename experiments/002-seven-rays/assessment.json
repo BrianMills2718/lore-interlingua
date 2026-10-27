@@ -1,0 +1,27 @@
+{
+  "id": "visual-experiment-002-seven-rays",
+  "status": "produced-not-human-tested",
+  "target_concepts": ["B01", "B02", "B03"],
+  "technical_checks": ["24s@24fps H.264", "JSON manifest", "corpus references", "cross-experiment contrast", "tests"],
+  "findings": [
+    {"area":"structural reuse", "status":"candidate", "detail":"Stable nodes, bounded membership, and differentiated relations remain useful."},
+    {"area":"meaningful divergence", "status":"observed", "detail":"Moving particles from experiment 001 would misleadingly imply substance transfer. Omitted in 002."},
+    {"area":"qualified form", "status":"candidate", "detail":"Internal pattern/texture changed within forms rather than receiving transported units."},
+    {"area":"source depletion", "status":"guarded", "detail":"The central source remains fixed; no decrease in energy or size depicted."},
+    {"area":"semantic readability", "status":"untested", "detail":"Narrative captions could mask ambiguity; no independent readers were tested."},
+    {"area":"historical symbols", "status":"artistic-not-canonical", "detail":"Color and textures are not claimed as Bailey's esoteric color or ray correspondences."}
+  ],
+  "risks": [
+    "Seven branching paths can still suggest material emanation despite omitting particles.",
+    "Sequential reveal can suggest rays came into being one after another.",
+    "Numbered colored channels may look like canonical esoteric color associations.",
+    "Three illustrative forms may invite a one-to-one ray/person reading.",
+    "Aesthetic coherence does not imply intuitive notation or semantic correctness."
+  ],
+  "decisions": [
+    "Do not promote ray textures as seven universal primitives.",
+    "Keep source/grammar/style separated in manifest and documentation.",
+    "Compare captionless and static baseline before adopting new grammar rules.",
+    "Proceed to an atemporal grounding stress-test after reviewing these results."
+  ]
+}
