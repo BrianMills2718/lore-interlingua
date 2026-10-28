@@ -1,0 +1,35 @@
+{
+  "id": "009-organic-life-cosmic-membrane",
+  "kind": "visual-development-study",
+  "lore": "Gurdjieff via Ouspensky",
+  "source": "https://www.gurdjieff-hawaii.org/?page_id=160",
+  "claims": [
+    "organic life receives planetary influences",
+    "organic life mediates them for Earth",
+    "organic life radiates differently toward the Sun planets and Moon"
+  ],
+  "subjects": {
+    "earth": "planetary recipient",
+    "organic_life": "heterogeneous living mediator",
+    "planetary_world": "plural influence sources",
+    "sun": "recipient of certain radiations",
+    "moon": "recipient of certain radiations"
+  },
+  "visual_operations": [
+    "continuous model",
+    "concurrent inbound/mediation/outbound motion",
+    "continuous camera drift",
+    "structural path toggle"
+  ],
+  "metaphor_limits": [
+    "not measured physical energy",
+    "not astronomical scale",
+    "not entire Ray of Creation"
+  ],
+  "verification": {
+    "javascript_syntax": "node --check passed",
+    "interactive_browser": "not verified due navigation restrictions",
+    "preview_video": "offline illustrative companion rendered successfully"
+  },
+  "status": "provisional"
+}
