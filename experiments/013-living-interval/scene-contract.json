@@ -1,0 +1,35 @@
+{
+  "id": "013-the-living-interval",
+  "title": "The Living Interval — One Connected Cosmology",
+  "kind": "cumulative-audience-facing-film",
+  "scope": "Gurdjieff's Ray of Creation and organic-life interval as recorded by P. D. Ouspensky; not a general cosmology or modern astrophysics",
+  "claims": [
+    {"ref": "G01", "role": "depicted", "content": "Seven selected world orders with 1, 3, 6, 12, 24, 48, 96 orders of laws"},
+    {"ref": "G02", "role": "depicted", "content": "Planetary influences received by organic life and mediated to Earth"},
+    {"ref": "G03", "role": "depicted", "content": "Different outgoing radiations to Sun, planets, Moon"},
+    {"ref": "G04", "role": "context-only", "content": "The Moon's dependence or nourishment is not depicted by arrival of a moving mark"}
+  ],
+  "primary_sources": [
+    {"reference": "P. D. Ouspensky, In Search of the Miraculous", "url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html", "sections": "Ray of Creation, Law of Three, Law of Seven, and organic life"},
+    {"reference": "Attributed Ouspensky organic-life excerpts, Gurdjieff Foundation Hawaii", "url": "https://www.gurdjieff-hawaii.org/?page_id=160"}
+  ],
+  "relation_operations": [
+    {"id": "selected-hierarchy", "on_screen": "Permanent highlighted succession of seven named cosmic orders", "semantic": "Selection and precedence within a metaphysical model", "not_asserted": "A light beam transmitting energy, physical proximity, or sequential creation during the video", "extends": "012"},
+    {"id": "orders-of-laws", "on_screen": "Named source counts with a recurring motif of more constrained motion", "semantic": "Gurdjieff's greater mechanicalness in lower worlds", "not_asserted": "That each motif curve corresponds to an identified law; the counts are not measurements of laboratory rules", "extends": "012"},
+    {"id": "three-forces", "on_screen": "Brief meeting of three labeled roles in the higher-world setting", "semantic": "Active, passive and neutralizing forces as relational roles", "not_asserted": "Three physical fluids, three permanently colored substances, or a specific astronomical mechanism", "new": true},
+    {"id": "octave-interval", "on_screen": "Labeled pause between the planetary world and Earth", "semantic": "Special interval of descending cosmic octave described by the Law of Seven", "not_asserted": "An empty measurable space, absence of cosmic bodies, or the full theory of octaves", "new": true},
+    {"id": "incoming-influence", "on_screen": "Transient cyan/violet marks traveling from plural planetary representatives into living Earth", "semantic": "Planetary influences received by organic life", "not_asserted": "Particles, ray speeds, wavelengths, or exact cosmic sources", "extends": "011"},
+    {"id": "organic-life", "on_screen": "Distinct trees, grasses, a deer and people that stay anchored to Earth's surface", "semantic": "Living intermediary and Earth’s sensitive organ of perception", "not_asserted": "A literal membranous organism or biome-wide physical antenna", "extends": "011"},
+    {"id": "inward-mediation", "on_screen": "Life's receptive region brightens; different marks begin at the surface and travel inward", "semantic": "Mediation makes planetary influence receivable by Earth", "not_asserted": "A one-to-one physical transduction, conservation equation, or true biochemistry", "extends": "011"},
+    {"id": "outward-radiation", "on_screen": "Three distinct families of moving symbols head from life to Sun, planetary sphere and Moon", "semantic": "Differentiated source-specified recipient classes", "not_asserted": "Three physically identified substances or the Moon being maintained simply by arrival", "extends": "011"},
+    {"id": "presentation-camera", "on_screen": "Continuous movement from overview to planets and living Earth then back out", "semantic": "Focus and reveal in a persistent model", "not_asserted": "Historical creation or extinction of worlds"}
+  ],
+  "cumulative_continuity": {
+    "retained_from_011": ["recognizable plants, animal and human gathering", "planetary reception", "distinct inward mediation", "three outward recipient categories", "source-scoped captions", "illustrated Earth surface"],
+    "retained_from_012": ["seven named and differentiated world orders", "law counts", "persistent selected Ray", "qualitative constraint metaphor", "continuous cinematic camera"],
+    "added_in_013": ["Law-of-Three force roles", "Law-of-Seven planetary-Earth interval", "explicit statements of unspecified physical nature", "integrated outgoing streams within the seven-world setting"],
+    "not_claimed": ["scientific validity", "self-evident comprehension without narration", "complete exposition of the Law of Three/Seven", "physical energy propagation mechanics", "Moon nourishment proof", "generic semantic-to-film compiler"]
+  },
+  "production": {"duration_seconds": 176, "fps": 24, "dimensions": [1280,720], "sound": "original generative ambient stereo score; no synthesized speech", "captioning": "burned-in explanatory text plus external SRT", "renderer": "Playwright headless Chromium Canvas → ffmpeg MJPEG pipe → H.264 + AAC"},
+  "status": "completed artistic prototype; visual conventions remain provisional"
+}

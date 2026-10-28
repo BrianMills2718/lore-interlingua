@@ -1,6 +1,6 @@
 # Cumulative Gurdjieff film: The Ray of Creation — The Living Interval
 
-**Status:** proposed integrated treatment after the audience review of Films 011 and 012, **not a completed Film 013**.
+**Status:** implemented as [Experiment 013 — The Living Interval](../experiments/013-living-interval/README.md). This file retains the planning rationale; the delivered film and its audit should be read alongside it.
 
 ## Editorial correction
 

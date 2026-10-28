@@ -20,6 +20,8 @@
 
 | 012 | Gurdjieff Ray of Creation — seven worlds and increasing mechanical constraint | [124-second continuous film and semantic audit](../experiments/012-ray-of-creation/README.md) · [source-to-visual case](../encyclopedia/studies/012-ray-of-creation.md) | Reuses 011's artistic language; selected hierarchy differs visually from radiation transfer; text explicitly gives seven law counts, with recurring-motion constraints as a documented metaphor | Universal visual comprehension, literal identification of 96 law types, or complete Gurdjieff cosmology |
 
+| 013 | Gurdjieff — The Living Interval (cumulative Ray, cosmic octave and living Earth) | [176-second film, review MP4 and source](../experiments/013-living-interval/README.md) · [imagery comparison](../encyclopedia/imagery.html) | Film preserves the seven-world Ray while restoring grass, animal and human imagery, planetary reception, inward mediation and three outward recipients. The Law of Three and the Law of Seven interval are named and schematically visualized; captions distinguish unknown physical mechanisms. | Detailed law-order derivation, complete octave mechanics, exact nature of cosmic influence, demonstrable Moon nourishment, and unfamiliar-viewer comprehension |
+
 **Cross-experiment result:** No proposed general visual-grammar rule has been promoted as independently established, and no finished film was generated automatically from the shared interlingua. These are **research and artistic prototypes**, not independently validated milestones toward a verified visual compiler.
 
 ## Main questions actually learned

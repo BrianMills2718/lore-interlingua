@@ -14,6 +14,13 @@
 | **Does Moon reception prove nourishment?** | The account elsewhere describes lunar nourishment, a stronger dependence than a stream arriving. | Film 011 shows arrival, Film 012 shows Moon in hierarchy; neither demonstrates maintaining the Moon. | Scope as contextual unless a maintenance relation is actually depicted and explained. | A particle landing as proof of sustenance |
 | **Is the camera showing creation happening?** | Cosmological scope and presentation time are distinct. | Film 012 traverses the hierarchy in sequence, risking a time-lapse reading. | Make the structure persistent before and after camera exploration, with explanatory framing. | Literal historical time passage |
 
+
+## Implementation update — Experiment 013 (28 October 2026)
+
+**The Living Interval** is a 176-second integrated film. Its viewer-facing captions now define the selected Ray and orders of governing laws; briefly introduce the active/passive/neutralizing roles of the Law of Three; place the Law-of-Seven octave interval specifically between planetary world and Earth; show recognizable grass, vegetation, an animal and humans receiving influences; separate inward mediation; and restore differentiated outgoing radiations toward visible Sun, planetary sphere and Moon. This updates rather than erases the historical **after Film 012** analysis below.
+
+**Still underexplained:** precise derivation of cumulative law counts; complete Law-of-Three and Law-of-Seven theory; identities of planetary influences; specific biological mechanism; nature of outward radiations; maintenance of the Moon. The film depicts the source's stated relations with nonliteral signs and does not claim physical validation. See [Experiment 013 continuity audit](../experiments/013-living-interval/CONTINUITY_AND_EXPLANATION.md).
+
 ## Core source distinctions
 
 - [Ouspensky, *In Search of the Miraculous*](https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html): the seven-world ray; orders of laws; the Law of Three; Law of Seven and the special interval; organic-life reception and radiation. In the discussion of laws, the account explicitly treats the numbers as numbers of forces/orders of laws. In the octave discussion it says organic life fills the interval between planetary sphere and Earth.
