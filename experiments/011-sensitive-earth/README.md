@@ -2,7 +2,7 @@
 
 **Primary deliverable:** `Gurdjieff_The_Sensitive_Earth_86s.mp4`  
 **Format:** 1280 × 720, 24 frames/sec, H.264 picture, original AAC stereo soundscape, burned-in English captions, no robotic voiceover.  
-**Scope:** one specific relationship within Gurdjieff's Ray of Creation: organic life as Earth's organ of perception and radiation, as reported by P. D. Ouspensky. Not a survey of all Gurdjieff teachings.
+**GitHub video:** [Watch/download the complete 86-second review in 480p](The_Sensitive_Earth_review_480p.mp4). The full-resolution 720p MP4 was delivered separately and can be recreated from the sources below.\n\n**Scope:** one specific relationship within Gurdjieff's Ray of Creation: organic life as Earth's organ of perception and radiation, as reported by P. D. Ouspensky. Not a survey of all Gurdjieff teachings.
 
 ## See the film
 
