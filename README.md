@@ -21,6 +21,10 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
 
+## Latest audience-facing Gurdjieff film
+
+**[Experiment 011 — The Sensitive Earth](experiments/011-sensitive-earth/README.md)** is an 86-second continuously animated, source-scoped Gurdjieff lore film, with recognizable vegetation, animal and human figures, directional reception, mediation toward Earth, and differentiated radiation to Sun/planets/Moon. The repository includes [the standalone offline picture viewer](experiments/011-sensitive-earth/film.html), [English subtitles](experiments/011-sensitive-earth/captions.srt), [semantic contract](experiments/011-sensitive-earth/scene-contract.json), a [review storyboard](experiments/011-sensitive-earth/review_storyboard.jpg), and a reproducible 1280×720 H.264/AAC rendering workflow. The rendered binary MP4 was delivered to the user separately; the source and renderer are stored here. The current film is an artistic interpretation, not an established generic semantic-to-film pipeline.
+
 ## Offline review package
 
 The complete **Encyclopedia v0.4 / Experiment 010** review snapshot is [stored on GitHub](downloads/README.md), including a [downloadable ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) and a [three-condition comparison image](experiments/010-living-intermediary/review-comparison.jpg). Source files remain editable in their existing directories. No separate chat attachment is required to obtain the review package.
