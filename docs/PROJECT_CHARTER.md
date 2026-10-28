@@ -75,6 +75,10 @@ A useful *partial* capability is sufficient: a vocabulary of reliable visual cor
 
 Decisions about priority and value are architectural/strategic judgments informed by examples and opportunity costs, **not** benchmark thresholds. Individual poor animations justify criticism of their design, not an impossibility claim about visual representation.
 
+## Visual reference target
+
+The current reference direction combines [Khutoryansky's dynamic conceptual physics animations and an uploaded Gnostic Genesis film's simplified, identifiable symbolic mythology](VISUAL_REFERENCE_DIRECTION.md), with 3Blue1Brown as an additional visual-reasoning example. It calls for one persistent symbolic/structural/dynamic composition—not a slide deck, unstructured mythology montage, or mandatory 3D simulation.
+
 ## Current next action
 
 Follow [Current State and Recovery Plan](PROJECT_STATUS.md) and the [Experiment Registry](EXPERIMENT_REGISTRY.md). First consolidate the corpus-to-scene relationship and choose one *actual lore mechanism* with identifiable visual operations; do not manufacture an additional feasibility question about whether timeless ideas can be depicted.
