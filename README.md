@@ -21,6 +21,10 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
 
+## Cumulative Gurdjieff visual world
+
+The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compare **Film 011** and **Film 012** as actual videos, records which earlier imagery was retained or dropped, and explains key Gurdjieff terms (orders of laws, Law of Three, Law of Seven, organic mediation and radiation). Read the [integrated follow-up film treatment](docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](docs/GURDJIEFF_EXPLANATION_LEDGER.md). The proposed cumulative film is **a plan, not yet a new MP4**; building a shared visual world does not require replaying every old shot.
+
 ## The Ray of Creation — Experiment 012
 
 **[Experiment 012 — The Ray of Creation](experiments/012-ray-of-creation/README.md)** is a 124-second continuous cosmological film extending the art direction of Experiment 011. It travels through the Absolute, All Worlds, All Suns, Sun, planetary world, Earth and Moon, and presents the source-scoped 1/3/6/12/24/48/96 orders of laws. Increasingly constrained motion is a selective **visual metaphor**, not a literal model of those laws. Its [original visual scene](experiments/012-ray-of-creation/film.html), [source contract](experiments/012-ray-of-creation/scene-contract.json), [caption file](experiments/012-ray-of-creation/captions.srt), reproducible score and MP4 renderer, and [encyclopedia study](encyclopedia/studies/012-ray-of-creation.md) are tracked here. Video remains the primary deliverable; a [directly playable, compressed 480p preview](experiments/012-ray-of-creation/Ray_of_Creation_review_480p.mp4) is archived alongside the sources.
