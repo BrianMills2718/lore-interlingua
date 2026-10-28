@@ -75,6 +75,24 @@ Repeated viewing and partial understanding are legitimate modes of learning. We 
 
 These modes share tools but do not share an identical quality metric. A private exploratory sketch should not fail just because it is not yet legible to a broad audience; a public explanatory video should not excuse ungrounded confusion as intrinsically profound.
 
+## Selective visual metaphor: meaning is not literal identity
+
+The project relies on **conceptual metaphor** (using a familiar perceptible phenomenon to explore another concept) and **analogical mapping** (carrying selected relations or properties from one domain into another). Literal similarity is neither expected nor required.
+
+For example, an animation may depict **grace as water, light, fire, or an illuminating current** even though Catholic theology does not identify grace as a measurable physical substance. The visual treatment may communicate reception, renewal, transformation, spiritual participation, or a sustaining gift. It does **not** thereby assert mass, viscosity, conservation of fluid volume, divine depletion, or laboratory-testable mechanics.
+
+This is not merely a concession to artistic license. Catholic tradition itself uses symbolically charged substances: the Catechism treats water as a sign of the Holy Spirit's action in Baptism (CCC §694), water as a symbol of grace (§1217), and baptismal washing as purification and new birth (§§1262–1266). Grace is discussed as an undeserved gift and participation in divine life (§§1996–2005). Primary sources:
+- [CCC §§691–701, symbols of the Holy Spirit](https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_three/article_8/ii_the_name%2C_titles%2C_and_symbols_of_the_holy_spirit.html)
+- [CCC §§1217–1222, baptismal water](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_1/ii_baptism_in_the_economy_of_salvation.html)
+- [CCC §§1262–1266, grace of Baptism](https://www.vatican.va/content/catechism/en/part_two/section_two/chapter_one/article_1/vii_the_grace_of_baptism.html)
+- [CCC §§1996–2005, grace](https://www.vatican.va/content/catechism/en/part_three/section_one/chapter_three/article_2/ii_grace.html)
+
+**Method:** Distinguish a metaphor's intended structural correspondences from the additional physical properties and associations of its imagery. We may identify some explicitly, but should **not** demand an exhaustive formal assignment for every impression, particle, color, or ornament. Evocative surplus (additional associations that emerge for viewers) may be productive.
+
+**Critical judgment:** The relevant risk is not that a visual element *could* be read literally. The risk is that the work **prominently and persistently communicates a material doctrinal claim that contradicts its intended interpretation**, or replaces the tradition's own important distinctions with an alien mechanism. Establish the context through imagery, speech, or brief text rather than sterilizing metaphors.
+
+**Design evaluation:** Ask what the metaphor reveals, what relations it invites viewers to explore, what it obscures, and whether the resulting insights or errors are productive. Do not reject an image just because its source phenomenon has properties the target lacks.
+
 ## Allocation of communicative work
 
 | Mode | Often best for |
