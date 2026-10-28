@@ -27,7 +27,7 @@ The first film should reveal a theological **world**: its source of being, forms
 | Cross and Resurrection | Historical saving center in Catholic proclamation | Cross, burial, empty tomb and risen Christ; connected transformation of relation | Mere death or physical resuscitation detached from salvation |
 | Church | Body of Christ, People of God, Temple of Spirit | Multiple embodied people joined in sacrament and communal life | A building as the entire Church, or a second divine person |
 | Sacraments | Efficacious signs entrusted to the Church | Specific ritual actions using water, bread/wine, anointing, words | Every puddle means Baptism; every blue particle means grace |
-| Grace | Unmerited participation in divine life; heals/elevates persons | Transformation of relationship, not fluid poured into a person's body | Finite energy transfer from one being to another |
+| Grace | Unmerited divine gift and participation in divine life; heals/elevates persons | **Water, light, fire, illumination, renewal**, or changed relationship may be deliberately evocative metaphors; Catholic sacramental symbolism already uses material signs | Do not mistake metaphorical water/light for a literal finite reservoir or mechanically depleted divine resource |
 | Heaven / purgatory / hell | Distinct postmortem conditions and ultimate destinies, not straightforward astronomical coordinates | Theological art, text, attention to communion/purification/separation | Three planets at different altitudes |
 | Final resurrection / new creation | Bodies and cosmos renewed in Christ | Recognizable embodied continuity with transformed creation | Permanent escape of pure souls from matter |
 
@@ -82,7 +82,7 @@ Start with one divine nature/three persons (atemporal), then the Son's historica
 4. Does the film reflect the distinctive narrative **Christ at the center**, or still frame Catholicism as generic nature metaphysics?
 5. Which transitions are historical versus eternal? Does film time imply false chronology?
 6. Can we test an early 15–30-second **animatic** (rough moving storyboard) before investing in full rendering?
-7. What ambiguities help viewers explore deeper meaning, and which misunderstandings contradict the selected tradition?
+7. What ambiguities help viewers explore deeper meaning, and which misunderstandings become central distortions rather than ordinary metaphorical properties?
 
 ## Engineering gate and evaluation
 
