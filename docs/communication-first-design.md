@@ -10,6 +10,19 @@ The project creates a **multimodal explanatory language**: a developing combinat
 
 > Prefer the medium or combination of media that best communicates the intended meaning. The visual grammar is an artistic instrument, not a constraint to be obeyed at the expense of understanding.
 
+## One coherent lore per public film
+
+**Initial production rule:** Every audience-facing lore film should depict **one coherent, internally articulated cosmological or theological account**. Do not build a film as a survey of competing beliefs, a list of interpretations, or a contrast-first definition of one tradition against another. Show the world *from within* the selected account, including its own entities, processes, relations, changes, and narrative logic.
+
+- **Scope the account before production.** State a named tradition and, where appropriate, a specific text, school, period, or doctrinal strand. Broad labels such as "Christianity" and "Gnosticism" contain substantive internal disagreements; coherence must not be fabricated by quietly combining incompatible sources.
+- **One explanatory world.** A film may show tensions and complexity *inside that account* when they belong to it, but should not silently cut to a different cosmology or alternate interpretation.
+- **Artistic plurality is compatible with doctrinal unity.** The filmmakers may test many visual metaphors, vary style, use text and iconography, and make creative decisions. Those are multiple *rendering approaches*, not multiple competing worldviews in the same finished film.
+- **Research comparisons remain backstage.** Cross-tradition comparisons and three-way visual thinking studies are useful working documents, optional companion material, or possible later formats; they are not the default narrative structure of an individual film.
+- **Provenance is still maintained.** Document the selected source(s) and interpretive choices in production notes. The public film can begin with one concise attribution/disclaimer, rather than constant qualifications.
+- **Focused episodes over survey montages.** A single film may explore one mechanism deeply instead of trying to summarize an entire religion in 30 seconds.
+
+**Release check:** Could a careful viewer identify whose cosmology is being represented, and would its major claims make sense together on the terms of that tradition? If not, narrow or revise the film.
+
 ## The role of text
 
 Text is a first-class, legitimate communicative resource. It may be the best way to convey:
