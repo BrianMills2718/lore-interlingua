@@ -1,4 +1,4 @@
-# Visual–Semantic Encyclopedia v0.1
+# Visual–Semantic Encyclopedia v0.4
 
 **Status:** A usable but **provisional** visual-reasoning research atlas for [Lore Interlingua](../README.md), October 2026. It is not a settled philosophical upper ontology, a complete dictionary of metaphysical concepts, a production renderer, or a demonstrated shared visual language.
 
@@ -54,7 +54,7 @@ A **visual candidate** declares an intended mapping, important things it *does n
 ## Extending the encyclopedia
 
 1. Choose **an actually needed** conceptual distinction from a source example or failed visual study; avoid speculative empty taxonomy.
-2. Identify a concept's relation to the existing twelve entries. Use more than one facet when relevant.
+2. Identify a concept's relation to the existing thirteen entries. Use more than one facet when relevant.
 3. Add an entry with a unique kebab-case ID, definition, distinguishing neighbors, source-scoped examples, mapping hypotheses, explicit non-claims, and a productive open question.
 4. Point to known corpus IDs or to a source-specific record; do **not** manufacture a source claim to fill a category.
 5. Rebuild `catalog.js` and run `tests/test_encyclopedia.py`. Test the browser interface with the offline document and keyboard controls.
@@ -64,7 +64,7 @@ A **visual candidate** declares an intended mapping, important things it *does n
 
 - The map is curated and arranged for legible navigation. It is **not** calculated by logical subsumption or metaphysical distance.
 - Crosslinks represent research relations; no OWL/RDF reasoner or upper ontology is installed. Adopting one should solve a concrete problem, not become a parallel project.
-- The four demos are simplified and intentionally iconically sparse; they do **not** yet attain the Khutoryansky-style structural richness and mythic specificity desired in public films.
+- The four original generic demos are simplified and intentionally iconically sparse; they do **not** yet attain the Khutoryansky-style structural richness and mythic specificity desired in public films.
 - Source citations are scoped repository IDs with embedded statements; not a substitute for reviewing primary texts or the specific translation choices.
 - The encyclopedia's copyable notebook has no collaboration, file export or persistent storage.
 - No viewer comprehension study has established that these sketches communicate the intended meaning to new viewers.
@@ -73,7 +73,7 @@ A **visual candidate** declares an intended mapping, important things it *does n
 
 ## Applied lore case 009 — Organic life as Earth’s cosmic membrane
 
-The encyclopedia now has a **separate source-linked case library**: [`cases.json`](cases.json) is its editable record, [`cases.js`](cases.js) is the generated offline mirror, and [`cases-ui.js`](cases-ui.js) renders it beside the twelve existing concepts. No second upper ontology was invented, and the interlingua corpus remains canonical for the claim statements.
+The encyclopedia now has a **separate source-linked case library**: [`cases.json`](cases.json) is its editable record, [`cases.js`](cases.js) is the generated offline mirror, and [`cases-ui.js`](cases-ui.js) renders it beside the thirteen interconnected concepts. No second upper ontology was invented, and the interlingua corpus remains canonical for the claim statements.
 
 The first case ties **G02** (planetary mediation) and **G03** (differentiated radiation) to the animated marks of [Experiment 009](../experiments/009-cosmic-membrane/index.html). **G04** (the Moon’s nourishment) is explicitly **context only**: showing a moonward stream does not by itself depict that the Moon is maintained by it. This distinction matters more than merely collecting an attractive animation.
 
@@ -96,3 +96,11 @@ The atlas remains provisional: no viewer comprehension study, formally validated
 The [interactive encoding audit](studies/009-encoding-audit.html) examines whether the three outgoing marker families represent three distinct *mechanisms* or chiefly denote source-scoped kinds associated with three different recipients. It permits uniform marks, permutation of marker assignments, a controlled animation-rate normalization, and comparison with G02 reception/mediation. The canonical [audit record](studies/009-encoding-audit.json) separates findings grounded in the Ouspensky text, observations from the renderer code, and proposed visual manipulations. Its offline generated JavaScript mirror is [009-encoding-audit-data.js](studies/009-encoding-audit-data.js).
 
 **Finding:** G03 warrants distinct recipient requirements and some categorical differentiation, but the renderer only encodes distinct glyphs/colors and arbitrarily different movement rates—not verified different causal mechanisms. G04 remains contextual. This is a **semantic/code audit**, not evidence of viewer comprehension or an automatic instruction to eliminate metaphor.
+
+## Applied case 010 — The Living Intermediary
+
+The ontology now includes **Mediation** as a thirteenth concept, grounded first in corpus claim **G02**. The connected [Experiment 010](../experiments/010-living-intermediary/index.html) is the first dedicated visual study of its reception/enabling/transmission distinctions. It compares the *same field* with (a) organic life absent as a **counterfactual control**, (b) grass present, and (c) people gathering.
+
+Ouspensky's source passage explicitly states that grassland and a crowd at the same site receive different influences and that organic life is needed for planetary influences to reach Earth. The depiction's two influence families, colors, path shapes and surface-response animation are **illustrative design hypotheses**, not physics. The scene remains one persistent world; switching modes is exploratory, not a chronology of creation.
+
+The new case selector lets readers move between 009 (cosmic envelope and differentiated outgoing radiation) and 010 (the role of the living intermediary). The [source-to-visual contract](../experiments/010-living-intermediary/scene-contract.json) assigns every prominent mark an intended role and non-claim. This addition does **not** promote any cross-tradition notation to established status.

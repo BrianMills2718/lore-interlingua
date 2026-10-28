@@ -27,11 +27,11 @@ class VisualSemanticEncyclopediaTests(unittest.TestCase):
             (ROOT / 'research/catholic-world-model/v0.1.json').read_text(encoding='utf-8'))['entities']}
 
     def test_seed_size_unique_identifiers_and_real_source_links(self):
-        self.assertEqual(len(self.concepts), 12)
+        self.assertEqual(len(self.concepts), 13)
         self.assertEqual(len(self.concepts), len(self.by_id))
         self.assertEqual(set(self.by_id), {'existence','identity','unity','plurality',
             'part-whole','dependence','causation','process','transformation',
-            'time','agency','participation'})
+            'time','agency','participation','mediation'})
         self.assertEqual(len({c['id'] for c in self.data['facets']}), len(self.data['facets']))
         facets={f['id'] for f in self.data['facets']}
         for c in self.concepts:

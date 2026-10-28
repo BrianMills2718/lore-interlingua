@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "title": "Lore Interlingua — Visual-Semantic Encyclopedia",
   "status": "editorial working atlas; all visual correspondences are hypotheses unless otherwise specified",
   "principles": [
@@ -1022,6 +1022,102 @@
       "position": {
         "x": 665,
         "y": 310
+      }
+    },
+    {
+      "id": "mediation",
+      "label": "Mediation",
+      "facets": [
+        "relation",
+        "change"
+      ],
+      "kind": "relation-concept",
+      "definition": "An intermediary participates in a relationship between other participants, enabling, receiving, transforming or conveying an influence under a specified account. A mediator can do more than pass along an otherwise identical packet.",
+      "distinctions": [
+        {
+          "name": "Mediation / mere adjacency",
+          "note": "Occupying an intermediate position is not sufficient to establish that a subject enables the relationship."
+        },
+        {
+          "name": "Reception / transmission",
+          "note": "Receiving something and passing something onward can be distinct roles, with or without a specified transformation."
+        },
+        {
+          "name": "Enabling / conveying",
+          "note": "Some mediators make a relation possible; others transmit a definite item. Do not assume physical transfer in every case."
+        },
+        {
+          "name": "Mediation / dependence",
+          "note": "A mediated process does not itself prove that the recipient continually depends on the mediator for its existence."
+        }
+      ],
+      "relations": [
+        {
+          "type": "related",
+          "target": "process",
+          "why": "A mediation may be realized by a patterned process."
+        },
+        {
+          "type": "distinguishes",
+          "target": "causation",
+          "why": "A diagrammatic intermediary is not by itself a measured causal pathway."
+        },
+        {
+          "type": "related",
+          "target": "participation",
+          "why": "The intermediary can participate in the larger system rather than merely occupy its center."
+        },
+        {
+          "type": "related",
+          "target": "dependence",
+          "why": "Some worldviews describe recipient dependence on an intermediary, but mediation and dependence are not synonyms."
+        },
+        {
+          "type": "related",
+          "target": "transformation",
+          "why": "Mediation may transform input, though transformation is not implied by every use of the term."
+        },
+        {
+          "type": "contrasts",
+          "target": "part-whole",
+          "why": "Being in a pathway does not make the mediator a literal part of either endpoint."
+        }
+      ],
+      "examples": [
+        {
+          "source": "interlingua-v0.2",
+          "ref": "G02",
+          "relevance": "In the Gurdjieff account reported by Ouspensky, organic life mediates planetary influences toward the Earth; the detailed grass/people contrast is in the source passage but not separately formalized as a v0.2 claim.",
+          "statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+          "scope": "gurdjieff"
+        }
+      ],
+      "visual_candidates": [
+        {
+          "id": "mediation-selective-living-interface",
+          "label": "Differentiated receptive interface",
+          "mapping": "Keep planetary source and terrestrial recipient fixed while changing the illustrative presence of organic life. A received influence triggers a visible response in living form and a subsequent Earth response; unlike a pure conduit, different kinds of living presence can receive different illustrative categories.",
+          "does_not_assert": "A real particle filtering law, exact planetary influence types, physical wave speed, scientific prediction about crowds or organisms, or a change in historical cosmic conditions.",
+          "primitives": [
+            "node",
+            "marker",
+            "region",
+            "hold"
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "questions": [
+        "What could visually distinguish an intermediary that enables a relation from a passive conduit?",
+        "How does a receiving field differ from a human gathering without inventing unsupported cosmic mechanisms?",
+        "When does a change in an illustrative receiving pattern become a claim about physical selectivity?",
+        "Which properties of mediation transfer to theology or other lore without assuming a material stream?"
+      ],
+      "scope_note": "See applied case 010 for the dedicated interactive comparison. The nearby generic dependence/transfer sketch is a contrast, not a full depiction of mediation.",
+      "demo_id": "dependence",
+      "position": {
+        "x": 554,
+        "y": 278
       }
     }
   ]

@@ -1,0 +1,37 @@
+{
+  "id": "010-living-intermediary",
+  "title": "The Living Intermediary",
+  "kind": "source-scoped visual thinking study",
+  "tradition": "Gurdjieff, reported by P. D. Ouspensky",
+  "status": "provisional artistic analogy; not empirical physics or validated visual notation",
+  "source": {
+    "work": "In Search of the Miraculous",
+    "locator": "Organic life as Earth's organ of perception; grass-covered field versus the same field occupied by a crowd (chapter 7 in many editions)",
+    "url": "https://www.gurdjieff-hawaii.org/?page_id=160",
+    "corpus_claim_id": "G02",
+    "corpus_statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+    "additional_source_distinction": "The grassland and a crowd at the same field receive and pass on different planetary influences, types unspecified by the source."
+  },
+  "exploratory_conditions": [
+    {"id":"bare","label":"Bare ground","semantic_role":"A counterfactual absence of the living intermediary; the illustrated Earth transmission is absent, not a claim about historical lifeless Earth."},
+    {"id":"grass","label":"Grassland","semantic_role":"A grass-covered field receives and transmits one unspecified kind of influence."},
+    {"id":"people","label":"Human gathering","semantic_role":"The same field with people receives and transmits a different unspecified kind of influence."}
+  ],
+  "visual_correspondences": [
+    {"id":"planetary_world","meaning":"Source of influences","appearance":"three illustrative celestial bodies","not_asserted":"exact planets, scale or influence count"},
+    {"id":"earth","meaning":"Terrestrial recipient distinct from life","appearance":"same earth cross-section across all conditions","not_asserted":"geological strata as cosmic levels"},
+    {"id":"organic_life","meaning":"Reception and mediation by living plants or people","appearance":"recognizable grass or people at the same location","not_asserted":"all living beings literally form a special particle receptor"},
+    {"id":"A","meaning":"A visually distinguishable example of an unspecified influence kind","appearance":"cyan moving points","not_asserted":"a known natural/occult energy species, a source-defined color"},
+    {"id":"B","meaning":"Another visually distinguishable example of an unspecified influence kind","appearance":"violet hollow points","not_asserted":"a second source-specified wave mode or physical resonance"},
+    {"id":"response","meaning":"Reception by organic life followed by onward relation to Earth","appearance":"short localized and subsurface luminous events","not_asserted":"a real physical filter, measured causation or conservation equation"},
+    {"id":"ornament","meaning":"nonsemantic orienting environment","appearance":"stars, planetary shading, earth texture","not_asserted":"cosmic levels, planet orbits, a taxonomy"}
+  ],
+  "temporal_categories": {"domain":"The source describes an ongoing cosmic relationship, not an observed physical law.", "presentation":"A continuous scene in which the moving shapes illustrate the selected relation.", "manipulation":"Changing grass, people and bare-ground modes compares assumed conditions, not a historical timeline."},
+  "evidence_boundaries": [
+    "The source distinguishes influences but does not identify their physical or metaphysical properties.",
+    "Channel A and B assignments to grass and people are chosen to visualize difference; these assignments are not source claims.",
+    "Bare ground is a counterfactual control to inspect mediation, not a claim that Earth's crust has never been influenced directly by any physical force.",
+    "No outgoing radiations to Sun, Moon or planets (G03), no lunar maintenance dependency (G04), and no full Ray of Creation are depicted.",
+    "No experiment or audience study has established visual comprehension or physical validity."
+  ]
+}

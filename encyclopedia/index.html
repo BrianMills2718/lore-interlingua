@@ -12,14 +12,14 @@
 <div class="site">
   <header class="mast">
     <div class="brand"><span class="sigil" aria-hidden="true">◈</span><div><div class="eyebrow">LORE INTERLINGUA / RESEARCH LIBRARY</div><strong>Visual–Semantic Encyclopedia</strong></div></div>
-    <div class="mast-right"><span class="status"><span class="status-dot"></span> Working atlas · v0.3</span><a class="repo-link" href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_CHARTER.md">Project charter <span aria-hidden="true">↗</span></a></div>
+    <div class="mast-right"><span class="status"><span class="status-dot"></span> Working atlas · v0.4</span><a class="repo-link" href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_CHARTER.md">Project charter <span aria-hidden="true">↗</span></a></div>
   </header>
-  <div class="intro"><div><div class="eyebrow">A BROWSABLE INSTRUMENT FOR THINKING</div><h1>Meaning before marks.</h1><p>Explore concepts, source-bound interpretations, experimental visual correspondences, and applied lore case studies. The atlas is a research tool—not a universal ontology or a library of approved symbols.</p></div><div class="intro-count"><strong id="total-count">12</strong><span>interconnected entries</span></div></div>
+  <div class="intro"><div><div class="eyebrow">A BROWSABLE INSTRUMENT FOR THINKING</div><h1>Meaning before marks.</h1><p>Explore concepts, source-bound interpretations, experimental visual correspondences, and applied lore case studies. The atlas is a research tool—not a universal ontology or a library of approved symbols.</p></div><div class="intro-count"><strong id="total-count">13</strong><span>interconnected entries</span></div></div>
   <div class="workspace">
     <nav class="sidebar panel" aria-label="Browse encyclopedia entries">
       <div class="section-top"><div class="eyebrow">01 / FIND A CONCEPT</div><span id="visible-count" class="count"></span></div>
       <label class="search-label" for="search">Search by concept, definition or source</label>
-      <input id="search" type="search" placeholder="Search 12 concepts…" autocomplete="off">
+      <input id="search" type="search" placeholder="Search 13 concepts…" autocomplete="off">
       <div class="facet-list" id="facet-filters" role="group" aria-label="Filter by category"></div>
       <div id="concept-list" class="concept-list" aria-label="Concepts"></div>
       <div class="sidebar-foot">Conceptual categories are <strong>navigation facets</strong>, not mutually exclusive types of existence.</div>
@@ -28,7 +28,7 @@
       <section class="atlas panel" aria-labelledby="atlas-title">
         <div class="section-top"><div><div class="eyebrow">02 / CONCEPTUAL NEIGHBORHOOD</div><h2 id="atlas-title">Relational atlas</h2></div><span class="minor">Select any node</span></div>
         <p class="guidance">Connections describe encyclopedia relationships, <em>not</em> causal forces or metaphysical laws. Only the selected concept’s neighborhood is drawn.</p>
-        <svg id="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" role="group" aria-label="Interactive network of twelve concepts"></svg>
+        <svg id="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" role="group" aria-label="Interactive network of thirteen concepts"></svg>
         <p id="graph-caption" class="graph-caption" aria-live="polite"></p>
       </section>
       <section class="lab panel" aria-labelledby="lab-title">
@@ -39,17 +39,17 @@
         <div class="lab-footer"><span class="unvalidated">Candidate mapping · Not an established notation</span><span>What changes in the model, and what only changes on screen?</span></div>
       </section>
       <section class="case panel" id="case-study" aria-labelledby="case-title">
-        <div class="section-top"><div><div class="eyebrow">04 / APPLIED WORLD MODEL</div><h2 id="case-title">Organic life as Earth’s cosmic membrane</h2></div><span class="minor">Case 009 · Source linked</span></div>
-        <p id="case-subtitle" class="case-kicker"></p>
+        <div class="section-top"><div><div class="eyebrow">04 / APPLIED WORLD MODEL</div><h2 id="case-title">Organic life as Earth’s cosmic membrane</h2></div><span class="minor" id="case-id-label">Case 010 · Source linked</span></div>
+        <div id="case-picker" class="case-claim-buttons" role="group" aria-label="Choose an applied visual case"></div><p id="case-subtitle" class="case-kicker"></p>
         <p id="case-overview" class="case-summary"></p>
-        <p id="case-scope" class="guidance"></p>
+        <p id="case-scope" class="guidance"></p><p id="case-source-observation" class="guidance" hidden></p>
         <p id="case-status" class="case-status"></p>
         <div class="case-tools">
           <button type="button" class="action" id="case-load-scene">Load interactive scene</button>
-          <span class="case-hint">Loads the actual continuous animation below, not an unrelated demonstration.</span>
+          <span class="case-hint">Loads the original source-scoped interactive study below.</span>
         </div>
         <div id="case-frame-box" hidden>
-          <iframe title="Experiment 009: Organic Life, the Cosmic Membrane" id="case-scene" loading="lazy" referrerpolicy="no-referrer" aria-label="Interactive source-scoped Gurdjieff study"></iframe>
+          <iframe title="Source-scoped Gurdjieff interactive study" id="case-scene" loading="lazy" referrerpolicy="no-referrer" aria-label="Interactive source-scoped Gurdjieff study"></iframe>
           <p id="case-scene-status" class="case-hint" role="status"></p>
         </div>
         <div id="case-doc-links" class="case-doc-links"></div>

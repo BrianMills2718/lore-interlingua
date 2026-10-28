@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Experiment 010 · The Living Intermediary</title>
+<style>
+:root{color-scheme:dark;--ink:#eef2e8;--muted:#adbec2;--edge:#365765;--teal:#70dfd2;--violet:#c5a8f5;--gold:#edca8a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 40% 0%,#183343 0%,#06131d 60%,#030a11 100%);color:var(--ink);font-family:system-ui,-apple-system,sans-serif}main{max-width:1140px;padding:24px 18px 40px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:11px;color:#8ec7c4;font-weight:700}h1{font:normal clamp(27px,4vw,46px)/1.12 Georgia,serif;margin:7px 0 6px}p{line-height:1.54}.intro{max-width:80ch;color:var(--muted);margin:0 0 20px;font-size:14px}
+.stage{border:1px solid #4a6970;position:relative;border-radius:13px;overflow:hidden;box-shadow:0 23px 60px #0005;background:#081a28}.stage canvas{display:block;width:100%;aspect-ratio:1050 / 650}.scene-tag{position:absolute;left:16px;top:15px;background:#071620e6;border:1px solid #5a797d;border-radius:7px;padding:9px 12px;font-size:11px;letter-spacing:.1em;color:#d8e9e4;text-transform:uppercase;pointer-events:none}.stage-caption{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);font:16px Georgia,serif;background:#06131edb;border:1px solid #55747d;border-radius:6px;padding:12px 16px;text-align:center;pointer-events:none}
+.controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;align-items:center}.modes{display:flex;flex-wrap:wrap;gap:8px}button{border:1px solid #597c83;background:#102b37;color:var(--ink);padding:10px 14px;border-radius:7px;font:600 13px system-ui;cursor:pointer}button[aria-pressed=true]{background:#24645e;border-color:#91d9c2;box-shadow:0 0 0 1px #91d9c2a0}button:focus-visible,input:focus-visible{outline:3px solid #e9c783;outline-offset:3px}button:hover{border-color:#a2bfc2}.split{flex:1;min-width:12px}.utility{background:#162b37}.timeline{display:flex;align-items:center;gap:12px;margin:12px 0 16px}.timeline input{width:100%;accent-color:#82d8ca}.timeline span{white-space:nowrap;font-variant-numeric:tabular-nums;color:#bed0cd;font-size:12px;min-width:45px}.checks{display:flex;flex-wrap:wrap;gap:16px;color:#bfd0ce;font-size:13px}.checks label{display:flex;align-items:center;gap:6px}.checks input{accent-color:#88d9c9}section.readout{background:#0d2430;border:1px solid var(--edge);padding:16px 18px;border-radius:8px;margin-top:15px}.readout .cap{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#9fcbbd}.readout p{color:#dce7dc;margin:9px 0 8px}.readout small{color:#a9bec2;line-height:1.5}.info{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}.info article{background:#0b1c28;border:1px solid #31505f;border-radius:9px;padding:16px}.info h2{font:normal 18px Georgia,serif;margin:0 0 7px}.info p{font-size:13px;color:#b7c7c7;margin:0}.info a{color:#9ce0d5}footer{font-size:12px;color:#9ab4ba;margin-top:18px}
+@media(max-width:700px){.stage-caption{font-size:12px;padding:8px 10px;bottom:7px}.scene-tag{font-size:9px;padding:6px;left:7px;top:7px}.info{grid-template-columns:1fr}button{padding:9px 11px}.controls{align-items:start}.split{display:none}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">LORE INTERLINGUA · VISUAL THINKING STUDY 010</div>
+<h1>The Living Intermediary</h1>
+<p class="intro">Ouspensky's account of Gurdjieff: the same piece of Earth receives planetary influences differently depending on what lives there. Change the <strong>exploratory condition</strong> below—not the cosmology's history—and inspect what the living layer contributes.</p>
+<div class="stage"><canvas id="scene" width="1050" height="650" role="img" aria-label="Animated continuous landscape under planetary influences; selectable bare ground, grassland or human gathering"></canvas><div class="scene-tag" id="scene-tag">Grassland · Living mediation</div><div class="stage-caption" id="stage-caption">Organic life receives and transmits planetary influences.</div></div>
+<div class="controls"><div class="modes" role="group" aria-label="Exploratory surface condition"><button type="button" data-mode="bare" aria-pressed="false">Bare ground</button><button type="button" data-mode="grass" aria-pressed="true">Grassland</button><button type="button" data-mode="people" aria-pressed="false">Human gathering</button></div><div class="split"></div><button class="utility" id="play" type="button">Pause</button><button class="utility" id="restart" type="button">Restart</button></div>
+<div class="timeline"><label for="time" class="eyebrow">Explore</label><input id="time" type="range" min="0" max="24" step="0.05" value="0" aria-label="Scrub the conceptual animation"><span id="clock">0:00</span></div>
+<div class="checks"><label><input id="show-other" type="checkbox" checked>Show non-received influences (faint)</label><label><input id="captions" type="checkbox" checked>Short explanation</label><label><input id="diagnostics" type="checkbox">Research-only labels</label></div>
+<section class="readout" aria-live="polite"><div class="cap">What the current condition illustrates</div><p id="interpretation"></p><small>Two colored influence families are invented examples of <em>different kinds</em>, not source-defined planetary energies. Bare ground is a research counterfactual, not a claim that Earth was historically bare. Every celestial and living object stays in the same spatial setting while its represented condition is varied.</small></section>
+<div class="info"><article><h2>What the source actually says</h2><p>Organic life allows planetary influences to reach Earth. A grass-covered field and the same field occupied by people receive and transmit influences of different kinds. The text does not identify their colors, motion laws, or quantitative differences. <a href="https://www.gurdjieff-hawaii.org/?page_id=160" target="_blank" rel="noopener">Read Ouspensky excerpts</a>.</p></article><article><h2>What this image does not assert</h2><p>No atmospheric particle physics, cosmic receptor chemistry, causal equation, exact number of channels, or prediction about human groups. The two illustrative channels are an artistic way to express selective reception and the mediation relationship—not a scientific model.</p></article></div>
+<footer>Source-scoped artistic interpretation · Gurdjieff via P. D. Ouspensky · Experiment 010 · No audio · Technical mapping and unresolved questions in <a href="README.md" style="color:#9ce0d5">research notes</a>.</footer>
+<script>
+(()=>{'use strict';
+const canvas=document.getElementById('scene'),ctx=canvas.getContext('2d'),TAU=Math.PI*2;
+const state={mode:'grass',time:0,playing:!matchMedia('(prefers-reduced-motion: reduce)').matches,showOther:true,captions:true,diagnostics:false};
+const $=id=>document.getElementById(id),fract=x=>((x%1)+1)%1,smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)};
+const modes={
+ bare:{tag:'NO ORGANIC LIFE · EXPLORATORY COUNTERFACTUAL',caption:'Without living mediation, the pictured planetary influences do not reach Earth.',reading:'With the intermediary removed, neither illustrated influence is received and passed into Earth. This visual counterfactual follows the role attributed to organic life; it does not describe a historical period of bare Earth.'},
+ grass:{tag:'GRASSLAND · RECEPTIVE LIVING FIELD',caption:'Grass receives one kind of influence and mediates it toward Earth.',reading:'Grass receives an illustrative influence, responds across its living surface and passes the represented influence toward Earth. Other incoming possibilities are drawn faintly to distinguish selective reception.'},
+ people:{tag:'HUMAN GATHERING · SAME FIELD',caption:'The same field, occupied by people, receives a different kind of influence.',reading:'A gathering of people receives and mediates another illustrative kind of influence at the very same location. Different drawn patterns signal a difference in reception, not a specified physiological mechanism.'}
+};
+const C={a:'#74e4d1',b:'#d9b1ff',life:'#b8e8a1',terrain:'#4b877c',earth:'#edc48a'};
+function line(points,stroke,width=1,alpha=1){ctx.save();ctx.globalAlpha=alpha;ctx.beginPath();ctx.moveTo(...points[0]);points.slice(1).forEach(p=>ctx.lineTo(...p));ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();ctx.restore()}
+function circ(x,y,r,fill,stroke='',width=1,alpha=1){ctx.save();ctx.globalAlpha=alpha;ctx.beginPath();ctx.arc(x,y,r,0,TAU);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke()}ctx.restore()}
+function glow(x,y,r,color,alpha=.3){ctx.save();ctx.globalAlpha=alpha;const g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,color);g.addColorStop(1,'transparent');ctx.fillStyle=g;ctx.fillRect(x-r,y-r,r*2,r*2);ctx.restore()}
+function txt(t,x,y,size=14,color='#dce9e6',align='center'){ctx.fillStyle=color;ctx.font=`${size}px system-ui`;ctx.textAlign=align;ctx.fillText(t,x,y)}
+function bez(a,b,k,u){const v=1-u;return [v*v*a[0]+2*v*u*k[0]+u*u*b[0],v*v*a[1]+2*v*u*k[1]+u*u*b[1]]}
+function background(t){let g=ctx.createLinearGradient(0,0,0,650);g.addColorStop(0,'#061727');g.addColorStop(.63,'#14303a');g.addColorStop(1,'#101b23');ctx.fillStyle=g;ctx.fillRect(0,0,1050,650);for(let i=0;i<95;i++){const x=(i*173.68+83)%1050,y=(i*89.38+22)%345;circ(x,y,i%13===0?1.5:.65,'#c6e7e7','',1,.11+.13*(.5+.5*Math.sin(i+t*.25)))}
+// Planetary bodies establish the source class; not astronomical coordinates or six different doctrines.
+const ps=[[185,95,24],[530,57,18],[822,112,21]];for(let i=0;i<ps.length;i++){const [x,y,r]=ps[i];glow(x,y,68,C.a,.14);circ(x,y,r,'#304f60','#a5c9c4',1.4);circ(x-r*.28,y-r*.35,r*.24,'#83a6a0','',1,.9);circ(x,y,r+7,'', '#6da5ae',1,.19)}
+txt('PLANETARY WORLD',523,28,16,'#c4dedb');ctx.save();ctx.globalAlpha=.32;txt('illustrative plurality · not a scale map',524,92,11,'#b9ced1');ctx.restore();}
+function terrain(t){ctx.save();let grad=ctx.createLinearGradient(0,413,0,650);grad.addColorStop(0,'#284d51');grad.addColorStop(.5,'#192f38');grad.addColorStop(1,'#132431');ctx.fillStyle=grad;ctx.fillRect(0,420,1050,230);ctx.strokeStyle='#85a9a0';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(0,418);for(let x=0;x<=1050;x+=8)ctx.lineTo(x,419+2*Math.sin(x*.009)+1.7*Math.sin(x*.04));ctx.stroke();for(let j=0;j<4;j++){const y=470+j*48;ctx.beginPath();for(let x=0;x<=1050;x+=10){const yy=y+5*Math.sin(x*.012+j*.8)+2*Math.cos(x*.04+j);if(x===0)ctx.moveTo(x,yy);else ctx.lineTo(x,yy)}ctx.strokeStyle=['#4d706b','#416169','#34505c','#253b51'][j];ctx.lineWidth=1.2;ctx.stroke()}for(let i=0;i<90;i++){const x=(i*127.34+62)%1050,y=446+((i*83.11)%202);circ(x,y,i%7===0?2:1,'#a5b09e','',1,.08)}ctx.restore();txt('EARTH · RECEIVING GROUND',520,618,13,'#98b4b9');}
+const spots=[170,235,304,374,444,520,600,682,761,832,895];
+function grass(t,active){for(let i=0;i<spots.length;i++){const x=spots[i],y=419+2*Math.sin(x*.009)+1.7*Math.sin(x*.04),h=23+(i%4)*8;let sway=Math.sin(t*1.6+i*.7)*2.4+(active?Math.sin(t*4.2+i*.42)*3.1:0);for(let j=-2;j<=2;j++){const a=j*.4;ctx.save();ctx.strokeStyle=j%2?'#7db8a0':'#a4d99a';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(x+j*2,y);ctx.quadraticCurveTo(x+j*7+sway*.3,y-h*.56,x+j*8+sway+(j%2?3:-3),y-h*(.8+.05*j));ctx.stroke();ctx.restore()}if(active)glow(x,y-21,23,C.a,.1+.07*Math.sin(t*2+i));}
+}
+function humans(t,active){const people=[294,366,438,510,582,654,727,789];for(let i=0;i<people.length;i++){const x=people[i],g=419+2*Math.sin(x*.009)+1.7*Math.sin(x*.04),h=33+(i%3)*4;const glowA=active?.12+.09*(.5+.5*Math.sin(t*2.4+i*.4)):0;glow(x,g-24,31,C.b,glowA);ctx.save();ctx.lineCap='round';ctx.strokeStyle=i%2?'#d6bca4':'#a9b9bf';ctx.lineWidth=4;circ(x,g-h-6,7,i%3===0?'#d6b28b':'#bd9f90');line([[x,g-h+3],[x,g-12]],ctx.strokeStyle,4);line([[x,g-25],[x-12,g-17]],ctx.strokeStyle,3);line([[x,g-25],[x+11,g-19]],ctx.strokeStyle,3);line([[x,g-12],[x-8,g]],ctx.strokeStyle,3);line([[x,g-12],[x+8,g]],ctx.strokeStyle,3);ctx.restore();}
+}
+function channels(t,mode){const received=mode==='grass'?'a':mode==='people'?'b':null;
+// A & B are invented VISUAL TYPES; the source does not name them or give any numeric rates.
+const streams=[{id:'a',color:C.a,source:[342,147],centers:[190,300,440,600,760,879],controlY:260},{id:'b',color:C.b,source:[710,153],centers:[285,384,487,582,695,787],controlY:290}];
+for(const ch of streams){const accept=ch.id===received;for(let j=0;j<ch.centers.length;j++){
+  const destX=ch.centers[j],surfaceY=408+2*Math.sin(destX*.009),a=[ch.source[0]+(j-2.5)*10,ch.source[1]+(j%3)*6],b=[destX,accept?surfaceY:297];const k=[(a[0]+b[0])/2+Math.sin(j*1.2)*30,ch.controlY];
+  for(let n=0;n<3;n++){let u=fract(t*.18+j*.23+n/3+(ch.id==='b'?.09:0));const [x,y]=bez(a,b,k,u);const alpha=accept?(Math.min(1,(1-u)*3)*.85): (state.showOther?Math.min(1,(1-u)*2)*.17:0);if(alpha<.005)continue;glow(x,y,13,ch.color,alpha*.25);if(ch.id==='a')circ(x,y,2.3,ch.color,'',1,alpha);else{circ(x,y,4,'',ch.color,1.8,alpha);circ(x,y,1.6,ch.color,'',1,alpha*.6)}
+    if(accept&&u>.70){
+      // A brief luminous response is triggered after reception at organic life.
+      // It visually crosses into Earth only while that intermediary is present.
+      const q=(u-.70)/.30,rootY=surfaceY+q*152,mag=(1-q)*(.55+.45*Math.sin(q*Math.PI));
+      glow(destX,rootY,40,ch.color,.47*mag);
+      circ(destX,rootY,4,'#e8f3db','',1,.82*mag);
+      for(let m=0;m<2;m++)circ(destX,rootY,9+q*23+m*11,'',ch.color,2.1-m*.5,.58*mag/(m+1));
+      // No permanent pipe, wave guide or source-defined field equation is implied.
+    }
+  }
+ }}
+ if(mode==='grass'){const a=.13+.11*(.5+.5*Math.sin(t*2));glow(520,410,185,C.a,a)}
+ if(mode==='people'){for(let i=0;i<6;i++){let x=340+i*77;glow(x,412,38,C.b,.09+.09*(.5+.5*Math.sin(t*1.9+i*.5)))}}
+}
+function labels(mode){if(!state.diagnostics)return;
+ctx.save();ctx.fillStyle='#071b27da';ctx.fillRect(12,165,335,88);txt('A = illustrative influence family',26,191,12,C.a,'left');txt('B = illustrative influence family',26,215,12,C.b,'left');txt('Matched forms are received; the other',26,236,11,'#a8bfc0','left');ctx.restore();txt('reception + mediation (illustrative)',520,546,12,C.life)}
+function draw(time=state.time){state.time=time;ctx.clearRect(0,0,1050,650);background(time);terrain(time);if(state.mode==='grass')grass(time,true);if(state.mode==='people')humans(time,true);channels(time,state.mode);labels(state.mode);}
+function sync(){const m=modes[state.mode];$('scene-tag').textContent=m.tag;$('stage-caption').textContent=m.caption;$('stage-caption').hidden=!state.captions;$('interpretation').textContent=m.reading;for(const b of document.querySelectorAll('[data-mode]'))b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode));$('time').value=state.time.toFixed(2);$('clock').textContent='0:'+String(Math.floor(state.time)).padStart(2,'0');$('play').textContent=state.playing?'Pause':'Play';draw()}
+for(const b of document.querySelectorAll('[data-mode]'))b.addEventListener('click',()=>{state.mode=b.dataset.mode;sync()});
+$('play').onclick=()=>{state.playing=!state.playing;sync()};$('restart').onclick=()=>{state.time=0;state.playing=false;sync()};$('time').oninput=e=>{state.time=+e.target.value;state.playing=false;sync()};$('show-other').onchange=e=>{state.showOther=e.target.checked;sync()};$('captions').onchange=e=>{state.captions=e.target.checked;sync()};$('diagnostics').onchange=e=>{state.diagnostics=e.target.checked;sync()};
+let last=0;function tick(now){const dt=Math.min(.08,(now-last)/1000||0);last=now;if(state.playing){state.time=fract((state.time+dt)/24)*24;sync()}requestAnimationFrame(tick)}
+window.__study010={state:()=>({...state}),drawAt:t=>{state.time=t;sync()},setMode:m=>{if(!(m in modes))throw Error('invalid study mode');state.mode=m;sync()}};
+sync();requestAnimationFrame(tick);
+})();
+</script>
+</main></body></html>
