@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atemporal Invariant — Calibration 008</title>
+<style>
+:root {color-scheme:dark;--bg:#0c1723;--surface:#142434;--text:#e9eee9;--muted:#aab9c5;--line:#3d5868;--a:#ebb983;--b:#7dc2d7;--c:#b6a9e8}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(155deg,#0b1522,#112639);color:var(--text);font:15px/1.5 system-ui,Arial,sans-serif}
+main{max-width:1180px;margin:auto;padding:28px 22px 50px}h1{font-size:clamp(24px,4vw,36px);margin:0 0 8px;letter-spacing:-.025em}p{margin:8px 0;color:var(--muted)}
+small,.small{font-size:12px;color:var(--muted)}.cap{font-size:11px;letter-spacing:.13em;color:#e9b981;font-weight:700;text-transform:uppercase}
+.layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(265px,1fr);gap:14px;margin-top:18px}.pane{background:#0d1d2b;border:1px solid #345063;border-radius:14px;padding:15px}.pane h2{font-size:15px;margin:0 0 8px}.pane svg{display:block;width:100%;aspect-ratio:660 / 435;touch-action:none;overflow:visible;background:radial-gradient(ellipse at 55% 43%,#142d3b,#0d1e2c);border-radius:9px}
+controls,.controls{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}.controls label{font-size:12px;color:var(--muted);display:block}.controls input{width:100%;accent-color:#efb778}.btn{border:1px solid #65849a;background:#1e3b4a;color:white;border-radius:8px;padding:8px 13px;cursor:pointer;margin:8px 8px 0 0}.btn:focus-visible{outline:2px solid white}.subtle{background:transparent}
+.monospace{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.static{height:140px}.check{margin-top:12px;border-left:3px solid #e6b87b;padding-left:10px}.reading{margin-top:16px;font-size:14px;background:#122635;border-radius:10px;padding:15px}.tag{display:inline-block;padding:2px 8px;border-radius:5px;color:#a9c8d5;background:#22384a;font-size:12px;margin:3px 3px 0 0}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.pane svg{aspect-ratio:660/435}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body><main>
+<div class="cap">Visual Reasoning Pilot 008 · Calibration case</div>
+<h1>Something changes. The relation does not.</h1>
+<p>Drag the triangle’s upper vertex or change its coordinates. This changes which triangle you are looking at, not the mathematical theorem that every nondegenerate Euclidean triangle has a 180° angle sum.</p>
+<div class="layout">
+<section class="pane">
+<h2>Manipulable construction</h2>
+<svg id="scene" viewBox="0 0 660 435" role="img" aria-label="Interactive triangle with dynamically updated angle wedges and a three-part straight-angle bar">
+<path d="M0 335 H660" stroke="#2c4758" stroke-width="1"/>
+<polygon id="tri" fill="rgba(122,170,185,.11)" stroke="#dce4dc" stroke-width="2.5"/>
+<g id="wedges"></g><g id="anglelabels" font-size="17" font-weight="650"></g>
+<circle id="handle" r="11" fill="#f3ebd8" stroke="#ce9d59" stroke-width="4" style="cursor:grab"/>
+<g fill="#b1c5ce" font-size="13"><text x="69" y="362">A</text><text x="485" y="362">B</text><text id="clabel">C</text></g>
+<text x="330" y="390" fill="#aabecb" font-size="13" text-anchor="middle">Change the triangle; watch what stays true.</text>
+<text x="80" y="410" fill="#809eaa" font-size="11">Angles are attributes of this instance</text>
+<text x="480" y="410" fill="#809eaa" font-size="11" text-anchor="end">Relation is invariant</text>
+</svg>
+<div class="controls"><label>Apex horizontal position <input type="range" id="x" min="155" max="430" value="285" step="1"/></label><label>Apex height <input type="range" id="y" min="70" max="270" value="120" step="1"/></label></div>
+<div><button id="reset" class="btn subtle">Reset</button><button id="reveal" class="btn">Reveal the relation</button><button id="hide" class="btn subtle">Hide labels</button></div>
+</section>
+<aside class="pane">
+<h2>Always the same relation</h2>
+<p>Three angle measures vary together as you manipulate the triangle.</p>
+<svg viewBox="0 0 300 200" style="aspect-ratio:3 / 2" role="img" aria-label="Current angles assembled into a straight line">
+<text x="17" y="25" fill="#beced3" font-size="13">These are not three moments.</text>
+<rect x="20" y="72" width="260" height="27" rx="2" fill="#253d4b"/>
+<g id="parts"></g><text x="20" y="130" id="sumLabel" fill="#efe5cd" font-size="25" font-weight="650">?°</text>
+<path d="M20 112 H280" stroke="#8ba5af" stroke-width="1.2"/>
+<text x="20" y="157" fill="#9eb4c1" font-size="12">One invariant across many triangles</text>
+</svg>
+<p id="live" aria-live="polite" class="monospace"></p>
+<p class="small">Static baseline: in Euclidean geometry, the interior angles of a nondegenerate triangle sum to 180°. A conventional static proof could place the three angles together along a straight line.</p>
+</aside>
+</div>
+<div class="reading"><strong>Three clocks, one test.</strong> <span class="tag">Domain: timeless theorem</span> <span class="tag">Representation: triangle instance changes</span> <span class="tag">Exploration: dragging occurs in time</span><p>This is a calibration example, not a metaphysical film. It asks whether continuous manipulation helps reveal an invariant that a static explanation alone may leave abstract. We have <strong>not</strong> shown that it communicates an atemporal theological relationship, nor that it outperforms the static baseline for unfamiliar viewers.</p><p><strong>Thinking prompt:</strong> If the form changes but its angle-sum does not, what is the visual evidence that the constant relationship was not produced by the movement? What additional visual convention would distinguish an eternal grounding relation from a historical causal event?</p></div>
+</main>
+<script>
+const svgNS='http://www.w3.org/2000/svg';const X=document.querySelector('#x'),Y=document.querySelector('#y'),svg=document.querySelector('#scene');
+const A={x:87,y:335},B={x:477,y:335};let C={x:285,y:120},reveal=false,labels=true;
+const COL=['#ebb983','#7dc2d7','#b6a9e8'];const radToDeg=180/Math.PI;
+const vsub=(p,q)=>[p.x-q.x,p.y-q.y]; const dot=(a,b)=>a[0]*b[0]+a[1]*b[1];const norm=v=>Math.hypot(...v);
+const angle=(p,q,r)=>{const u=vsub(p,q),v=vsub(r,q);const ratio=dot(u,v)/(norm(u)*norm(v));return Math.acos(Math.max(-1,Math.min(1,ratio)))};
+function el(name,attrs={},text=''){const e=document.createElementNS(svgNS,name);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));e.textContent=text;return e}
+function wedge(q,p,r,ang,col){const v1=vsub(p,q),v2=vsub(r,q),p1=Math.atan2(v1[1],v1[0]),p2=Math.atan2(v2[1],v2[0]);let d=((p2-p1+Math.PI*3)%(Math.PI*2))-Math.PI;const RR=46;const x1=q.x+RR*Math.cos(p1),y1=q.y+RR*Math.sin(p1),x2=q.x+RR*Math.cos(p2),y2=q.y+RR*Math.sin(p2);let path=`M ${q.x} ${q.y} L ${x1} ${y1} A ${RR} ${RR} 0 0 ${d>=0?1:0} ${x2} ${y2} Z`;return el('path',{d:path,fill:col,'fill-opacity':.3,stroke:col,'stroke-width':1.8})}
+function render(){C={x:Number(X.value),y:Number(Y.value)};const P=[A,B,C];const a=[angle(C,A,B),angle(A,B,C),angle(A,C,B)],deg=a.map(x=>x*radToDeg);const ws=document.querySelector('#wedges'),ls=document.querySelector('#anglelabels'),ps=document.querySelector('#parts');ws.replaceChildren();ls.replaceChildren();ps.replaceChildren();ws.append(wedge(A,C,B,a[0],COL[0]),wedge(B,A,C,a[1],COL[1]),wedge(C,B,A,a[2],COL[2]));document.querySelector('#tri').setAttribute('points',P.map(p=>`${p.x},${p.y}`).join(' '));document.querySelector('#handle').setAttribute('cx',C.x);document.querySelector('#handle').setAttribute('cy',C.y);document.querySelector('#clabel').setAttribute('x',C.x+15);document.querySelector('#clabel').setAttribute('y',C.y-16);
+if(labels){ls.append(el('text',{x:133,y:310,fill:COL[0]},deg[0].toFixed(1)+'°'),el('text',{x:410,y:310,fill:COL[1]},deg[1].toFixed(1)+'°'),el('text',{x:C.x,y:C.y+62,fill:COL[2],'text-anchor':'middle'},deg[2].toFixed(1)+'°'))}
+let off=20;deg.forEach((d,i)=>{const w=260*d/180;ps.append(el('rect',{x:off,y:72,width:w,height:27,fill:COL[i],'fill-opacity':.83}));off+=w});document.querySelector('#sumLabel').textContent=reveal?'180°':'?°';document.querySelector('#live').textContent=labels?deg.map((d,i)=>'ABC'[i]+': '+d.toFixed(1)+'°').join('  ·  '):'Labels hidden — shapes and proportions remain';document.querySelector('#hide').textContent=labels?'Hide labels':'Show labels';document.querySelector('#reveal').textContent=reveal?'Hide sum':'Reveal the relation';}
+X.oninput=render;Y.oninput=render;document.querySelector('#reset').onclick=()=>{X.value=285;Y.value=120;reveal=false;labels=true;render()};document.querySelector('#reveal').onclick=()=>{reveal=!reveal;render()};document.querySelector('#hide').onclick=()=>{labels=!labels;render()};
+let dragging=false;document.querySelector('#handle').addEventListener('pointerdown',ev=>{dragging=true;ev.currentTarget.setPointerCapture(ev.pointerId)});document.querySelector('#handle').addEventListener('pointermove',ev=>{if(!dragging)return;const pt=svg.createSVGPoint();pt.x=ev.clientX;pt.y=ev.clientY;const p=pt.matrixTransform(svg.getScreenCTM().inverse());X.value=Math.round(Math.max(155,Math.min(430,p.x)));Y.value=Math.round(Math.max(70,Math.min(270,p.y)));render()});document.querySelector('#handle').addEventListener('pointerup',()=>dragging=false);document.querySelector('#handle').addEventListener('pointercancel',()=>dragging=false);
+window.__triangleState=()=>{const a=angle(C,A,B),b=angle(A,B,C),c=angle(A,C,B);return {x:C.x,y:C.y,sumDeg:(a+b+c)*radToDeg,revealed:reveal,labels}};
+render();
+</script></body></html>
