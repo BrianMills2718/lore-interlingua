@@ -1,5 +1,8 @@
 # Relationship to `visual-language`
 
+> **Historical/provisional record.** This file retains earlier examples and proposed next steps; current project decisions are in [Project Charter](PROJECT_CHARTER.md), [Current State](PROJECT_STATUS.md), and [Experiment Registry](EXPERIMENT_REGISTRY.md). Do not treat a past "gate" as a program-level stop rule.
+
+
 **Reviewed:** 2026-10-27  
 **Source:** [BrianMills2718/visual-language](https://github.com/BrianMills2718/visual-language) (`main`)  
 **Status:** architecture comparison; no code imported or dependency added.
@@ -47,7 +50,9 @@ This is a **candidate integration**, not an existing executable pipeline.
 5. **Choice ≠ libertarian free will ≠ moral responsibility.** A learned rule for selecting alternatives must not imply metaphysical freedom or moral status.
 6. **Temporal presentation ≠ temporal occurrence.** Revealing an atemporal relation over several seconds does not license the claim that the represented process took time.
 
-## Proposed minimal cross-project experiment
+## Historical proposed cross-project experiment
+
+This was the initial integration hypothesis. Later experiments did not establish an interoperable renderer, and current project management no longer treats viewer benchmarks as existential go/no-go gates. Consult [Project Status](PROJECT_STATUS.md) for the current research direction.
 
 Use one `lore-interlingua` corpus and a small borrowed *candidate* notation key, but keep implementations independent.
 
@@ -58,7 +63,7 @@ Use one `lore-interlingua` corpus and a small borrowed *candidate* notation key,
 | Plotinus: Intellect grounded in the One | Existence-dependence without motion, depletion, or chronological production | Persistent relation, relative dependence with an atemporal key | Freeze test: remove time cues, ensure the relation remains intelligible |
 | Gurdjieff: self-remembering | Experience, attending to an object, reflexive awareness | New grammar candidate; no existing G1–G6 encoding yet | Must distinguish attention from reflection without labeling every scene |
 
-Success requires (1) correspondence with the interlingua claim, (2) compositional reuse, (3) readers trained on a compact key decoding **unseen** examples, and (4) a meaningful gain over static figures. Failure should trigger notation revision, **not** a post-hoc reinterpretation of the lore.
+For the **notation-research subproject**, initial criteria proposed (1) correspondence with the interlingua claim, (2) compositional reuse, (3) readers trained on a compact key decoding **unseen** examples, and (4) comparison with strong static figures. These do **not** govern viability or worth of the broader artistic visual-reasoning project. Failure should trigger notation revision, **not** a post-hoc reinterpretation of the lore.
 
 ## Project-management recommendation
 
