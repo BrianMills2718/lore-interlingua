@@ -90,3 +90,9 @@ python -m unittest discover -s tests -p 'test_encyclopedia_cases.py' -v
 ```
 
 The atlas remains provisional: no viewer comprehension study, formally validated cross-tradition notation, or generic semantic-to-film compiler has been produced. Source claims are paraphrases scoped to Gurdjieff via Ouspensky. The third-party Gnostic reference film is **not** copied into this library.
+
+## Experiment 009 — Encoding audit
+
+The [interactive encoding audit](studies/009-encoding-audit.html) examines whether the three outgoing marker families represent three distinct *mechanisms* or chiefly denote source-scoped kinds associated with three different recipients. It permits uniform marks, permutation of marker assignments, a controlled animation-rate normalization, and comparison with G02 reception/mediation. The canonical [audit record](studies/009-encoding-audit.json) separates findings grounded in the Ouspensky text, observations from the renderer code, and proposed visual manipulations. Its offline generated JavaScript mirror is [009-encoding-audit-data.js](studies/009-encoding-audit-data.js).
+
+**Finding:** G03 warrants distinct recipient requirements and some categorical differentiation, but the renderer only encodes distinct glyphs/colors and arbitrarily different movement rates—not verified different causal mechanisms. G04 remains contextual. This is a **semantic/code audit**, not evidence of viewer comprehension or an automatic instruction to eliminate metaphor.

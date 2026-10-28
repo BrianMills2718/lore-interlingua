@@ -354,7 +354,8 @@
         "narration_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/narration-and-audit.md",
         "parsimony_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/PARSIMONY_REVISION.md",
         "local_preview_status": "The downloadable silent video was delivered during the earlier experiment; the repository version used here is its interactive HTML scene.",
-        "limitations": "Interactive preview is illustrative and not evidence of source truth or audience comprehension."
+        "limitations": "Interactive preview is illustrative and not evidence of source truth or audience comprehension.",
+        "encoding_audit": "studies/009-encoding-audit.html"
       },
       "decisions": [
         "Removed unsupported nested cosmic ellipses rather than inventing doctrine to justify them.",
@@ -367,7 +368,8 @@
         "Can the organic envelope’s mediating role become more evident through local organism interactions instead of similarly moving dots?",
         "How should the larger claim that the Moon is nourished be visualized without falsely claiming a physical conservation mechanism?",
         "Do three differently colored outgoing mark families communicate distinct kinds of radiations, or merely three destinations?",
-        "Which decorative forms enhance recognition without implying unexplained cosmic principles?"
+        "Which decorative forms enhance recognition without implying unexplained cosmic principles?",
+        "Does changing destination-linked glyphs alter any represented mechanism, or merely relabel the distinct recipient requirements? See the encoding audit."
       ]
     }
   ]
