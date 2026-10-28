@@ -1,38 +1,52 @@
-# Cosmology Interlingua
+# Lore Interlingua
 
-A research and prototyping project for translating metaphysical, esoteric, and philosophical systems into a **common conceptual interlingua**, and eventually into a **compositional visual language** for animation.
+**An artistic and conceptual research project for thinking with, exploring, and communicating philosophical, esoteric, and metaphysical lore through a developing multimodal visual language.**
 
-**Status:** semantic prototype v0.2. No production renderer yet.
+We use source-grounded conceptual models, reusable visual relations, symbolic imagery, motion, text, and artistic interpretation. The goal is **not** to eliminate words or automatically render every doctrine. Visual representation can also support manipulation and discovery: seeing a relation differently may expose new questions and distinctions.
 
-## The problem
+**Current status (October 2026):** exploratory research. The corpus validator works, and there are several hand-directed animations and interactive studies, but **no demonstrated generic pipeline from the conceptual interlingua to finished films**. The previous animated-slideshow workflow is not the recommended next step. The basic ability to represent atemporal ideas is not in dispute. See the [project audit and recovery plan](docs/PROJECT_STATUS.md).
 
-Distinct traditions may use the same words for different concepts, or different words for structurally similar ideas. We want to separate **source terminology**, **conceptual meaning**, and **visual expression** rather than assign arbitrary icons directly to terms.
+## Start here
+
+| Document | Role |
+| --- | --- |
+| **[Project Charter](docs/PROJECT_CHARTER.md)** | Current mission, artistic commitments, semantic boundaries, and project scope |
+| **[Current State / Recovery Plan](docs/PROJECT_STATUS.md)** | Findings, gaps, priorities, and next architectural work |
+| **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Status of Experiments 000–008; what was actually produced and learned |
+| [Decision Record](docs/DECISIONS.md) | Retained, revised and superseded project choices |
+| [Communication-First Artistic Design](docs/communication-first-design.md) | Metaphor, text, accessibility, one-lore films and artistic freedom |
+| [Visual Reasoning Instrument](docs/visual-reasoning-instrument.md) | Representation ↔ manipulation ↔ discovery |
+| [Relationship to Visual Language](docs/visual-language-crosswalk.md) | Reuse-first boundary with the separate temporal-notation project |
+
+**Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
+
+## What exists
+
+- **Interlingua research:** [v0.2 corpus](data/v0.2.json) (29 propositions, 15 declared sorts, 39 typed predicates); [JSON Schema](schemas/v0.2.schema.json), [validator](scripts/validate.py) and [unit tests](tests/test_interlingua.py). The earlier [v0.1](data/v0.1.json) includes 12 examples.
+- **Tradition-specific model:** [Catholic source-scoped world model](research/catholic-world-model/README.md) and [typed JSON](research/catholic-world-model/v0.1.json), with its own structure, independent of the v0.2 interlingua.
+- **Visual work:** [experiment index](docs/EXPERIMENT_REGISTRY.md) links Gurdjieff, Bailey, Manichaeism/Catholicism comparisons, a Catholic visual-thinking workbench, a botanical film, a Trinity–Incarnation animatic, and a mathematical interactive demonstration.
+- **Research history:** [Inquiry Graph](https://github.com/BrianMills2718/inquiry-graph/tree/main/examples/conversations/2026-10-25-lore-visual-interlingua) contains selected source-anchored conversation excerpts, **not** a complete export or a truth database.
+
+## Architecture — still under investigation
 
 ```text
-Primary sources → contextual interpretation → worldview-scoped proposition
-                → conceptual interlingua → compositional visual grammar
-                → diagrams and animation → comprehension testing
+specific primary-source lore
+        ↓
+interpretation and roles
+        ↕
+optional conceptual interlingua
+        ↕
+art-directed visual / verbal / interactive exploration
+        ↔ manipulation and discovered questions
+        ↓
+film, study, diagram, or other artifact
 ```
 
-The aim is to model what a tradition *claims*, not to endorse its metaphysics. Presentation may use a single opening attribution/disclaimer rather than per-scene epistemic qualifiers; detailed research evidence remains in the model.
+The **interlingua is an optional structuring instrument**, not a doctrinal adjudicator or a requirement that every image be formally derived. Metaphorical correspondences are selective; for example, grace may be depicted as water without claiming it has physical mass. A film can express **one coherent lore** without explaining every interpretive uncertainty on-screen.
 
-## Current materials
+## Reproduce the research checks
 
-| Path | Purpose |
-| --- | --- |
-| [`docs/v0.2.md`](docs/v0.2.md) | Current semantic specification, decisions and limitations |
-| [`data/v0.2.json`](data/v0.2.json) | 29 translated propositions: Gurdjieff, Bailey, Plotinus, Dennett, and constructed tests |
-| [`schemas/v0.2.schema.json`](schemas/v0.2.schema.json) | JSON Schema for expression structure |
-| [`reports/v0.2.validation.json`](reports/v0.2.validation.json) | Original structural validation results |
-| [`docs/v0.1.md`](docs/v0.1.md) and [`data/v0.1.json`](data/v0.1.json) | Earlier ontology and 12-proposition corpus |
-| [`scripts/build_v02.py`](scripts/build_v02.py) | Reconstruct the v0.2 corpus and schema from v0.1 |
-| [`scripts/validate.py`](scripts/validate.py) | Revalidate corpus structure, roles and type constraints |
-| [`tests/test_interlingua.py`](tests/test_interlingua.py) | Regression checks against malformed claims |
-| [`examples/gurdjieff_cosmic_myth.mp4`](examples/gurdjieff_cosmic_myth.mp4) | Prior programmatic animation, a stylistic reference rather than a renderer output |
-
-## Local usage
-
-Requires Python 3.10+.
+Python 3.11+, install the small schema dependency:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -40,34 +54,20 @@ python scripts/validate.py
 python -m unittest discover -s tests -v
 ```
 
-To regenerate the current data files from v0.1:
+These validate **structural contracts**, selected invariants and source-reference presence. They do **not** establish doctrinal truth, source-paraphrase correctness, cross-domain visual semantics, or audience comprehension. Animation renderers have separate dependencies; follow their experiment README files.
 
-```bash
-python scripts/build_v02.py
-python scripts/validate.py
-```
+The corpus can be regenerated from v0.1 with `python scripts/build_v02.py`, but that is a *version-specific build*, not an end-to-end visualization tool.
 
-## Key design requirements
+## Repo boundaries
 
-- **Theory-relative semantics:** assertions belong to a named tradition or model; incompatibilities between traditions do not become contradictions in the interlingua.
-- **Composable meaning:** complex visual expressions should be derived from reusable spatial and temporal operations where possible.
-- **Visual pluralism:** iconic depictions and learned conventional signs are permitted alongside compositional geometry.
-- **No forced conflations:** subjective experience, awareness, deliberation, choice, free will, and moral responsibility must be separately expressible.
-- **No false mechanics:** material transfer, existential dependence, logical implication, and moral obligation must not all render as the same causal flow.
-- **Research provenance:** keep source locations and interpretation notes in the corpus, without requiring intrusive on-screen disclaimers.
+- [visual-language](https://github.com/BrianMills2718/visual-language) — research into learned, domain-transferable temporal notation; reuse ideas, do not assume its grammar is already an expressive lore renderer.
+- [inquiry-graph](https://github.com/BrianMills2718/inquiry-graph) — capture of reasoning trajectory and source-anchored positions.
+- This repository — source-scoped lore models, conceptual translation, artistic experiments, and decisions about their relationship.
 
-## Visual experiments
+## What comes next
 
-- **[Experiment 001 — The Earth as Transmitter](experiments/001-lunar-nourishment/README.md)**: art-directed, source-grounded 28-second animation of Gurdjieff's lunar nourishment with semantic scene manifest, reusable renderer, storyboard, assessment and tests. The video is [in the repository](experiments/001-lunar-nourishment/visual-experiment-001.mp4).
+Per the [recovery plan](docs/PROJECT_STATUS.md): choose one actual metaphysical relation with nontrivial structure; specify source meaning, a visual correspondence, and a potentially illuminating manipulation; produce a *small research study*, not another polished slideshow. Consolidate reusable conventions only after discovering repeated need.
 
-## Proposed next milestone
+## License and publication
 
-Build three small animations from the same semantics-to-visuals pipeline. Test (1) experience versus awareness, (2) choosing versus having the ability to do otherwise, and (3) cosmic nourishment versus existential grounding. Evaluate intelligibility with people unfamiliar with the ontology before expanding its primitive vocabulary.
-
-## Limitations
-
-Schema/type validation does **not** prove philosophical correctness of a translation. The current 39 predicates are a provisional lexicon, **not** 39 visual primitives. There is no claim of mathematical minimality or demonstrated viewer comprehension.
-
-## License
-
-No license has been selected yet. Do not presume permission to redistribute third-party source texts or imagery. The initial animation is an internally generated reference asset.
+No license is currently selected. Do not presume reuse rights over third-party source texts or media. The repository is public and some project histories include selected user-conversation excerpts; review their publication scope before importing further transcripts or private project material.
