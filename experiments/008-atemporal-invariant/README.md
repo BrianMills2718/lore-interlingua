@@ -1,5 +1,8 @@
 # Experiment 008 — Atemporal invariant calibration
 
+> **Historical/provisional record.** This file retains earlier examples and proposed next steps; current project decisions are in [Project Charter](../../docs/PROJECT_CHARTER.md), [Current State](../../docs/PROJECT_STATUS.md), and [Experiment Registry](../../docs/EXPERIMENT_REGISTRY.md). Do not treat a past "gate" as a program-level stop rule.
+
+
 **Status: first playable probe, NOT a validated visual grammar or proof of metaphysical translation.**
 
 [Open the local interactive construction](index.html) in a browser (after downloading or cloning the repository). It uses only local HTML/CSS/SVG/JavaScript, with no dependencies.
@@ -25,12 +28,12 @@ The prototype draws three color-coded angle wedges and assembles their magnitude
 - This is program correctness, **not a human comprehension result**.
 - No unfamiliar viewers have been tested; no gain versus an equally developed static baseline has been demonstrated.
 
-## Research tasks / success gate
+## Optional diagnostic tasks — original gate superseded
 
 1. Show a viewer the static diagram and the manipulable version, matched for visual clarity.
 2. Ask what changes and what stays invariant; allow an unfamiliar viewer to predict before revealing the sum.
 3. Record whether scrubbing/manipulation prompts an insight that the static visual did not, or whether it merely adds motion and attention cost.
 4. Only then attempt the distinct source-scoped Plotinian **atemporal grounding** case. Do not equate mathematical angle invariance with metaphysical dependence.
-5. Apply the [predeclared go/no-go plan](../../research/atemporal-visual-reasoning-gate.md). Unsuccessful transfer triggers one bounded revision, then a decision to narrow or spike the formal-generative track.
+5. Interpret results as evidence about this **particular construction**. The old benchmark-based kill gate has been withdrawn: see the [revised first-principles appraisal](../../research/atemporal-visual-reasoning-gate.md). Neither successful nor unsuccessful triangle animation decides the viability of visualizing metaphysical concepts.
 
 This prototype is deliberately an *internal mathematical calibration*, not a lore film; the one-coherent-lore requirement governs public lore films, not research instruments.
