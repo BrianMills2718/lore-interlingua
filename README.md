@@ -11,7 +11,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 | Document | Role |
 | --- | --- |
 | **[Project Charter](docs/PROJECT_CHARTER.md)** | Current mission, artistic commitments, semantic boundaries, and project scope |
-| **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [Open interactive atlas](encyclopedia/index.html) | Twelve interconnected concepts, four visual hypotheses to manipulate, and the first complete source-linked Gurdjieff case |
+| **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [Open interactive atlas](encyclopedia/index.html) | Thirteen interconnected concepts, four visual hypotheses to manipulate, and the first complete source-linked Gurdjieff case |
 | **[Current State / Recovery Plan](docs/PROJECT_STATUS.md)** | Findings, gaps, priorities, and next architectural work |
 | **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Status of Experiments 000–009; what was actually produced and learned |
 | [Decision Record](docs/DECISIONS.md) | Retained, revised and superseded project choices |
@@ -23,7 +23,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 ## What exists
 
-- **Visual-semantic encyclopedia:** [Browse 12 concept entries](encyclopedia/index.html), search an ontology-style navigation graph, inspect existing source-scoped claims and experiment with four proposed visual correspondences. It now includes [Gurdjieff Study 009 as a fully annotated applied case](encyclopedia/index.html#case-study), distinguishing depicted claims G02/G03 from contextual claim G04. Data and visual mappings remain provisional, not a new universal ontology.
+- **Visual-semantic encyclopedia:** [Browse 13 concept entries](encyclopedia/index.html), search an ontology-style navigation graph, inspect existing source-scoped claims and experiment with four proposed visual correspondences. It now includes [Gurdjieff Study 009 as a fully annotated applied case](encyclopedia/index.html#case-study), distinguishing depicted claims G02/G03 from contextual claim G04. Data and visual mappings remain provisional, not a new universal ontology.
 - **Interlingua research:** [v0.2 corpus](data/v0.2.json) (29 propositions, 15 declared sorts, 39 typed predicates); [JSON Schema](schemas/v0.2.schema.json), [validator](scripts/validate.py) and [unit tests](tests/test_interlingua.py). The earlier [v0.1](data/v0.1.json) includes 12 examples.
 - **Tradition-specific model:** [Catholic source-scoped world model](research/catholic-world-model/README.md) and [typed JSON](research/catholic-world-model/v0.1.json), with its own structure, independent of the v0.2 interlingua.
 - **Visual work:** [experiment index](docs/EXPERIMENT_REGISTRY.md) links Gurdjieff, Bailey, Manichaeism/Catholicism comparisons, a Catholic visual-thinking workbench, a botanical film, a Trinity–Incarnation animatic, and a mathematical interactive demonstration.
@@ -77,3 +77,7 @@ No license is currently selected. Do not presume reuse rights over third-party s
 ## Experiment 009 — Visual encoding audit
 
 The encyclopedia now includes a [source-anchored interactive audit](encyclopedia/studies/009-encoding-audit.html) of whether outgoing colors/shapes encode distinct cosmic mechanisms or chiefly distinguish types of radiation and their destinations. Use **Current marks**, **Uniform marks**, **Swap symbols**, and **Equalize mark speeds** to inspect which graphic choices are conventional. The [findings](encyclopedia/studies/009-encoding-audit.md) separate G03's source-asserted differences in kind from unsourced differences in speed or physical mechanism. This is a design investigation, **not** a viewer test or general ontology expansion.
+
+## Experiment 010 — The Living Intermediary
+
+The [interactive study](experiments/010-living-intermediary/index.html) explores organic life's mediating role in Gurdjieff's cosmology through bare-ground, grassland and human-gathering conditions. The visual-semantic encyclopedia now includes [Mediation](encyclopedia/index.html) as its thirteenth concept and a second applied case. These are source-scoped artistic experiments, not physical simulations or established universal notation.

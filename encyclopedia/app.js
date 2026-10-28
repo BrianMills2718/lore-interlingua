@@ -8,7 +8,7 @@
   if (!DB?.concepts?.length) throw new Error('Encyclopedia catalog missing');
   const byId = new Map(DB.concepts.map(x => [x.id, x]));
   const $ = id => document.getElementById(id);
-  const S = { selected:'dependence', facet:'all', query:'', mode:'', value:.46, playing:false, demo:'dependence', notes:{}, last:0 };
+  const S = { selected:'mediation', facet:'all', query:'', mode:'', value:.46, playing:false, demo:'dependence', notes:{}, last:0 };
   const facetNames = new Map(DB.facets.map(f => [f.id,f.label]));
   const canvas=$('demo'), ctx=canvas.getContext('2d');
   const W=canvas.width,H=canvas.height;
@@ -122,7 +122,7 @@
   }
   function renderControls(){
     const c=byId.get(S.selected),lab=S.demo;
-    $('lab-context').textContent=(c.label+' · '+labNames[lab]+'. '+(c.id===lab?'Dedicated study. ':'Shared study, not a dedicated encoding. ')+labCautions[lab]);
+    $('lab-context').textContent=c.id==='mediation'?'Mediation · This neighboring grounding/transfer sketch is NOT a dedicated encoding. Open applied case 010 below for a source-bound study of the living intermediary.':(c.label+' · '+labNames[lab]+'. '+(c.id===lab?'Dedicated study. ':'Shared study, not a dedicated encoding. ')+labCautions[lab]);
     const root=$('demo-controls');root.replaceChildren();
     for(const [id,label] of labModes[lab]){
       const b=E('button','secondary',label);b.type='button';b.setAttribute('aria-pressed',String(S.mode===id));
@@ -230,7 +230,7 @@
     catch{ $('note').value=message;$('note').select();$('note-status').textContent='Clipboard unavailable: select and copy the prepared note manually.'; }
   };
   $('total-count').textContent=DB.concepts.length;
-  renderFacets();choose('dependence');window.requestAnimationFrame(raf);
+  renderFacets();choose('mediation');window.requestAnimationFrame(raf);
   // Stable read-only entry point used by automation / smoke tests.
   window.__encyclopedia={select:id=>choose(id), state:()=>({selected:S.selected,facet:S.facet,demo:S.demo,mode:S.mode,value:S.value}), catalog:DB};
 })();

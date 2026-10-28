@@ -53,7 +53,7 @@ class AppliedCaseTests(unittest.TestCase):
                 self.assertIn(rel['id'],self.by_id)
                 self.assertIn(rel['claim_id'],{x['id'] for x in case['claims']})
                 self.assertTrue(rel['role'] and rel['why'])
-        self.assertEqual(len(self.atlas['concepts']),12)
+        self.assertEqual(len(self.atlas['concepts']),13)
         self.assertNotIn('concepts',self.data)
 
     def test_each_major_mark_has_a_role_and_nonclaim(self):
@@ -69,8 +69,8 @@ class AppliedCaseTests(unittest.TestCase):
                     self.assertEqual(mark['referent'].split()[0],'none')
                 # The illustrated lunar stream is NOT proof of the stronger maintenance claim.
                 self.assertNotIn('G04',mark['claim_ids'])
-            self.assertEqual({x['id'] for x in c['claims'] if x['status']=='depicted'},
-                             {'G02','G03'})
+            expected={'G02','G03'} if c['id'].startswith('gurdjieff-009') else {'G02'}
+            self.assertEqual({x['id'] for x in c['claims'] if x['status']=='depicted'},expected)
 
     def test_interactive_scene_and_local_links(self):
         for c in self.data['cases']:
@@ -80,13 +80,15 @@ class AppliedCaseTests(unittest.TestCase):
             # Documentation stays canonical in the main repository; the offline
             # study bundle does not duplicate narrative/source review files.
             for key in ['primary_treatment','scene_contract','narration_audit','parsimony_audit']:
+                experiment='009-cosmic-membrane' if '009' in c['id'] else '010-living-intermediary'
                 self.assertTrue(c['artifact'][key].startswith(
-                    'https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/'))
+                    'https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/'+experiment+'/'))
         page=(ROOT/'encyclopedia/index.html').read_text(encoding='utf8')
         for target in ['cases.js','cases-ui.js','id="case-study"','id="case-scene"','id="case-marks"']:
             self.assertIn(target,page)
         ui=(ROOT/'encyclopedia/cases-ui.js').read_text(encoding='utf8')
         self.assertIn('No marks in this scene independently depict this stronger claim.',ui)
+        self.assertIn('case-picker',ui)
         self.assertNotIn('innerHTML',ui)
 
     def test_generated_offline_mirror(self):

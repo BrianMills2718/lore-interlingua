@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "Curated case records are source-scoped visual studies, not a general ontology or validated notation.",
   "principles": [
     "Every case must cite existing source claims and give each prominent mark an intentional role or explicit ornamental status.",
@@ -370,6 +370,300 @@
         "Do three differently colored outgoing mark families communicate distinct kinds of radiations, or merely three destinations?",
         "Which decorative forms enhance recognition without implying unexplained cosmic principles?",
         "Does changing destination-linked glyphs alter any represented mechanism, or merely relabel the distinct recipient requirements? See the encoding audit."
+      ]
+    },
+    {
+      "id": "gurdjieff-010-living-intermediary",
+      "title": "The Living Intermediary — organic reception",
+      "subtitle": "Interactive source-anchored visual thinking study · Gurdjieff via Ouspensky",
+      "tradition": "gurdjieff",
+      "status": "illustrative counterfactuals; artistic response profiles are hypotheses, not physical cosmology",
+      "summary": "The same ground and planetary environment persist while the apparent organic intermediary is absent, grassy, or occupied by people. Differentiated reception and Earth response make the role of the intermediary visible rather than only displaying a stream between objects.",
+      "scope": "One passage about planetary influences received through organic life. Bare ground is an illustrative control condition; grassland and gathering are contrasted at the same field. This case does not portray radiations back toward Sun/planets/Moon or Gurdjieff’s complete Ray of Creation.",
+      "source_documents": [
+        {
+          "id": "ouspensky-organic-life",
+          "label": "Ouspensky, In Search of the Miraculous — organic life passage",
+          "locator": "Chapter 7 in many editions (edition-dependent): sensitive film, planetary influences, grass field and human gathering.",
+          "url": "https://www.gurdjieff-hawaii.org/?page_id=160",
+          "status": "textual witness to teaching; not a measurement of planetary energy"
+        },
+        {
+          "id": "interlingua-claims",
+          "label": "Interlingua v0.2 G02",
+          "locator": "data/v0.2.json / claim G02",
+          "url": "https://github.com/BrianMills2718/lore-interlingua/blob/main/data/v0.2.json",
+          "status": "scoped editorial proposition"
+        }
+      ],
+      "source_observation": {
+        "id": "OUSP-SENSITIVE-FIELD",
+        "status": "additional passage-specific distinction (not an extra v0.2 predicate)",
+        "statement": "The same field receives and transmits planetary influences of different kinds when covered with grass or occupied by a crowd of people. Organic life is the intermediary that makes planetary influences accessible to Earth."
+      },
+      "claims": [
+        {
+          "id": "G02",
+          "status": "depicted",
+          "statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+          "relation": "planetary sphere → living intermediary → terrestrial recipient",
+          "reading": "In the grass and gathering conditions, incoming illustrative influences trigger response at the living layer and a distinct following response within Earth. In the bare control there is no living mediator and no earthly transmission.",
+          "not_shown": "The text does not specify exact influence categories, material mechanisms, quantitative filtering, wave speed, or a scientific causal model."
+        }
+      ],
+      "subjects": [
+        {
+          "id": "planetary_world",
+          "label": "Planetary sphere",
+          "role": "source of influences",
+          "picture": "multiple celestial disks above a persistent field",
+          "claim_ids": [
+            "G02"
+          ]
+        },
+        {
+          "id": "earth",
+          "label": "Earth",
+          "role": "recipient via organic life",
+          "picture": "the same layered terrestrial ground in all modes",
+          "claim_ids": [
+            "G02"
+          ]
+        },
+        {
+          "id": "grass",
+          "label": "Grassland",
+          "role": "vegetable living receiver and mediator (one illustrative kind)",
+          "picture": "recognizable grass blades and brief localized luminous reception",
+          "claim_ids": [
+            "G02"
+          ]
+        },
+        {
+          "id": "people",
+          "label": "Human gathering",
+          "role": "human living receiver and mediator (another illustrative kind)",
+          "picture": "recognizable persons occupying the same field",
+          "claim_ids": [
+            "G02"
+          ]
+        }
+      ],
+      "marks": [
+        {
+          "id": "planetary_bodies",
+          "label": "Planetary bodies",
+          "symbol": "◉",
+          "color": "#a5c9c4",
+          "kind": "iconic",
+          "referent": "planetary sphere",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Plural celestial sources stay visible across all three conditions.",
+          "why": "Identifies the source class rather than a disembodied packet origin.",
+          "does_not_assert": "Exactly three planets, astronomical distances, or a fixed three-part cosmological taxonomy.",
+          "visibility": "shown"
+        },
+        {
+          "id": "terrain",
+          "label": "Terrestrial surface and cross-section",
+          "symbol": "▰",
+          "color": "#4b877c",
+          "kind": "iconic",
+          "referent": "Earth",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "The same Earth region remains present while only its intermediary condition changes.",
+          "why": "Distinguishes Earth as the recipient from organic life as an intermediary.",
+          "does_not_assert": "The cross-section layers are specific geological strata or a true spatial profile of cosmic influence.",
+          "visibility": "shown"
+        },
+        {
+          "id": "channel_a",
+          "label": "Illustrative influence A",
+          "symbol": "●",
+          "color": "#74e4d1",
+          "kind": "relation in motion",
+          "referent": "one invented example of planetary influence",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Cyan motes are received by the grassy intermediary in the comparison.",
+          "why": "Makes the passage’s claimed selectivity perceptible when the condition changes.",
+          "does_not_assert": "An actual named wave or fixed grass-sensitive cosmic particle.",
+          "visibility": "shown; faint when not selected"
+        },
+        {
+          "id": "channel_b",
+          "label": "Illustrative influence B",
+          "symbol": "○",
+          "color": "#d9b1ff",
+          "kind": "relation in motion",
+          "referent": "another invented example of planetary influence",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Violet ring marks are received by the people condition instead of the grassland.",
+          "why": "Makes a difference of received kind apparent without proposing a physical mechanism.",
+          "does_not_assert": "A unique human-sensitive cosmic particle or a source-specified violet radiation.",
+          "visibility": "shown; faint when not selected"
+        },
+        {
+          "id": "grass_icon",
+          "label": "Grass stems",
+          "symbol": "♧",
+          "color": "#a4d99a",
+          "kind": "iconic",
+          "referent": "vegetable organic life",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Grass is a recognizable example of a living intermediary named in the source.",
+          "why": "Prevents the mediator from becoming a generic circle or network.",
+          "does_not_assert": "Every organism behaves like grass or that specific blades are cosmic receivers.",
+          "visibility": "grassland only"
+        },
+        {
+          "id": "people_icons",
+          "label": "Human figures",
+          "symbol": "♟",
+          "color": "#d6bca4",
+          "kind": "iconic",
+          "referent": "people in a gathering",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "People visibly replace grass in the same geographic region.",
+          "why": "The passage specifically contrasts grass with a crowd at the same location.",
+          "does_not_assert": "Any empirical claim about the measured effect of a group of humans.",
+          "visibility": "gathering only"
+        },
+        {
+          "id": "local_response",
+          "label": "Brief surface response",
+          "symbol": "✧",
+          "color": "#74e4d1",
+          "kind": "selected metaphor",
+          "referent": "reception by the living intermediary",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "A local surface glow accompanies the received influence rather than the planet’s mere presence.",
+          "why": "Provides evidence of the mediator’s active role in the illustrated relation.",
+          "does_not_assert": "Actual physiology, metaphysical energy measurement, or quantified receptivity.",
+          "visibility": "grass or gathering, with different visual signatures"
+        },
+        {
+          "id": "earth_response",
+          "label": "Transient Earth response",
+          "symbol": "◎",
+          "color": "#b8e8a1",
+          "kind": "relation in motion",
+          "referent": "transmission of influence toward Earth",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "After reception, a new luminous wave advances into the Earth section. No such wave appears in the bare control.",
+          "why": "Distinguishes arrival at organic life from onward mediation to Earth.",
+          "does_not_assert": "A measured physical conduit, conserved energy packet, or specific input–output equation.",
+          "visibility": "only with living intermediary"
+        },
+        {
+          "id": "bare_condition",
+          "label": "Bare ground control",
+          "symbol": "—",
+          "color": "#9caeac",
+          "kind": "study-only control",
+          "referent": "hypothetical absence of organic life",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Switching off the living intermediary removes the visually mediated Earth response.",
+          "why": "Shows which role is attributed to organic life through a controlled illustration.",
+          "does_not_assert": "A historical era of lifeless Earth or empirical claim that planetary forces could not otherwise physically act.",
+          "visibility": "user-selected counterfactual"
+        },
+        {
+          "id": "stars",
+          "label": "Background stars and terrain texture",
+          "symbol": "✦",
+          "color": "#98b8bc",
+          "kind": "ornament",
+          "referent": "none — visual context and depth",
+          "claim_ids": [],
+          "mapping": "Celestial and terrestrial context for a single persistent view.",
+          "why": "Separates realms and helps orient a first-time viewer.",
+          "does_not_assert": "A source-derived star chart, cosmic hierarchy, or encoded causal variable.",
+          "visibility": "shown"
+        }
+      ],
+      "related_concepts": [
+        {
+          "id": "mediation",
+          "role": "principal concept",
+          "claim_id": "G02",
+          "why": "The living intermediary enables and differentiates the transmission from planetary sphere to Earth."
+        },
+        {
+          "id": "process",
+          "role": "depicted",
+          "claim_id": "G02",
+          "why": "Reception and following Earth response are represented as distinct phases of the selected analogy."
+        },
+        {
+          "id": "causation",
+          "role": "interpretive caution",
+          "claim_id": "G02",
+          "why": "A cinematic response should not be read as measured physical causation."
+        },
+        {
+          "id": "participation",
+          "role": "depicted",
+          "claim_id": "G02",
+          "why": "Living beings actively participate in the world model."
+        },
+        {
+          "id": "transformation",
+          "role": "hypothesis",
+          "claim_id": "G02",
+          "why": "The exact transformation, if any, is not specified by the source passage; only differentiated mediation is."
+        },
+        {
+          "id": "identity",
+          "role": "preserved",
+          "claim_id": "G02",
+          "why": "The field and Earth retain identity when only its depicted living occupation changes."
+        },
+        {
+          "id": "time",
+          "role": "presentation caution",
+          "claim_id": "G02",
+          "why": "Switching conditions is exploration, not a chronological claim about Gurdjieff’s cosmos."
+        }
+      ],
+      "artifact": {
+        "html": "../experiments/010-living-intermediary/index.html",
+        "primary_treatment": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/010-living-intermediary/README.md",
+        "scene_contract": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/010-living-intermediary/scene-contract.json",
+        "narration_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/010-living-intermediary/README.md",
+        "parsimony_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/010-living-intermediary/scene-contract.json",
+        "local_preview_status": "HTML interaction is the canonical study; no polished film or synthetic voice is supplied.",
+        "limitations": "User-selected conditions do not create alternative theological worldviews; they are an investigative comparison of the source’s asserted relation."
+      },
+      "decisions": [
+        "Built one persistent environment; changing its living state is an exploratory operation rather than a chronological slideshow.",
+        "Made reception by grass and a crowd visibly different without assigning empirical properties to cosmic influence kinds.",
+        "Used bare Earth as an explicit counterfactual: no mediator, no illustrated Earth response.",
+        "Made Earth response follow reception without drawing permanent pipes or a false energy-conservation law.",
+        "Kept decorative stars and terrestrial bands unassigned to cosmological hierarchy."
+      ],
+      "open_questions": [
+        "Does the same-frame comparison actually help viewers recognize mediation, or does the verbal explanation still do most of the work?",
+        "What would constitute a deeper visual relation than merely selecting one of two illustrative categories?",
+        "Can a visually useful notion of mediation transfer to other worldviews without reducing it to physical filtering?",
+        "Can more faithful representations of vegetation and human activity carry the distinction without multiplying unsupported mechanism details?"
       ]
     }
   ]

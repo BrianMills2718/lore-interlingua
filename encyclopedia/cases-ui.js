@@ -10,7 +10,7 @@
   }
   const $ = id => document.getElementById(id);
   const byId = new Map(DB.cases.map(c => [c.id, c]));
-  const chosen = {caseId: DB.cases[0].id, claimId:'G02', sceneLoaded:false};
+  const chosen = {caseId: DB.cases[DB.cases.length-1].id, claimId:'all', sceneLoaded:false};
   const node = (tag,cl,txt) => {
     const e = document.createElement(tag);
     if(cl)e.className = cl;
@@ -27,10 +27,19 @@
     const c=byId.get(id);
     if(claimId && c.claims.some(x=>x.id===claimId))chosen.claimId=claimId;
     else if(changed)chosen.claimId='all';
+    if(changed) { const frame=$('case-scene'); frame.removeAttribute('src'); $('case-frame-box').hidden=true; chosen.sceneLoaded=false; }
     renderCase();
     if(scroll) $('case-study').scrollIntoView({behavior:'smooth',block:'start'});
   }
 
+  function renderCasePicker(){
+    const root=$('case-picker'); root.replaceChildren();
+    for(const c of DB.cases){
+      const button=add(root,node('button','case-filter'+(chosen.caseId===c.id?' active':''),c.id.includes('010')?'010 · Living intermediary':'009 · Cosmic membrane'));
+      button.type='button'; button.setAttribute('aria-pressed',String(chosen.caseId===c.id));
+      button.onclick=()=>openCase(c.id,null,{scroll:false});
+    }
+  }
   function renderConceptCaseLinks(id) {
     const detail=$('entry-body');
     const old=detail.querySelector('[data-case-links]');
@@ -113,7 +122,10 @@
   }
   function renderCase(){
     const c=byId.get(chosen.caseId);
+    renderCasePicker();
     $('case-title').textContent=c.title;
+    $('case-id-label').textContent=c.id.includes('010')?'Case 010 · Source linked':'Case 009 · Source linked';
+    const so=$('case-source-observation'); so.textContent=c.source_observation?('Source-passage detail: '+c.source_observation.statement):''; so.hidden=!c.source_observation;
     $('case-subtitle').textContent=c.subtitle;
     $('case-overview').textContent=c.summary;
     $('case-scope').textContent=c.scope;
@@ -122,9 +134,10 @@
     renderClaimButtons(c);renderClaimDetails(c);renderMarks(c);
     const docs=$('case-doc-links');docs.replaceChildren();
     if(c.artifact.encoding_audit) link(docs,'Inspect mark semantics · interactive audit',c.artifact.encoding_audit);
-    link(docs,'Read original study',c.artifact.html);
-    link(docs,'Narration and symbol audit',c.artifact.narration_audit);
-    link(docs,'Parsimony corrections',c.artifact.parsimony_audit);
+    link(docs,'Open interactive study',c.artifact.html);
+    if(c.artifact.primary_treatment)link(docs,'Read study notes',c.artifact.primary_treatment);
+    if(c.artifact.scene_contract)link(docs,'Visual semantics contract',c.artifact.scene_contract);
+    if(c.id.includes('009')){link(docs,'Narration and symbol audit',c.artifact.narration_audit);link(docs,'Parsimony corrections',c.artifact.parsimony_audit);}
     const s=$('case-sources');s.replaceChildren();
     for(const src of c.source_documents){
       const row=add(s,node('div','case-source-item'));
@@ -144,7 +157,8 @@
     $('case-frame-box').hidden=false;
     chosen.sceneLoaded=true;
     load.textContent='Reload interactive scene';
-    $('case-scene-status').textContent='Interactive Gurdjieff scene loaded with subtitles; diagnostic paths and technical key remain optional inside the scene.';
+    $('case-scene').setAttribute('title',c.title+' — interactive study');
+    $('case-scene-status').textContent=c.id.includes('010')?'Exploratory surface comparison loaded. The switch changes the modeled condition, not cosmological history.':'Interactive cosmic membrane scene loaded; diagnostic paths and key are optional.';
   });
   $('copy-case-note').addEventListener('click',async()=>{
     const c=byId.get(chosen.caseId);
