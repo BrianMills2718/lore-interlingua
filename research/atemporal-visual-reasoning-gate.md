@@ -4,8 +4,10 @@
 
 ## Decision problem: five distinct questions
 
+**Correction:** The earlier framing wrongly elevated the ordinary fact that static or animated symbols can represent atemporal relations into a feasibility question. This version explicitly treats that fact as settled and concentrates on fidelity, composition, reasoning, and practical development.
+
 1. **Conceptual coherence:** Can we describe the intended capability without contradiction? What would count as representation, manipulation, and discovery? Do we require complete translation of every metaphysical concept (probably untenable), or useful selective representations?
-2. **Possibility in principle:** Can symbols, spatial relations, motion, text, and interaction convey timeless as well as temporal distinctions? Can exploration of a representation reveal properties without falsely asserting that the represented world changes? A constructive instance establishes **local possibility**, not universal expressive adequacy.
+2. **Expressive adequacy:** Visual and symbolic representations of atemporal relationships already exist. Which *specific* metaphysical distinctions can our vocabulary convey faithfully, intuitively, artistically, and with useful compositional structure? What is lost or distorted in translation?
 3. **Tractability:** Can the capability be decomposed into learnable and buildable subproblems using existing ideas and tools? What are the hard unknowns: conceptual translation, visual semantics, aesthetic direction, formal manipulation, and user interpretation?
 4. **Path / intellectual leverage:** Is there a sequence of work in which solving one problem unlocks the next, with discoveries carried forward into a reusable vocabulary? Does any abstraction do useful work rather than becoming a second project?
 5. **Value:** Would a partial system—supporting visual thought, artistic investigation and communication in some domains—be worthwhile? Value is a goal-relative judgment, not a theorem or a score fixed by a benchmark.
@@ -14,13 +16,13 @@
 
 ## First-principles reasoning
 
-### A. Atemporal subject matter poses no inherent contradiction to dynamic representation
+### A. Atemporal relationships are already representable; the question is how well
 
 Separate **domain time** (whether the depicted reality itself changes), **presentation time** (the order in which we encounter the representation), and **manipulation time** (the order in which we modify a representation, instance, or viewpoint).
 
-An unchanged relationship can be revealed progressively or explored by moving a representation. This does not require assigning a time coordinate to the underlying relationship.
+Static diagrams, written symbols, and art already represent atemporal ideas. A film may reveal the representation in stages or allow it to be manipulated without making the represented relationship temporal. This is established representational practice, **not a capability awaiting a feasibility demonstration**.
 
-**Constructive example:** In Euclidean geometry, deforming a valid triangle changes its angles but preserves their sum. The movement is in a sequence of *instances inspected*, not a history of the theorem becoming true. This shows one instance of the needed distinction, not that Catholic eternity or Plotinian dependence is equivalent to geometry.
+**Established example:** In Euclidean geometry, deforming a valid triangle changes its angles while preserving their sum. This illustrates the distinction between exploration and the depicted mathematical relationship. It should **not** be used to establish that timeless concepts can be depicted, since that proposition was never in doubt, or to suggest that Catholic eternity or Plotinian dependence is equivalent to geometry.
 
 ### B. Representation and reasoning are already separable
 
@@ -41,13 +43,13 @@ The project may succeed with a partial, artistically directed, multimodal medium
 
 Use proven or plausible building blocks: conceptual source modeling; compositional diagrams; traditional iconography and metaphor; temporal visual notation; typed identities/relations; interactive manipulation; a disciplined research log.
 
-**Critical uncertainty:** The cross-domain translation layer may fail to preserve distinctions while producing communicatively useful visuals. We do not currently possess a demonstrated general semantic compiler, and examples from mathematics do not settle that problem.
+**Actual open difficulty:** A reusable cross-domain visual vocabulary may not preserve complex conceptual distinctions, support meaningful operations, and produce compelling works without substantial tradition-specific interpretation. We do not have a demonstrated general semantic compiler. This—not the possibility of visualizing timeless relations—is the architectural question.
 
 ## Decision rubric — assessed by argument, not scores
 
 | Question | Present assessment | What could change the assessment |
 | --- | --- | --- |
-| Is it coherent to depict atemporal relationships dynamically? | **Yes in principle** if domain time and presentation/manipulation time are separated. | A requirement that insists all animation depicts actual physical/historical change would contradict this, but that is not our goal. |
+| Can existing representations depict atemporal relationships? | **Yes. Settled.** Static notation, diagrams, iconography, and staged reveal already do so. | Not a project viability gate. The open work concerns expressive richness, precision, artistic integration, and manipulation of such representations. |
 | Is some visual reasoning possible? | **Yes for some domains**, as illustrated by standard geometric/diagrammatic constructions. | An argument showing our exact desired class of semantics cannot be mapped meaningfully; no such argument exists. |
 | Can we encompass all metaphysical lore faithfully and intuitively? | **No established justification.** Treat as an open, probably overbroad aspiration. | A rigorous compositional translation framework and many independent cases could improve confidence, never prove unbounded universality. |
 | Is there a meaningful partial architecture? | **Yes, provisional:** source lore → explicit conceptual relations → artistic visual construction ↔ manipulation → questions/insights → source/model revision. | Discovering that each stage necessarily erases distinctions essential to the next would require major revision. |
@@ -59,7 +61,7 @@ Use proven or plausible building blocks: conceptual source modeling; composition
 
 **Step 1 — specify a minimal distinction, not a complete cosmology:** an entity's identity, its relationship to another, and whether that relationship is temporal, persistent, or atemporal. Do not assume these are all geometrically the same.
 
-**Step 2 — use a constructive exemplar:** e.g., the existing triangle invariant pilot `experiments/008-atemporal-invariant`. Ask what it *demonstrates logically* about the distinction between changing instances and invariant claims, and what it does not show about metaphysics. The current construction is sufficient as a calibration artifact; further benchmark work is optional.
+**Step 2 — use an existing illustrative technique:** e.g., the triangle pilot `experiments/008-atemporal-invariant`, only as one example of manipulating representations of a fixed relationship. Do **not** treat this as a proof-of-possibility gate or assume it is the right foundation for metaphysical imagery. Further benchmarking is optional and diagnostic.
 
 **Step 3 — translate one metaphysical case:** an explicitly scoped passage from Plotinus or Catholic theology with an atemporal relationship. Specify the tradition's interpretation and where any analogical visual convention is selective, not literal.
 
