@@ -41,6 +41,7 @@
     S.demo=byId.get(id).demo_id||'dependence';S.mode=labModes[S.demo][0][0];
     $('note-status').textContent='';
     renderList();renderGraph();renderEntry();renderControls();drawDemo();
+    window.dispatchEvent(new CustomEvent("encyclopedia:select",{detail:{id}}));
     if(focus)$('entry-heading').focus({preventScroll:true});
   }
   function renderFacets(){
