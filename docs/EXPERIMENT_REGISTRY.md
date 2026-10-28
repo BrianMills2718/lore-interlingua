@@ -1,6 +1,6 @@
 # Experiment Registry — What exists, and what it establishes
 
-**Updated:** 2026-10-27. This is the current status index. Individual experiment READMEs retain original plans, some since superseded. Keep artifacts for critique and provenance rather than rewriting the history to pretend they met later requirements.
+**Updated:** 2026-10-28. This is the current status index. Individual experiment READMEs retain original plans, some since superseded. Keep artifacts for critique and provenance rather than rewriting the history to pretend they met later requirements.
 
 | ID | Subject | Artifact in repository | Status / observed lesson | What remains **unproven** |
 | --- | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 | 007 | Catholic Trinity/Incarnation | [Interactive animatic, preview, contract](../experiments/007-trinity-incarnation/README.md) | Central doctrine identified; depiction still reads as animated slide sequence; identity/person–nature ambiguity | Useful independent visual manipulation; evocative language |
 | 008 | Euclidean angle invariant | [Interactive triangle](../experiments/008-atemporal-invariant/README.md) | Elementary demonstration that an invariant survives variation of a represented instance; controls and numeric checks run | Any need for a feasibility proof of atemporality (**not an open question**), metaphysical transfer, audience benefit |
 
-**Cross-experiment result:** No proposed general visual-grammar rule has been promoted as independently established, and no finished film was generated automatically from the shared interlingua. These are **research and artistic prototypes**, not eight completed milestones toward a verified visual compiler.
+| 009 | Gurdjieff’s organic-life cosmic membrane | [Continuous interactive study](../experiments/009-cosmic-membrane/index.html) · [source-linked encyclopedia case](../encyclopedia/index.html#case-study) | A persistent cosmic system with explicit symbolic casting, parsimony corrections, and a separate mark-by-mark research dictionary | Whether outbound forms convey different *processes* rather than merely destinations; audience comprehension; any general compiler |\n\n**Cross-experiment result:** No proposed general visual-grammar rule has been promoted as independently established, and no finished film was generated automatically from the shared interlingua. These are **research and artistic prototypes**, not nine independently validated milestones toward a verified visual compiler.
 
 ## Main questions actually learned
 

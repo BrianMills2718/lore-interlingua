@@ -70,3 +70,23 @@ A **visual candidate** declares an intended mapping, important things it *does n
 - No viewer comprehension study has established that these sketches communicate the intended meaning to new viewers.
 
 **Recommended next step:** add one **fully cast, tradition-specific visual scene** (e.g., Gurdjieff's organic-life mediation, which already exists as [Experiment 009](../experiments/009-cosmic-membrane/)) as an **embedded encyclopedia case**, linking its major marks, behaviors, source claims, and alternative art directions. Do not fabricate a generic renderer or hundreds of empty entries.
+
+## Applied lore case 009 — Organic life as Earth’s cosmic membrane
+
+The encyclopedia now has a **separate source-linked case library**: [`cases.json`](cases.json) is its editable record, [`cases.js`](cases.js) is the generated offline mirror, and [`cases-ui.js`](cases-ui.js) renders it beside the twelve existing concepts. No second upper ontology was invented, and the interlingua corpus remains canonical for the claim statements.
+
+The first case ties **G02** (planetary mediation) and **G03** (differentiated radiation) to the animated marks of [Experiment 009](../experiments/009-cosmic-membrane/index.html). **G04** (the Moon’s nourishment) is explicitly **context only**: showing a moonward stream does not by itself depict that the Moon is maintained by it. This distinction matters more than merely collecting an attractive animation.
+
+Use the **All visual marks / G02 / G03 / G04** selectors to inspect the mapping for every prominent visual element, including nonsemantic ornament and hidden diagnostic paths. The atlas links each of the relevant conceptual entries to the applied case, and clicking a case concept jumps back to its encyclopedia entry. The scene itself loads only on request, preserving its original interactive controls and source-specific captions. The shipped case HTML works offline; deeper source audits link to their canonical GitHub files and require an internet connection to open.
+
+The **Research key** inside Experiment 009 is an optional diagnostic aid and is deliberately not a permanent film legend. This encyclopedia offers an extended semantic dictionary outside the audience-facing film, where it belongs.
+
+To regenerate the independent case library's offline mirror:
+
+```bash
+python scripts/build_encyclopedia_cases.py
+python scripts/build_encyclopedia_cases.py --check
+python -m unittest discover -s tests -p 'test_encyclopedia_cases.py' -v
+```
+
+The atlas remains provisional: no viewer comprehension study, formally validated cross-tradition notation, or generic semantic-to-film compiler has been produced. Source claims are paraphrases scoped to Gurdjieff via Ouspensky. The third-party Gnostic reference film is **not** copied into this library.

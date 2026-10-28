@@ -1,0 +1,374 @@
+{
+  "version": "0.1.0",
+  "status": "Curated case records are source-scoped visual studies, not a general ontology or validated notation.",
+  "principles": [
+    "Every case must cite existing source claims and give each prominent mark an intentional role or explicit ornamental status.",
+    "An associated concept is not a logical implication or a doctrinal equivalence.",
+    "Do not call a contextual source claim depicted unless the scene actually expresses its additional content."
+  ],
+  "cases": [
+    {
+      "id": "gurdjieff-009-organic-membrane",
+      "title": "Organic life as Earth’s cosmic membrane",
+      "subtitle": "A source-anchored visual development study · Gurdjieff via P. D. Ouspensky",
+      "tradition": "gurdjieff",
+      "status": "provisional artistic study — not an endorsed astronomical model or validated notation",
+      "summary": "Organic life is pictured as the receptive and radiating intermediary between planetary influences, the Earth, and distinct cosmic recipients. The visual field persists while reciprocal processes run concurrently.",
+      "scope": "A narrowly scoped account of organic life as Earth’s organ of reception and radiation, not Gurdjieff’s complete Ray of Creation, doctrine of laws, or a scientific physical process.",
+      "source_documents": [
+        {
+          "id": "ouspensky-organic-life",
+          "label": "P. D. Ouspensky, In Search of the Miraculous — organic life passages",
+          "locator": "Discussion of organic life as Earth’s organ of perception and radiation, including planetary influences and differentiated radiations. Edition locators can vary.",
+          "url": "https://www.gurdjieff-hawaii.org/?page_id=160",
+          "status": "textual witness attributed to Ouspensky, not independently verified physics"
+        },
+        {
+          "id": "interlingua-claims",
+          "label": "Lore Interlingua v0.2 — G02, G03 and G04",
+          "locator": "data/v0.2.json / claims[].id",
+          "url": "https://github.com/BrianMills2718/lore-interlingua/blob/main/data/v0.2.json",
+          "status": "editorial paraphrases of the Gurdjieff account"
+        }
+      ],
+      "claims": [
+        {
+          "id": "G02",
+          "status": "depicted",
+          "statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+          "relation": "planetary world → organic life → Earth",
+          "reading": "Cyan incoming marks reach the living envelope; distinct pale-green marks move inward to Earth. This illustrates mediation, not a measured conversion process.",
+          "not_shown": "The precise mechanism, physical quantities, and identities of particular cosmic influences are not specified here."
+        },
+        {
+          "id": "G03",
+          "status": "depicted",
+          "statement": "Organic life emits differentiated radiations toward Sun, planets, and Moon; their requirements differ.",
+          "relation": "organic life → Sun / planets / Moon (distinct categories)",
+          "reading": "Purple squares, blue rings, and gold dots depict visually different outgoing streams. The choice of shapes and colors is invented; only differentiation and the recipient classes are source-scoped.",
+          "not_shown": "There is no sourced taxonomy specifying three exclusive physical particle types or their exact conversion ratios."
+        },
+        {
+          "id": "G04",
+          "status": "context only — not depicted",
+          "statement": "The Moon is maintained by energies associated with terrestrial organic life.",
+          "relation": "organic life → Moon (cosmic support in the larger account)",
+          "reading": "The Moon is shown receiving a stream, but the scene does not show that its condition or ongoing existence is maintained by that stream. Treat the stronger claim as contextual research, not something this film demonstrates.",
+          "not_shown": "No lunar response, maintenance dependency, or counterfactual change is drawn, so the animation does not itself communicate nourishment or existential dependence."
+        }
+      ],
+      "subjects": [
+        {
+          "id": "earth",
+          "label": "Earth",
+          "role": "planetary recipient and host of life",
+          "picture": "textured blue-green globe",
+          "claim_ids": [
+            "G02"
+          ]
+        },
+        {
+          "id": "organic_life",
+          "label": "Organic life",
+          "role": "diverse living intermediary, receptive and radiating",
+          "picture": "branched envelope around Earth",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ]
+        },
+        {
+          "id": "planetary_world",
+          "label": "Planetary world",
+          "role": "plural input sources and outgoing recipient class",
+          "picture": "multiple distinct small celestial bodies",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ]
+        },
+        {
+          "id": "sun",
+          "label": "Sun",
+          "role": "distinct recipient of radiation in this selected relation",
+          "picture": "golden celestial globe",
+          "claim_ids": [
+            "G03"
+          ]
+        },
+        {
+          "id": "moon",
+          "label": "Moon",
+          "role": "distinct recipient; nourishment only contextual",
+          "picture": "pale textured globe",
+          "claim_ids": [
+            "G03",
+            "G04"
+          ]
+        }
+      ],
+      "marks": [
+        {
+          "id": "earth_globe",
+          "label": "Earth globe",
+          "symbol": "◉",
+          "color": "#69b4ba",
+          "kind": "iconic",
+          "referent": "Earth",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "The material Earth is the endpoint of the mediated inward influence.",
+          "why": "Without the Earth, the recipient of the influence would not be identifiable.",
+          "does_not_assert": "This is not a map of measured geography or a cosmological scale diagram.",
+          "visibility": "shown"
+        },
+        {
+          "id": "living_envelope",
+          "label": "Branching living envelope",
+          "symbol": "✳",
+          "color": "#8dd8b6",
+          "kind": "iconic + metaphor",
+          "referent": "organic life",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ],
+          "mapping": "A diverse receptive surface around Earth also becomes the source of outgoing radiations.",
+          "why": "This is the central mediating subject; deleting it destroys the scene’s principal claim.",
+          "does_not_assert": "Life is not literally one continuous shell made of identical glowing branches.",
+          "visibility": "shown"
+        },
+        {
+          "id": "planetary_sources",
+          "label": "Small planetary bodies",
+          "symbol": "●",
+          "color": "#90c8c6",
+          "kind": "iconic",
+          "referent": "planetary world",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ],
+          "mapping": "Plural planetary influences have recognizable celestial origins and recipients.",
+          "why": "Removing these would conceal the plural source class.",
+          "does_not_assert": "Exactly three planets or exactly three incoming influences.",
+          "visibility": "shown"
+        },
+        {
+          "id": "incoming",
+          "label": "Cyan inbound motes",
+          "symbol": "●",
+          "color": "#77e2d7",
+          "kind": "relation in motion",
+          "referent": "influences from the planetary world",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Movement from the planetary bodies to organic life depicts reception.",
+          "why": "Provides directional information, making a route line unnecessary.",
+          "does_not_assert": "Physical particles, measured fluxes, literal orbital trajectories, or a fixed number of influences.",
+          "visibility": "shown"
+        },
+        {
+          "id": "mediation",
+          "label": "Pale-green inward motes",
+          "symbol": "●",
+          "color": "#c5eaba",
+          "kind": "relation in motion",
+          "referent": "influences mediated to Earth by organic life",
+          "claim_ids": [
+            "G02"
+          ],
+          "mapping": "Movement begins at the living envelope and proceeds toward Earth, distinguished from reception.",
+          "why": "Separates the envelope’s receiving role from its onward terrestrial role.",
+          "does_not_assert": "A proven biological transducer, conservation equation, or a particular chemical mechanism.",
+          "visibility": "shown"
+        },
+        {
+          "id": "moon_radiation",
+          "label": "Gold dots toward Moon",
+          "symbol": "●",
+          "color": "#edc690",
+          "kind": "relation in motion",
+          "referent": "moon-directed radiation",
+          "claim_ids": [
+            "G03"
+          ],
+          "mapping": "One distinguishable outgoing family terminates at the Moon.",
+          "why": "Shows a specified recipient; contributes to source-asserted differentiation.",
+          "does_not_assert": "Exactly this type of radiation, literal lunar food particles, or visual proof of continuing Moon maintenance.",
+          "visibility": "shown"
+        },
+        {
+          "id": "sun_radiation",
+          "label": "Purple squares toward Sun",
+          "symbol": "◆",
+          "color": "#d9a6d9",
+          "kind": "relation in motion",
+          "referent": "sun-directed radiation",
+          "claim_ids": [
+            "G03"
+          ],
+          "mapping": "A second outgoing family has a distinctive shape and destination.",
+          "why": "Prevents all recipient-directed influences from collapsing into one undifferentiated stream.",
+          "does_not_assert": "Square-shaped particles or a uniquely purple substance.",
+          "visibility": "shown"
+        },
+        {
+          "id": "planet_radiation",
+          "label": "Blue rings toward planetary sphere",
+          "symbol": "◎",
+          "color": "#9db7ff",
+          "kind": "relation in motion",
+          "referent": "planet-directed radiation",
+          "claim_ids": [
+            "G03"
+          ],
+          "mapping": "A third family of marks is directed toward the planetary recipient class.",
+          "why": "Differentiates this recipient from the Sun and Moon.",
+          "does_not_assert": "A single chosen planet or a formally established trichotomy of radiations.",
+          "visibility": "shown"
+        },
+        {
+          "id": "sun_moon_icons",
+          "label": "Sun and Moon silhouettes",
+          "symbol": "◐",
+          "color": "#dabf9f",
+          "kind": "iconic",
+          "referent": "Sun and Moon",
+          "claim_ids": [
+            "G03"
+          ],
+          "mapping": "Familiar celestial imagery identifies different recipients.",
+          "why": "Without distinguishable recipients, shape differences in streams would be arbitrary.",
+          "does_not_assert": "The displayed radii, relative scale, rays or texture are astronomical measurements.",
+          "visibility": "shown"
+        },
+        {
+          "id": "subtitles",
+          "label": "Concise subtitles",
+          "symbol": "▣",
+          "color": "#d7dfd5",
+          "kind": "language",
+          "referent": "source-scoped narrative interpretation",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ],
+          "mapping": "Words identify the relevant claims without a dense technical legend.",
+          "why": "Support comprehension by a viewer with no prior notation tutorial.",
+          "does_not_assert": "The narration is a quotation from Ouspensky or a validated astrophysical description.",
+          "visibility": "shown by default; optional toggle"
+        },
+        {
+          "id": "diagnostic_paths",
+          "label": "Thin diagnostic paths",
+          "symbol": "⌁",
+          "color": "#648d91",
+          "kind": "research-only aid",
+          "referent": "visual routes already conveyed by movement",
+          "claim_ids": [
+            "G02",
+            "G03"
+          ],
+          "mapping": "Optional curves help a researcher inspect direction and destination.",
+          "why": "They are available for diagnosis, but unnecessary in the default film because moving marks already show routes.",
+          "does_not_assert": "Permanent physical conduits between celestial bodies.",
+          "visibility": "hidden by default"
+        },
+        {
+          "id": "cosmic_ornament",
+          "label": "Background stars and glows",
+          "symbol": "✦",
+          "color": "#8f9caa",
+          "kind": "ornament",
+          "referent": "none — environmental depth and distinguishable silhouettes",
+          "claim_ids": [],
+          "mapping": "Sets an atmospheric context and makes the bodies visually legible.",
+          "why": "Provides depth and visual separation; not required to encode a doctrinal proposition.",
+          "does_not_assert": "A specific stellar map, moral hierarchy, divine aura or additional cosmic levels.",
+          "visibility": "shown; intentionally nonsemantic"
+        }
+      ],
+      "related_concepts": [
+        {
+          "id": "process",
+          "role": "depicted",
+          "claim_id": "G02",
+          "why": "Concurrent inbound, mediation, and outward motions make a connected process visible."
+        },
+        {
+          "id": "participation",
+          "role": "depicted",
+          "claim_id": "G02",
+          "why": "Organic life participates in a larger cosmic network, without losing its distinct identity."
+        },
+        {
+          "id": "causation",
+          "role": "interpretive caution",
+          "claim_id": "G02",
+          "why": "Direction of influence is shown; the animation does not establish a scientific causal mechanism."
+        },
+        {
+          "id": "plurality",
+          "role": "depicted",
+          "claim_id": "G03",
+          "why": "Plural planetary sources and different cosmic recipients should remain identifiable."
+        },
+        {
+          "id": "part-whole",
+          "role": "metaphor",
+          "claim_id": "G02",
+          "why": "Many organisms are treated as the collective Earth-envelope; not literal anatomical union."
+        },
+        {
+          "id": "dependence",
+          "role": "context only",
+          "claim_id": "G04",
+          "why": "The larger lore asserts lunar nourishment; this video does not show maintenance, only reception."
+        },
+        {
+          "id": "transformation",
+          "role": "speculative",
+          "claim_id": "G02",
+          "why": "The membrane’s response evokes transformation but provides no specified input–output mechanics."
+        },
+        {
+          "id": "time",
+          "role": "presentation distinction",
+          "claim_id": "G02",
+          "why": "A continuous loop and moving viewpoint need not be a history of the entire Ray of Creation."
+        },
+        {
+          "id": "identity",
+          "role": "recognition",
+          "claim_id": "G02",
+          "why": "The same Earth and organic envelope persist throughout visual exploration."
+        }
+      ],
+      "artifact": {
+        "html": "../experiments/009-cosmic-membrane/index.html",
+        "primary_treatment": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/treatment.md",
+        "scene_contract": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/contract.json",
+        "narration_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/narration-and-audit.md",
+        "parsimony_audit": "https://github.com/BrianMills2718/lore-interlingua/blob/main/experiments/009-cosmic-membrane/PARSIMONY_REVISION.md",
+        "local_preview_status": "The downloadable silent video was delivered during the earlier experiment; the repository version used here is its interactive HTML scene.",
+        "limitations": "Interactive preview is illustrative and not evidence of source truth or audience comprehension."
+      },
+      "decisions": [
+        "Removed unsupported nested cosmic ellipses rather than inventing doctrine to justify them.",
+        "Diagnostic trajectory lines are hidden by default; a separate technical view remains possible.",
+        "Replaced the misleading permanent legend with an optional mark-accurate research key.",
+        "Retired the poor-quality synthetic narration in favor of source-scoped subtitles.",
+        "Differentiated outgoing imagery remains an artistic encoding, not a measured typology."
+      ],
+      "open_questions": [
+        "Can the organic envelope’s mediating role become more evident through local organism interactions instead of similarly moving dots?",
+        "How should the larger claim that the Moon is nourished be visualized without falsely claiming a physical conservation mechanism?",
+        "Do three differently colored outgoing mark families communicate distinct kinds of radiations, or merely three destinations?",
+        "Which decorative forms enhance recognition without implying unexplained cosmic principles?"
+      ]
+    }
+  ]
+}

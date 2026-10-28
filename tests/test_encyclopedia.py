@@ -97,7 +97,7 @@ class VisualSemanticEncyclopediaTests(unittest.TestCase):
 
     def test_offline_page_uses_local_code_only(self):
         page=(ROOT/'encyclopedia/index.html').read_text(encoding='utf-8')
-        for src in ['styles.css','catalog.js','app.js']:
+        for src in ['styles.css','catalog.js','app.js','cases.js','cases-ui.js']:
             self.assertIn(src,page)
         self.assertNotIn('https://cdn.',page)
         self.assertIn('id="demo"',page)

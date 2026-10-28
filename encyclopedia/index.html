@@ -12,9 +12,9 @@
 <div class="site">
   <header class="mast">
     <div class="brand"><span class="sigil" aria-hidden="true">◈</span><div><div class="eyebrow">LORE INTERLINGUA / RESEARCH LIBRARY</div><strong>Visual–Semantic Encyclopedia</strong></div></div>
-    <div class="mast-right"><span class="status"><span class="status-dot"></span> Working atlas · v0.1</span><a class="repo-link" href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_CHARTER.md">Project charter <span aria-hidden="true">↗</span></a></div>
+    <div class="mast-right"><span class="status"><span class="status-dot"></span> Working atlas · v0.2</span><a class="repo-link" href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_CHARTER.md">Project charter <span aria-hidden="true">↗</span></a></div>
   </header>
-  <div class="intro"><div><div class="eyebrow">A BROWSABLE INSTRUMENT FOR THINKING</div><h1>Meaning before marks.</h1><p>Explore concepts, source-bound interpretations, and proposed ways to make relationships visible. The atlas is a research tool—not a universal ontology or a library of approved symbols.</p></div><div class="intro-count"><strong id="total-count">12</strong><span>interconnected entries</span></div></div>
+  <div class="intro"><div><div class="eyebrow">A BROWSABLE INSTRUMENT FOR THINKING</div><h1>Meaning before marks.</h1><p>Explore concepts, source-bound interpretations, experimental visual correspondences, and applied lore case studies. The atlas is a research tool—not a universal ontology or a library of approved symbols.</p></div><div class="intro-count"><strong id="total-count">12</strong><span>interconnected entries</span></div></div>
   <div class="workspace">
     <nav class="sidebar panel" aria-label="Browse encyclopedia entries">
       <div class="section-top"><div class="eyebrow">01 / FIND A CONCEPT</div><span id="visible-count" class="count"></span></div>
@@ -38,9 +38,47 @@
         <div id="demo-controls" class="demo-controls" role="group" aria-label="Manipulate the visual study"></div>
         <div class="lab-footer"><span class="unvalidated">Candidate mapping · Not an established notation</span><span>What changes in the model, and what only changes on screen?</span></div>
       </section>
+      <section class="case panel" id="case-study" aria-labelledby="case-title">
+        <div class="section-top"><div><div class="eyebrow">04 / APPLIED WORLD MODEL</div><h2 id="case-title">Organic life as Earth’s cosmic membrane</h2></div><span class="minor">Case 009 · Source linked</span></div>
+        <p id="case-subtitle" class="case-kicker"></p>
+        <p id="case-overview" class="case-summary"></p>
+        <p id="case-scope" class="guidance"></p>
+        <p id="case-status" class="case-status"></p>
+        <div class="case-tools">
+          <button type="button" class="action" id="case-load-scene">Load interactive scene</button>
+          <span class="case-hint">Loads the actual continuous animation below, not an unrelated demonstration.</span>
+        </div>
+        <div id="case-frame-box" hidden>
+          <iframe title="Experiment 009: Organic Life, the Cosmic Membrane" id="case-scene" loading="lazy" referrerpolicy="no-referrer" aria-label="Interactive source-scoped Gurdjieff study"></iframe>
+          <p id="case-scene-status" class="case-hint" role="status"></p>
+        </div>
+        <div id="case-doc-links" class="case-doc-links"></div>
+        <div class="case-section-label">Corpus propositions · Select a claim to inspect its representation</div>
+        <div id="case-claim-buttons" class="case-filters" role="group" aria-label="Select source claim"></div>
+        <div id="case-claim-details" class="case-claims"></div>
+        <div class="case-section-head"><h3>Visual mark dictionary</h3><span id="case-mark-count" class="minor"></span></div>
+        <p class="guidance">Every major visible element is tied to a source-specific role or identified as nonsemantic ornament. Selecting G04 deliberately shows what this film does <em>not</em> establish.</p>
+        <div id="case-marks" class="case-marks"></div>
+        <div class="case-section-label">Navigate related ontology entries</div>
+        <div id="case-concept-links" class="case-concepts"></div>
+        <details class="case-details"><summary>Source provenance and production corrections</summary>
+          <div id="case-sources"></div>
+          <h3>Decisions that affected the visible image</h3>
+          <ul id="case-revisions"></ul>
+        </details>
+        <details class="case-details"><summary>Questions opened by the experiment</summary>
+          <ul id="case-questions"></ul>
+        </details>
+        <div class="case-notebook">
+          <label for="case-note">Research note about this scene</label>
+          <textarea id="case-note" rows="2" placeholder="Which relationship is clarified or obscured?"></textarea>
+          <button class="action" type="button" id="copy-case-note">Copy note with case and claim context</button>
+          <p id="case-note-status" role="status"></p>
+        </div>
+      </section>
     </div>
     <aside class="detail panel" aria-label="Selected concept and its research context">
-      <div class="section-top"><div class="eyebrow">04 / ENTRY RECORD</div><span id="entry-type" class="count"></span></div>
+      <div class="section-top"><div class="eyebrow">05 / ENTRY RECORD</div><span id="entry-type" class="count"></span></div>
       <h2 id="entry-heading" tabindex="-1">Dependence</h2>
       <div id="entry-body"></div>
       <section class="inquiry" aria-label="Inquiry note">
@@ -55,6 +93,8 @@
   <footer>Source claims remain scoped to their traditions. Visual candidates are exploratory. <a href="README.md">Method, provenance and limitations</a> · <a href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/VISUAL_REFERENCE_DIRECTION.md">Visual references</a> · <a href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_STATUS.md">Project status</a></footer>
 </div>
 <script src="catalog.js"></script>
+<script src="cases.js"></script>
 <script src="app.js"></script>
+<script src="cases-ui.js"></script>
 </body>
 </html>
