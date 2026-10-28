@@ -17,6 +17,7 @@ Formal entailment, analogy and imaginative discovery are **different**. A visual
 ## Operating principles
 
 - **One coherent lore per audience-facing lore film, initially.** Scope a specific tradition, primary text or doctrinal strand; present its *positive internal claims*, not mainly contrasts against another system. Internal research and comparison artifacts may cover multiple renderings or traditions.
+- **Cumulative visual-world continuity.** When extending an established lore world in an expanding film, carry forward essential earlier source relationships and recognizable imagery unless deliberately revised. A narrowly scoped episode may select a subset, but must name its scope. Maintain an explanation audit: what the art conveys, what text or voice must supply, and what the source does not specify.
 - **Source first; rendering free.** Define the essential subjects, relations, processes, and narrative scope before choosing central images. Preserve source provenance and significant interpretive uncertainty in research notes; an audience-facing work can have a concise initial attribution.
 - **Artistic practice is irreducible.** Formal systems guide choices but do not mechanically generate all meaningful forms. Permit recognized iconography, invented metaphors, ornament, and experimental imagery.
 - **Selective metaphor, not literalism.** Water may represent grace or transformation without claiming grace has volume or viscosity. Ask which correspondences matter and whether a metaphor's dominant reading contradicts the represented lore.
