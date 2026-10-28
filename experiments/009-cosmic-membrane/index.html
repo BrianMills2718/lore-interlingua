@@ -15,7 +15,8 @@ function renderAt(sec){t=sec;const W=960,H=540;c.clearRect(0,0,W,H);let bg=c.cre
 let cam=ease(t/24), zoom=lerp(.92,1.11,cam);c.save();c.translate(480,270);c.scale(zoom,zoom);c.translate(-480+18*cam,-270+13*cam);
 let earth=[495,300],moon=[803,379],sun=[145,110],planets=[[350,84],[520,65],[675,116]],R=101;
 // field of the surrounding cosmological order: geometry is a visual analogy, not literal metric distance.
-c.save();c.globalAlpha=.29;for(let j=0;j<4;j++){c.strokeStyle=j%2?'#346987':'#675f8a';c.lineWidth=1;c.beginPath();c.ellipse(481,274,355+j*17,190+j*10,-.12,0,TAU);c.stroke()}c.restore();
+// Removed four ungrounded concentric cosmological ellipses.
+
 // celestial identities
 for(let i=0;i<planets.length;i++){let [x,y]=planets[i];glow(x,y,24,'#86d9db',.28);circle(x,y,8+i*2,'#244855','#90c8c6');circle(x-2,y-3,2.3,'#e8e4ce')}
 glow(...sun,91,'#d99e52',.34);circle(...sun,27,'#e6bb79','#f5d99a',2);for(let j=0;j<12;j++){let a=j*TAU/12+t*.025;curve([sun[0]+Math.cos(a)*31,sun[1]+Math.sin(a)*31],[sun[0]+Math.cos(a)*55,sun[1]+Math.sin(a)*55],[sun[0]+Math.cos(a)*43,sun[1]+Math.sin(a)*43],'#f5c880',1,.38)}
@@ -23,13 +24,15 @@ glow(...moon,50,'#7c9fbb',.29);circle(...moon,30,'#9fb5bd','#d9d8c2',1.3);circle
 // Earth shows material texture (shadow, bands, continents), not a bare semantic node.
 glow(...earth,147,'#2b9d85',.26);circle(...earth,82,'#163c4b','#7dbbb0',1.5);c.save();c.beginPath();c.arc(...earth,82,0,TAU);c.clip();let shading=c.createLinearGradient(earth[0]-80,earth[1]-40,earth[0]+90,earth[1]+80);shading.addColorStop(0,'#236777');shading.addColorStop(.45,'#1d5764');shading.addColorStop(1,'#061b2c');c.fillStyle=shading;c.fillRect(earth[0]-90,earth[1]-90,180,180);c.fillStyle='#54785c';for(let i=0;i<6;i++){let a=i*1.9+.8;let x=earth[0]+Math.cos(a)*48,y=earth[1]+Math.sin(a)*44;c.beginPath();c.ellipse(x,y,13+i%3*6,12+i%2*8,a,0,TAU);c.fill()}c.restore();
 // Living membrane: active, heterogeneous receptive/transductive skin.
-const N=96;for(let i=0;i<N;i++){let a=TAU*i/N;let pulse=Math.sin(t*1.9+i*.63);let rr=99+3*Math.sin(5*a+t*.8)+2*pulse;let x=earth[0]+Math.cos(a)*rr,y=earth[1]+Math.sin(a)*rr;glow(x,y,9,i%3===0?'#f4b96d':'#61d6bf',.19+.08*pulse);circle(x,y,1.2+i%5*.18,i%3===0?'#e6b982':'#95ebcd');if(i%4===0){let a2=a+.14;curve([x,y],[earth[0]+Math.cos(a2)*81,earth[1]+Math.sin(a2)*81],[earth[0]+Math.cos(a+.09)*91,earth[1]+Math.sin(a+.09)*91],'#6ac4a5',.75,.32)}}
+const N=96;for(let i=0;i<N;i++){let a=TAU*i/N;let pulse=Math.sin(t*1.9+i*.63);let receiving=Math.exp(-Math.pow(Math.atan2(Math.sin(a+1.55),Math.cos(a+1.55))/.5,2));let rr=99+3*Math.sin(5*a+t*.8)+2*pulse+4*receiving*Math.sin(t*3);let x=earth[0]+Math.cos(a)*rr,y=earth[1]+Math.sin(a)*rr;glow(x,y,10,i%3===0?'#f4b96d':'#61d6bf',.21+.08*pulse+.15*receiving);circle(x,y,1.2+i%5*.18,i%3===0?'#e6b982':'#95ebcd');if(i%4===0){let a2=a+.14;curve([x,y],[earth[0]+Math.cos(a2)*81,earth[1]+Math.sin(a2)*81],[earth[0]+Math.cos(a+.09)*91,earth[1]+Math.sin(a+.09)*91],'#6ac4a5',.75,.32)}}
 // planetary input is a plurality of influences rather than a simplistic single pipe.
 const inBounds=[[-45,-10],[-18,-90],[100,-40]];for(let i=0;i<3;i++){let a=planets[i],ang=[-2.32,-1.42,-.6][i];let b=[earth[0]+Math.cos(ang)*102,earth[1]+Math.sin(ang)*102],ctrl=[lerp(a[0],b[0],.55)+inBounds[i][0],lerp(a[1],b[1],.5)+inBounds[i][1]];if(showPaths)curve(a,b,ctrl,'#72d4dc',1.8,.3);for(let k=0;k<10;k++){let u=((t*.12+k/10+i*.27)%1);mote(a,b,ctrl,u,'#77e2d7',u>.85?3:1.9)}}
 // membrane-to-earth: transduction/mediation, distinct from onward rays.
 for(let i=0;i<20;i++){let a=TAU*i/20+t*.08;let a1=[earth[0]+Math.cos(a)*103,earth[1]+Math.sin(a)*103],b=[earth[0]+Math.cos(a)*75,earth[1]+Math.sin(a)*75];if(showPaths)curve(a1,b,[earth[0]+Math.cos(a+.04)*89,earth[1]+Math.sin(a+.04)*89],'#bce7a4',.7,.22);let u=(t*.32+i*.173)%1;let q=[lerp(a1[0],b[0],u),lerp(a1[1],b[1],u)];circle(...q,1.7,'#c5eaba')}
 // differentiated radiation: varying rhythmic marks toward three destinations.
-const out=[{to:moon,col:'#edc690',a:.12,ctrl:[654,455],rate:.095},{to:sun,col:'#d9a6d9',a:3.9,ctrl:[247,210],rate:.067},{to:planets[1],col:'#9db7ff',a:4.91,ctrl:[620,165],rate:.083}];
+const out=[{to:moon,col:'#edc690',a:.12,ctrl:[654,455],rate:.095},{to:sun,col:'#d9a6d9',a:3.9,ctrl:[247,210],rate:.067},{to:[525,88],col:'#9db7ff',a:4.91,ctrl:[620,165],rate:.083}];
+// Three translucent branches show the planetary sphere receiving, not one privileged planet.
+if(showPaths)for(let i=0;i<3;i++){let src=[earth[0]+Math.cos(4.91)*104,earth[1]+Math.sin(4.91)*104];curve(src,planets[i],[610+i*10,155-i*6],'#9db7ff',1,.22)}
 for(let i=0;i<out.length;i++){let z=out[i],a=[earth[0]+Math.cos(z.a)*104,earth[1]+Math.sin(z.a)*104];if(showPaths)curve(a,z.to,z.ctrl,z.col,2,.38);for(let k=0;k<12;k++){let u=(t*z.rate+k/12+i*.2)%1;let [x,y]=point(a,z.to,z.ctrl,u);glow(x,y,16,z.col,.22);if(i===0){circle(x,y,2.2,z.col)}else if(i===1){c.save();c.translate(x,y);c.rotate(t*.3+k);c.fillStyle=z.col;c.fillRect(-2,-2,4,4);c.restore()}else{circle(x,y,2,z.col);circle(x,y,5,null,z.col,.55)}}}
 // Organic life visualized as branching rooted forms on the membrane, not a simple blank halo.
 for(let i=0;i<25;i++){let a=i*TAU/25+Math.sin(t*.21+i)*.012;let x=earth[0]+Math.cos(a)*91,y=earth[1]+Math.sin(a)*91;let dx=Math.cos(a)*13,dy=Math.sin(a)*13;c.strokeStyle=i%3===0?'#d6b87f':'#75bda1';c.lineWidth=.8;c.beginPath();c.moveTo(x-dx*.7,y-dy*.7);c.lineTo(x+dx,y+dy);c.moveTo(x+dx*.4,y+dy*.4);c.lineTo(x+dx*.9-dy*.24,y+dy*.9+dx*.24);c.moveTo(x+dx*.5,y+dy*.5);c.lineTo(x+dx*.9+dy*.25,y+dy*.9-dx*.25);c.stroke()}
