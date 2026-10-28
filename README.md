@@ -21,7 +21,11 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
 
-## Latest audience-facing Gurdjieff film
+## The Ray of Creation — Experiment 012
+
+**[Experiment 012 — The Ray of Creation](experiments/012-ray-of-creation/README.md)** is a 124-second continuous cosmological film extending the art direction of Experiment 011. It travels through the Absolute, All Worlds, All Suns, Sun, planetary world, Earth and Moon, and presents the source-scoped 1/3/6/12/24/48/96 orders of laws. Increasingly constrained motion is a selective **visual metaphor**, not a literal model of those laws. Its [original visual scene](experiments/012-ray-of-creation/film.html), [source contract](experiments/012-ray-of-creation/scene-contract.json), [caption file](experiments/012-ray-of-creation/captions.srt), reproducible score and MP4 renderer, and [encyclopedia study](encyclopedia/studies/012-ray-of-creation.md) are tracked here. Video remains the primary deliverable; a [directly playable, compressed 480p preview](experiments/012-ray-of-creation/Ray_of_Creation_review_480p.mp4) is archived alongside the sources.
+
+## Earlier audience-facing Gurdjieff film
 
 **[Experiment 011 — The Sensitive Earth](experiments/011-sensitive-earth/README.md)** is an 86-second continuously animated, source-scoped Gurdjieff lore film, with recognizable vegetation, animal and human figures, directional reception, mediation toward Earth, and differentiated radiation to Sun/planets/Moon. The repository includes [the standalone offline picture viewer](experiments/011-sensitive-earth/film.html), [English subtitles](experiments/011-sensitive-earth/captions.srt), [semantic contract](experiments/011-sensitive-earth/scene-contract.json), a [review storyboard](experiments/011-sensitive-earth/review_storyboard.jpg), and a reproducible 1280×720 H.264/AAC rendering workflow. A directly playable [480p film preview](experiments/011-sensitive-earth/The_Sensitive_Earth_review_480p.mp4) is archived here; the full-resolution 1280×720 MP4 was delivered separately in chat and can be reproduced from the renderer. The current film is an artistic interpretation, not an established generic semantic-to-film pipeline.
 

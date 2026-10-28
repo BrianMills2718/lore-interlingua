@@ -1,0 +1,77 @@
+{
+  "id": "012-the-ray-of-creation",
+  "kind": "audience-facing-source-scoped-film",
+  "title": "The Ray of Creation — Seven Worlds",
+  "lore": "Gurdjieff as recorded by P. D. Ouspensky",
+  "source": {
+    "book": "P. D. Ouspensky, In Search of the Miraculous, section describing the Ray of Creation and orders of laws",
+    "text_url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html",
+    "secondary_text_url": "https://gurdjieff.work/texts/p-d-ouspensky-the-cosmology-of-mans-possible-evolution.pdf",
+    "corpus": "data/v0.2.json#G01",
+    "notes": "The source calls world 6 'All Suns' in a standard table, while also treating one chosen starry world as our Milky Way. Thus the film labels All Suns / one chosen galaxy without claiming all suns everywhere equal the Milky Way."
+  },
+  "worlds": [
+    {"id": "absolute", "label": "The Absolute", "orders_of_laws": 1, "depiction": "luminous non-personal emblem", "kind": "origin"},
+    {"id": "all-worlds", "label": "All Worlds", "orders_of_laws": 3, "depiction": "plurality of schematic starry worlds", "kind": "totality / scope"},
+    {"id": "all-suns", "label": "All Suns", "orders_of_laws": 6, "depiction": "one selected galactic stellar system", "kind": "selected starry world"},
+    {"id": "sun", "label": "Our Sun", "orders_of_laws": 12, "depiction": "golden solar disc", "kind": "individual star"},
+    {"id": "planetary", "label": "Planetary World", "orders_of_laws": 24, "depiction": "several illustrated planets", "kind": "planetary ensemble"},
+    {"id": "earth", "label": "Earth", "orders_of_laws": 48, "depiction": "textured blue-green globe bearing trees, grass and human figures", "kind": "living terrestrial world"},
+    {"id": "moon", "label": "Moon", "orders_of_laws": 96, "depiction": "illustrated cratered moon", "kind": "growing end of the selected ray in this account"}
+  ],
+  "semantic_operations": [
+    {
+      "id": "selected-ray",
+      "source_relation": "successive worlds, with one world selected in each nested order",
+      "visual_treatment": "one continuous branching gold-white strand passing through seven persistent, differentiated visual worlds; faint side branches indicate other possible selections",
+      "why": "Conveys selected lineage without turning it into independent slide cards",
+      "does_not_assert": "Literal celestial wiring, astronomical distance, transmission conduit, or physical world creation occurring during the 124-second film"
+    },
+    {
+      "id": "increasing-constraint",
+      "source_relation": "greater numbers of orders of laws accompany greater mechanicalness and reduced independence",
+      "visual_treatment": "a recurring motion motif becomes increasingly enclosed within multiple overlapping rhythmic patterns at successively lower worlds; exact source-law counts appear typographically",
+      "why": "Differentiate structural degrees of constraint from merely changing the number on screen",
+      "does_not_assert": "That there are literally 1/3/6/12/24/48/96 drawn curves, that laws are physical cages, or that any loop is a specific Gurdjieff law"
+    },
+    {
+      "id": "world-identity",
+      "source_relation": "specific distinguishable cosmological scopes and worlds",
+      "visual_treatment": "non-personal emblem; galaxy clusters; spiral galaxy; luminous Sun; differentiated planets; living Earth; cratered Moon",
+      "why": "Prevents seven anonymous generic circles from substituting for distinct world referents",
+      "does_not_assert": "Empirically accurate celestial scale, galaxy count, planetary arrangement or geography"
+    },
+    {
+      "id": "organic-mediation-callback",
+      "source_relation": "organic life receives planetary influences and mediates them toward Earth",
+      "visual_treatment": "recognizable grass, branching vegetation and human figures over the same textured globe used in Experiment 011; small animated source-to-envelope and envelope-to-Earth marks during Earth focus",
+      "why": "Connects hierarchical cosmology to the already developed life-mediated relation without making life a generic atmospheric shell",
+      "does_not_assert": "Literal particles, identified cosmic influences or conversion rates"
+    },
+    {
+      "id": "camera-as-disclosure",
+      "source_relation": "viewer selection of a chain of worlds, independent of any one chronology",
+      "visual_treatment": "continuous pan and zoom through a persistent world and final zoom out to the whole chosen ray",
+      "why": "Separates presentation time from ontological creation time and supports whole/part comprehension",
+      "does_not_assert": "The Absolute or all worlds have metric spatial locations along a literal physical ladder"
+    }
+  ],
+  "ornament": [
+    "Atmospheric star dust, nebula colors and luminous scattering provide depth but do not denote additional world levels.",
+    "Solar spokes and lunar crater texture are iconographic or decorative, not encoded law types.",
+    "Ambient harmonic pads, synthetic bells and small repeated clicks are original sound design, not Gurdjieff's prescribed musical theory."
+  ],
+  "negative_claims": [
+    "This film depicts Gurdjieff's teaching, not empirically accepted astrophysics.",
+    "The seven numbers represent 'orders of laws' in the source model and are not physical measurements.",
+    "The individual constraints and their distinct mechanisms are not enumerated in the film.",
+    "Cross-scale spatial proximity is a composition strategy, not astronomy.",
+    "No source explicitly associates a particular color, shape, pulse frequency or motion path with a law."
+  ],
+  "status": "provisional artistic rendering; no established transferable visual notation or measured audience comprehension",
+  "duration_seconds": 124,
+  "resolution": "1280x720",
+  "frames_per_second": 24,
+  "sound": "original synthesized ambient stereo soundtrack, with no spoken narration",
+  "subtitles": "burned-in source-scoped English captions; a separate SRT is supplied"
+}

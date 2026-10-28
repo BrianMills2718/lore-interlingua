@@ -18,6 +18,8 @@
 
 | 011 | Gurdjieff organic life as Earth's sensitive membrane | [Audience-facing film source and audit](../experiments/011-sensitive-earth/README.md) · [storyboard](../experiments/011-sensitive-earth/review_storyboard.jpg) | Continuous 86-second 720p film with distinctive plants, animals and people; original score, subtitles, and explicit limits on illustrated mechanism. The 480p playable MP4 preview is archived on GitHub; a full-resolution 720p version was supplied separately and is reproducible from source. | A viewer-comprehension demonstration, natural voice narration, finished Khutoryansky-level visual sophistication, or a generic compiler |
 
+| 012 | Gurdjieff Ray of Creation — seven worlds and increasing mechanical constraint | [124-second continuous film and semantic audit](../experiments/012-ray-of-creation/README.md) · [source-to-visual case](../encyclopedia/studies/012-ray-of-creation.md) | Reuses 011's artistic language; selected hierarchy differs visually from radiation transfer; text explicitly gives seven law counts, with recurring-motion constraints as a documented metaphor | Universal visual comprehension, literal identification of 96 law types, or complete Gurdjieff cosmology |
+
 **Cross-experiment result:** No proposed general visual-grammar rule has been promoted as independently established, and no finished film was generated automatically from the shared interlingua. These are **research and artistic prototypes**, not independently validated milestones toward a verified visual compiler.
 
 ## Main questions actually learned
