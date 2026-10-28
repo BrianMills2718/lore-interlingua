@@ -1,6 +1,9 @@
 # Semantic casting and first-film options
 
-**Status:** Preproduction proposal, not an approved storyboard or an instruction to render. Read [the world model](README.md) first. We are now asking what is worth depicting, *before* choosing attractive scenery.
+> **Historical/provisional record.** This file retains earlier examples and proposed next steps; current project decisions are in [Project Charter](../../docs/PROJECT_CHARTER.md), [Current State](../../docs/PROJECT_STATUS.md), and [Experiment Registry](../../docs/EXPERIMENT_REGISTRY.md). Do not treat a past "gate" as a program-level stop rule.
+
+
+**Status:** Historical preproduction options for the Catholic model, written before Experiments 007–008 and the later first-principles corrections. These options are not the current project roadmap; see [Project Status](../../docs/PROJECT_STATUS.md). Read [the world model](README.md) first. We are now asking what is worth depicting, *before* choosing attractive scenery.
 
 ## One film, one positive Catholic account
 
@@ -63,7 +66,7 @@ Start with one divine nature/three persons (atemporal), then the Son's historica
 
 **Benefit:** Rich temporal visual development and recognizable narrative. **Risk:** Would need context to avoid making Catholic theology look like a generic mythology of death and rebirth.
 
-**Recommendation:** Route A for the first **representative** Catholic overview, preceded by a small conceptual test for the person/nature and eternal/historical distinctions in Route B. Neither requires producing a film in this PR.
+**Historical recommendation (not current authorization):** Route A was proposed for a representative Catholic overview, with Route B as an earlier test. A schematic Trinity–Incarnation animatic was subsequently produced (Experiment 007) and criticized as too slide-like. Do not treat Route A as an automatically approved next film.
 
 ## Communication and visual-language plan
 
