@@ -21,6 +21,10 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
 
+## Offline review package
+
+The complete **Encyclopedia v0.4 / Experiment 010** review snapshot is [stored on GitHub](downloads/README.md), including a [downloadable ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) and a [three-condition comparison image](experiments/010-living-intermediary/review-comparison.jpg). Source files remain editable in their existing directories. No separate chat attachment is required to obtain the review package.
+
 ## What exists
 
 - **Visual-semantic encyclopedia:** [Browse 13 concept entries](encyclopedia/index.html), search an ontology-style navigation graph, inspect existing source-scoped claims and experiment with four proposed visual correspondences. It now includes [Gurdjieff Study 009 as a fully annotated applied case](encyclopedia/index.html#case-study), distinguishing depicted claims G02/G03 from contextual claim G04. Data and visual mappings remain provisional, not a new universal ontology.
