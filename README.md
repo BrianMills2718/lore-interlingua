@@ -21,9 +21,13 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
 
+## Latest cumulative film — The Living Interval (Experiment 013)
+
+The [176-second integrated Gurdjieff film](experiments/013-living-interval/README.md) combines the **Ray of Creation's seven world orders** with the **Law of Three, Law of Seven, planetary–Earth interval, recognizable organic life, and differentiated incoming/outgoing relations**. [Watch the GitHub review MP4](experiments/013-living-interval/The_Living_Interval_review_480p.mp4), [inspect its continuity and explanation audit](experiments/013-living-interval/CONTINUITY_AND_EXPLANATION.md), or [compare all three films in the cumulative imagery atlas](encyclopedia/imagery.html). The full-resolution master is reproducible from the renderer. This remains an art-directed source-scoped film, not experimentally verified cosmic physics or a generic compiler.
+
 ## Cumulative Gurdjieff visual world
 
-The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compare **Film 011** and **Film 012** as actual videos, records which earlier imagery was retained or dropped, and explains key Gurdjieff terms (orders of laws, Law of Three, Law of Seven, organic mediation and radiation). Read the [integrated follow-up film treatment](docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](docs/GURDJIEFF_EXPLANATION_LEDGER.md). The proposed cumulative film is **a plan, not yet a new MP4**; building a shared visual world does not require replaying every old shot.
+The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compare **Films 011, 012, and 013** as actual videos, records which earlier imagery was retained or dropped, and explains key Gurdjieff terms (orders of laws, Law of Three, Law of Seven, organic mediation and radiation). See the now-implemented [integrated film treatment](docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](docs/GURDJIEFF_EXPLANATION_LEDGER.md). The proposed cumulative film is **a plan, not yet a new MP4**; building a shared visual world does not require replaying every old shot.
 
 ## The Ray of Creation — Experiment 012
 

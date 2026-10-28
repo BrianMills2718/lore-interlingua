@@ -108,3 +108,7 @@ The new case selector lets readers move between 009 (cosmic envelope and differe
 ## Cumulative imagery and explanation audit (011–012)
 
 Open the [visual imagery index](imagery.html) for playable previews of Films 011 and 012, an explicit preservation/reduction record of semantic marks, and source-scoped terms for laws, influences, radiation, and octave intervals. The [proposed integrated treatment](../docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](../docs/GURDJIEFF_EXPLANATION_LEDGER.md) prevent a new same-lore film from silently discarding earlier essential content. The imagery index uses [imagery.json](imagery.json) as its canonical edited data; regenerate its offline companion with `python scripts/build_encyclopedia_imagery.py`. This is not a replacement for the ontology or a claim that the proposed integrated Film 013 has already been produced.
+
+## Film 013 and cumulative imagery v0.6
+
+The [cumulative imagery atlas](imagery.html) compares three actual films, now including [Experiment 013 — The Living Interval](../experiments/013-living-interval/README.md). Film 013 restores the previously omitted living Earth, incoming mediation and outgoing radiation within the seven-world hierarchy. The imagery ledger now records whether each significant motif is present, partial or absent in **all three** films, with an explanation of what the sign depicts and cannot assert. The Law-of-Three relation is depicted only schematically; lunar nourishment is still not depicted by mere arrival.

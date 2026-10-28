@@ -14,7 +14,7 @@ class CumulativeImageryTests(unittest.TestCase):
     cls.concepts={c['id'] for c in json.loads((ROOT/'encyclopedia/catalog.json').read_text(encoding='utf-8'))['concepts']}
     cls.claims={c['id'] for c in json.loads((ROOT/'data/v0.2.json').read_text(encoding='utf-8'))['claims']}
   def test_work_and_source_links(self):
-    self.assertEqual({w['id'] for w in self.d['works']},{'011','012'})
+    self.assertEqual({w['id'] for w in self.d['works']},{'011','012','013'})
     for w in self.d['works']:
       self.assertTrue((ROOT/'encyclopedia'/w['source']).is_file(),w['source'])
       self.assertTrue((ROOT/'encyclopedia'/w['storyboard']).is_file(),w['storyboard'])
@@ -31,6 +31,7 @@ class CumulativeImageryTests(unittest.TestCase):
       self.assertTrue(set(m['ontology'])<=self.concepts)
       self.assertIn(m['film011'],{'present','partial','absent'})
       self.assertIn(m['film012'],{'present','partial','absent'})
+      self.assertIn(m['film013'],{'present','partial','absent'})
       self.assertTrue(m['next'] and m['non_claim'] and m['what_lost'])
     self.assertTrue(any(m['film011']=='present' and m['film012']=='absent' for m in self.d['motifs']))
   def test_generated_js_and_html(self):
