@@ -1,0 +1,366 @@
+{
+  "version": "0.5.0",
+  "scope": "Gurdjieff as recorded by P. D. Ouspensky",
+  "status": "curated, source-scoped visual vocabulary; no established cross-tradition notation",
+  "source_documents": {
+    "ouspensky-ray": {
+      "label": "Ouspensky — Ray of Creation and laws of three forces",
+      "url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html",
+      "description": "Ray, force counts, orders of laws, mechanicalness"
+    },
+    "ouspensky-octave": {
+      "label": "Ouspensky — Law of Seven and the organic-life interval",
+      "url": "https://tonylutz.net/index.php/e-books/in-search/41",
+      "description": "Planetary–Earth interval, additional shock, organic-life mediation"
+    },
+    "ouspensky-organic": {
+      "label": "Gurdjieff Foundation Hawaii — Ouspensky organic-life excerpts",
+      "url": "https://www.gurdjieff-hawaii.org/?page_id=160",
+      "description": "Reception, terrestrial mediation, outward radiations"
+    }
+  },
+  "works": [
+    {
+      "id": "011",
+      "title": "The Sensitive Earth",
+      "slug": "sensitive-earth",
+      "source": "../experiments/011-sensitive-earth/The_Sensitive_Earth_review_480p.mp4",
+      "storyboard": "../experiments/011-sensitive-earth/review_storyboard.jpg",
+      "focus": "Organic life receives planetary influences, mediates them toward Earth, and radiates outward."
+    },
+    {
+      "id": "012",
+      "title": "The Ray of Creation",
+      "slug": "ray-of-creation",
+      "source": "../experiments/012-ray-of-creation/Ray_of_Creation_review_480p.mp4",
+      "storyboard": "../experiments/012-ray-of-creation/review_storyboard.jpg",
+      "focus": "One selected ray through seven world orders and a metaphor for increasing constraint."
+    }
+  ],
+  "terms": [
+    {
+      "id": "laws",
+      "term": "Orders of laws",
+      "question": "What are these laws?",
+      "source_meaning": "In this Gurdjieff/Ouspensky account, the numbers 1, 3, 6, 12, 24, 48 and 96 designate progressively accumulated orders of governing forces/laws. Lower worlds are more subject to mechanical determination; this is not a list of that many separately named human or scientific rules.",
+      "explained_now": "Film 012 gives counts and a repeating-motion metaphor.",
+      "missing": "Explain why the counts accumulate and distinguish the doctrinal claim from the illustrative rhythm. Do not imply 48 literal strings or experimentally measured laws.",
+      "source": "ouspensky-ray"
+    },
+    {
+      "id": "three",
+      "term": "Law of Three",
+      "question": "Why do three forces matter?",
+      "source_meaning": "Every phenomenon is described as involving active, passive and neutralizing forces, roles defined relationally at their meeting. The Absolute is conceived as their unity; in successively created worlds they are divided and multiple orders of forces operate.",
+      "explained_now": "Not explained pictorially in 011 or 012.",
+      "missing": "Introduce a focused, source-scoped visual interaction before presenting the multiplication of governing laws; do not reduce the forces to three permanent substances or colors.",
+      "source": "ouspensky-ray"
+    },
+    {
+      "id": "seven",
+      "term": "Law of Seven / cosmic octave",
+      "question": "Why is there a gap between planets and Earth?",
+      "source_meaning": "The teaching describes developing processes as octaves with intervals where continuation needs additional influence or an “additional shock.” Organic life fills the interval between planetary world and Earth in the cosmic octave.",
+      "explained_now": "Film 012 depicts seven levels but does not adequately explain this interval; Film 011 depicts the mediating organ without locating its cosmic reason.",
+      "missing": "Show an interrupted or unreceived relation, then the living intermediary that enables reception. Avoid literalizing music notes as astronomical vibrations.",
+      "source": "ouspensky-octave"
+    },
+    {
+      "id": "influence",
+      "term": "Planetary influence",
+      "question": "What exactly is traveling toward Earth?",
+      "source_meaning": "The source calls these planetary influences or radiations, which organic life receives and mediates so Earth can receive them. It does not provide a testable modern physical identification, particle taxonomy, wavelength or exact transfer mechanism.",
+      "explained_now": "Film 011 shows luminous incoming motion; Film 012 only briefly recalls it near Earth.",
+      "missing": "Explain direction, reception and uncertainty explicitly. Light marks are illustrative carriers of meaning, not physically identified cosmic particles.",
+      "source": "ouspensky-organic"
+    },
+    {
+      "id": "mediation",
+      "term": "Organic mediation",
+      "question": "Why does life matter instead of merely sitting on Earth?",
+      "source_meaning": "Organic life is described as the Earth’s sensitive organ, making planetary influences receivable that otherwise would not be received. Grassland and human gatherings are said to receive different kinds of influence.",
+      "explained_now": "Film 011 depicts plants, animals, humans, inbound marks and an inward response; Experiment 010 isolates the counterfactual.",
+      "missing": "Embed those recognized forms and differentiated roles directly into the seven-world film, making the source-to-life-to-Earth sequence readable within one cosmos.",
+      "source": "ouspensky-organic"
+    },
+    {
+      "id": "outgoing",
+      "term": "Outward radiations",
+      "question": "Is this the same thing being sent back?",
+      "source_meaning": "The teaching also describes organic life as radiating from areas of Earth toward the Sun, planets and Moon; those recipients are said to require different kinds of radiation. The source does not establish that outgoing radiation is physically identical to incoming influence.",
+      "explained_now": "Film 011 distinguishes recipient-directed outgoing streams; Film 012 omits most of this sequence.",
+      "missing": "Restore the different outgoing destinations and keep both directions and their claimed roles distinct.",
+      "source": "ouspensky-organic"
+    },
+    {
+      "id": "moon",
+      "term": "Moon nourishment",
+      "question": "Is a moonward stream the same as nourishing the Moon?",
+      "source_meaning": "Other passages connect the Moon to nourishment from organic life, a stronger dependence claim than the mere existence of a directed radiation.",
+      "explained_now": "Neither film depicts an independently legible maintenance or nourishment dependency.",
+      "missing": "If included, show what “maintained by” means in the account, with attribution, rather than claiming that arriving dots explain support.",
+      "source": "ouspensky-organic"
+    },
+    {
+      "id": "selection",
+      "term": "Selected ray versus transmission",
+      "question": "Does the bright line mean energy travels down it?",
+      "source_meaning": "The Ray of Creation selects one succession of nested worlds. Its structural order must not be confused with the separate idea of planetary influence and life-mediated radiation.",
+      "explained_now": "Film 012 uses a luminous strand to show selection; Film 011 uses moving marks for reception and radiation.",
+      "missing": "Maintain two distinct visual operations: stable structural highlighting versus moving, source-identified influence. A structural connection is not a cosmic cable.",
+      "source": "ouspensky-ray"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "selected-ray",
+      "label": "Selected world hierarchy",
+      "kind": "structure",
+      "source_ref": [
+        "G01"
+      ],
+      "meaning": "A highlighted structural succession of world levels, not a physical conduit.",
+      "film011": "absent",
+      "film011_note": "Only local bodies and influences; no seven-level hierarchy.",
+      "film012": "present",
+      "film012_note": "Selected gold-white strand through seven recognizable worlds.",
+      "next": "Retain as an orienting structure while descending into the living-Earth subscene.",
+      "what_lost": "No overarching map of where living Earth sits in the larger source model.",
+      "non_claim": "The line itself transmits a measured force or depicts physical distance.",
+      "ontology": [
+        "dependence",
+        "part-whole",
+        "identity"
+      ]
+    },
+    {
+      "id": "law-rhythm",
+      "label": "Constraint / mechanicalness",
+      "kind": "metaphor",
+      "source_ref": [
+        "G01"
+      ],
+      "meaning": "Increasingly constrained rhythmic behavior as an artistic cue for lower-world mechanicalness.",
+      "film011": "absent",
+      "film011_note": "The film does not attempt to explain orders of laws.",
+      "film012": "partial",
+      "film012_note": "Rhythmic constraint is depicted but its relation to the Law of Three is not explained.",
+      "next": "Keep the cue but introduce how orders of laws accumulate, with words and a precise visual study.",
+      "what_lost": "The law numbers remain unexplained labels and decorative recurrence.",
+      "non_claim": "One drawn loop or speed corresponds to one specified Gurdjieff law.",
+      "ontology": [
+        "process",
+        "causation",
+        "dependence"
+      ]
+    },
+    {
+      "id": "world-casting",
+      "label": "Recognizable cosmic bodies",
+      "kind": "iconic casting",
+      "source_ref": [
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "meaning": "Sun, planetary world, living Earth and Moon retain identities across changes of scale.",
+      "film011": "present",
+      "film011_note": "Celestial recipients and living Earth remain identifiable.",
+      "film012": "present",
+      "film012_note": "Distinct world icons are carried across the hierarchy.",
+      "next": "Retain the same art direction and recognizably identical Earth, Sun and Moon.",
+      "what_lost": "Continuity of place and reference; viewers must relearn the picture each episode.",
+      "non_claim": "Real astronomical scale or geometry.",
+      "ontology": [
+        "identity",
+        "existence",
+        "plurality"
+      ]
+    },
+    {
+      "id": "plants-animals-humans",
+      "label": "Life as recognizable living forms",
+      "kind": "iconic + metaphor",
+      "source_ref": [
+        "G02",
+        "G03"
+      ],
+      "meaning": "Vegetation, animals and humans form a heterogeneous organ of reception and radiation.",
+      "film011": "present",
+      "film011_note": "Central scene with depicted grass, trees, animal and human figures.",
+      "film012": "partial",
+      "film012_note": "Only a brief small-scale callback at Earth.",
+      "next": "Restore the close living-world movement with detail and time sufficient to identify behavior.",
+      "what_lost": "Organic life collapses into a generic ring or decorative surface instead of an actor.",
+      "non_claim": "All life is literally fused into a glowing anatomical film.",
+      "ontology": [
+        "mediation",
+        "participation",
+        "part-whole"
+      ]
+    },
+    {
+      "id": "incoming",
+      "label": "Planetary reception",
+      "kind": "directed relation",
+      "source_ref": [
+        "G02"
+      ],
+      "meaning": "Influences travel from the planetary world to receptive organic life.",
+      "film011": "present",
+      "film011_note": "Directional arrival is one of the main actions.",
+      "film012": "partial",
+      "film012_note": "A small local callback during the Earth segment; no extended explanation.",
+      "next": "Show identifiable planetary source, living reception and the special interval that makes the reception consequential.",
+      "what_lost": "The account’s source of influence and life’s receptive function disappear.",
+      "non_claim": "A particle, frequency or measured beam identified by the text.",
+      "ontology": [
+        "mediation",
+        "process",
+        "causation"
+      ]
+    },
+    {
+      "id": "inward",
+      "label": "Life-mediated transmission toward Earth",
+      "kind": "directed relation",
+      "source_ref": [
+        "G02"
+      ],
+      "meaning": "Distinct visual response begins in the living intermediary and moves into Earth.",
+      "film011": "present",
+      "film011_note": "Inward motion follows reception, from different origin.",
+      "film012": "partial",
+      "film012_note": "Only briefly hinted at within the hierarchy.",
+      "next": "Show the otherwise unreceived influence gaining passage through the living intermediary.",
+      "what_lost": "Mediation cannot be distinguished from direct transmission.",
+      "non_claim": "A known material transducer or precise energy conversion.",
+      "ontology": [
+        "mediation",
+        "transformation",
+        "process"
+      ]
+    },
+    {
+      "id": "outgoing",
+      "label": "Different kinds of outward radiation",
+      "kind": "directed relation",
+      "source_ref": [
+        "G03"
+      ],
+      "meaning": "Distinct types of life-associated radiation go to Sun, planets and Moon.",
+      "film011": "present",
+      "film011_note": "Multiple recipient-directed streams and distinct visual families.",
+      "film012": "absent",
+      "film012_note": "The surrounding worlds appear but the sustained reciprocal action is omitted.",
+      "next": "Restore outbound motion with specific destination labels; do not infer source-specified wavelengths or colors.",
+      "what_lost": "The central reciprocal role of life as an organ of radiation.",
+      "non_claim": "Identified particles, fixed physical particle types or identical transmission in both directions.",
+      "ontology": [
+        "mediation",
+        "plurality",
+        "process"
+      ]
+    },
+    {
+      "id": "octave-interval",
+      "label": "Interval between planetary world and Earth",
+      "kind": "source-specified process relation",
+      "source_ref": [
+        "G01",
+        "G02"
+      ],
+      "meaning": "A discontinuity in the cosmic octave that organic life is said to fill.",
+      "film011": "partial",
+      "film011_note": "Mediation is depicted but the octave interval is not explained.",
+      "film012": "absent",
+      "film012_note": "World succession appears continuous, hiding the source’s special interval.",
+      "next": "Introduce the gap in reception and an additional enabling role of organic life, without implying Earth was physically unreachable.",
+      "what_lost": "The key doctrinal bridge linking hierarchy to life and Film 011 to Film 012.",
+      "non_claim": "An empty metric gap in space or a visible astronomical tunnel.",
+      "ontology": [
+        "mediation",
+        "process",
+        "dependence"
+      ]
+    },
+    {
+      "id": "moon-sustenance",
+      "label": "Moon nourishment / maintenance",
+      "kind": "context-only claim",
+      "source_ref": [
+        "G04"
+      ],
+      "meaning": "The separate claim that the Moon receives sustaining nourishment associated with life.",
+      "film011": "partial",
+      "film011_note": "Moon-directed stream appears but maintenance is not made perceptible.",
+      "film012": "absent",
+      "film012_note": "Moon is a lower world but no maintenance relation is shown.",
+      "next": "Do not treat mere arrival as proof of nourishment; only add a sourced maintenance demonstration if it can be explained.",
+      "what_lost": "The distinction between receiving and depending on a received influence.",
+      "non_claim": "Literal food particles or a verified lunar ecological model.",
+      "ontology": [
+        "dependence",
+        "mediation",
+        "causation"
+      ]
+    },
+    {
+      "id": "camera-exploration",
+      "label": "One continuous exploratory environment",
+      "kind": "presentation grammar",
+      "source_ref": [
+        "G01",
+        "G02"
+      ],
+      "meaning": "Camera moves through an existing conceptual world, not along a literal timeline of cosmological creation.",
+      "film011": "present",
+      "film011_note": "Persistent cosmos, camera reveals Earth and surrounding recipients.",
+      "film012": "present",
+      "film012_note": "Travels down a selected ray and returns to overview.",
+      "next": "Use the same spatial referents to zoom from seven-world structure into Earth, and back to the whole without swapping slide decks.",
+      "what_lost": "A coherent environment viewers can reason about across scales.",
+      "non_claim": "A historical time-lapse or true metric positions.",
+      "ontology": [
+        "time",
+        "identity",
+        "part-whole"
+      ]
+    },
+    {
+      "id": "law-of-three",
+      "label": "Active / passive / neutralizing interplay",
+      "kind": "not-yet-depicted relation",
+      "source_ref": [
+        "G01"
+      ],
+      "meaning": "The source’s relational three-force account, needed to explain multiplying orders of laws.",
+      "film011": "absent",
+      "film011_note": "Outside the first film’s scope.",
+      "film012": "absent",
+      "film012_note": "A key explanatory omission despite the numerical sequence.",
+      "next": "Develop a short, grounded illustrative configuration while explaining that roles depend on the interaction.",
+      "what_lost": "Viewers cannot understand why the law counts grow beyond accepting unexplained numbers.",
+      "non_claim": "Permanent color-coded particles or a physical derivation established by the visual.",
+      "ontology": [
+        "process",
+        "causation",
+        "unity",
+        "plurality"
+      ]
+    }
+  ],
+  "future_film": {
+    "id": "013-proposed-cumulative-ray",
+    "title": "The Ray of Creation: The Living Interval (proposed)",
+    "status": "treatment, not yet produced",
+    "goals": [
+      "Keep all seven source-scoped world levels and the orders-of-laws argument from 012",
+      "Explain Law of Three and Law of Seven enough to make the interval comprehensible",
+      "Recover 011 vegetation, animals, human gatherers, planetary reception, Earth mediation, and distinct outbound destinations",
+      "Use text and eventual natural voiceover for what pictures cannot legitimately identify",
+      "Return to full-world overview with the living intermediary still functioning"
+    ],
+    "not_a_rule": "New works should preserve prior meaningful source claims and visual imagery when expanding the *same coherent lore scope*, but need not replay every previous shot or retain rejected visual details."
+  }
+}
