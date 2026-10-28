@@ -52,3 +52,7 @@ Primary grounding: [Catechism of the Catholic Church §§293–302](https://www.
 This study revises the lesson of failed/provisional Catholicism Experiment 004. It is guided by [communication-first artistic design](../../docs/communication-first-design.md) and may reuse temporal conventions from [Visual Language](https://github.com/BrianMills2718/visual-language), but does not conflate a scene-specific metaphor with a universal notation.
 
 **Deliverable:** the interactive HTML is canonical. A 12-second video preview and static screenshot are companion media, not replacements for the editable study.
+
+## Format decision after critique — 2026-10-27
+
+This three-way interactive workbench is an **internal visual-thinking study**, not a model for an audience-facing lore film. It tests three possible visualizations of a *single selected Catholic doctrinal claim*. Future lore videos should follow one coherent tradition-specific story, rather than presenting alternative visual treatments as if they were competing theologies or combining incompatible accounts. Studies like this are valid research artifacts; a published film should choose and develop a narratively consistent interpretation with clearly scoped primary sources.
