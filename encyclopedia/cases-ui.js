@@ -121,6 +121,7 @@
     renderConcepts(c);
     renderClaimButtons(c);renderClaimDetails(c);renderMarks(c);
     const docs=$('case-doc-links');docs.replaceChildren();
+    if(c.artifact.encoding_audit) link(docs,'Inspect mark semantics · interactive audit',c.artifact.encoding_audit);
     link(docs,'Read original study',c.artifact.html);
     link(docs,'Narration and symbol audit',c.artifact.narration_audit);
     link(docs,'Parsimony corrections',c.artifact.parsimony_audit);

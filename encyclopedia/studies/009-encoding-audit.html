@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>When three symbols are not three mechanisms · Lore Interlingua</title>
+  <style>
+    :root{--bg:#07111c;--surface:#0d1b2a;--panel:#122536;--border:#2a4754;--fg:#e8eee8;--muted:#afc1cb;--gold:#e8c58f;--cyan:#77e2d7}*{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 80% -20%,#172c3a,var(--bg) 56%);color:var(--fg);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+    a{color:#a8dce6}a:hover{color:#d2f2f8}.shell{max-width:1200px;margin:auto;padding:22px 25px 64px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(29px,4.2vw,49px);line-height:1.08;margin:18px 0 12px;max-width:880px}h2{font:normal 25px Georgia,serif;margin:0 0 8px}h3{font-size:15px;margin:0 0 8px}p{margin:0 0 13px} .lede{max-width:900px;color:#b9cdd3;font-size:16px}
+    .grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:16px;margin-top:22px}.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;min-width:0}.visual{background:#07121c;border:1px solid #314c56;border-radius:8px;overflow:hidden;margin:15px 0 12px}
+    canvas{display:block;width:100%;height:auto;aspect-ratio:960 / 510}.controls{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 16px}button{font:inherit;border-radius:7px;border:1px solid #395e68;background:#153344;color:#e3f1ee;padding:8px 12px;cursor:pointer}button:hover,button:focus-visible{border-color:#acd9d3}button.active{background:#345f67;border-color:#c0e5d3}button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+    .settings{display:flex;gap:10px 16px;flex-wrap:wrap;align-items:center;font-size:13px;color:#cadae2}.settings label{display:flex;align-items:center;gap:6px}.scrubber{flex:1;min-width:160px}.scrubber input{width:100%}.setting-note{font-size:12px;color:var(--muted)}
+    .legend{display:flex;gap:10px 20px;flex-wrap:wrap;margin:8px 0 0}.legend-item{font-size:12px;display:flex;align-items:center;gap:5px;min-width:140px}.glyph{font-size:19px;width:22px;text-align:center}
+    .metric{border-top:1px solid var(--border);padding:14px 0}.metric:last-child{padding-bottom:0}.metric strong{color:#e8ddc0}.metric p{font-size:13px;color:var(--muted);margin:6px 0 0}.info{padding:12px 14px;border-left:3px solid #7fb6ac;background:#142b37;margin:15px 0;color:#dde4dc}.info strong{color:#f0ddb0}.mark{color:var(--gold);font-weight:600}
+    .wide{grid-column:1/-1}.analysis{display:grid;grid-template-columns:1fr 1fr;gap:17px}.analysis section{background:#0c1c2a;border:1px solid #284451;padding:15px;border-radius:9px}.analysis p,.analysis li{color:var(--muted);font-size:14px}.analysis ul{padding-left:20px}.tag{background:#203541;border:1px solid #395864;padding:2px 7px;border-radius:5px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+    table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0 4px}td,th{text-align:left;border-bottom:1px solid #2c4251;padding:10px 8px;vertical-align:top}th{color:#e8d4a6;font-size:12px}td{color:#b7c8d3}.pill{color:#b8e8cb}
+    footer{font-size:12px;color:var(--muted);margin-top:24px}details summary{cursor:pointer;color:#cce3df}details p{font-size:13px;color:var(--muted);margin-top:8px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.analysis{grid-template-columns:1fr}.shell{padding:16px 13px 45px}.panel{padding:13px}.settings{gap:7px}.top{font-size:12px}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header class="top"><a href="../index.html#case-study">← Back to the visual encyclopedia</a><span class="eyebrow">Experiment 009 / Encoding audit</span><span class="tag">Backstage research study</span></header>
+  <h1>When three symbols are not three mechanisms.</h1>
+  <p class="lede">Gurdjieff's organic-life account gives different cosmic recipients different kinds of radiations. Our animation depicts three colors, shapes and pathways. Does this show three mechanisms, or only three categories aimed at different destinations?</p>
+  <div class="grid">
+    <section class="panel" aria-labelledby="viz-heading">
+      <h2 id="viz-heading">Manipulate the visible code</h2>
+      <p style="color:var(--muted)">All three modes preserve the underlying G03 statement. Only the expressive mapping changes. Movement is diagram time, not measured cosmic activity.</p>
+      <div class="controls" role="group" aria-label="Outgoing symbol encoding">
+        <button id="mode-original" class="active" type="button" aria-pressed="true">Current marks</button>
+        <button id="mode-uniform" type="button" aria-pressed="false">Uniform marks</button>
+        <button id="mode-permuted" type="button" aria-pressed="false">Swap symbols</button>
+      </div>
+      <div class="visual"><canvas id="comparison" width="960" height="510" role="img" aria-label="Animated study of receiving, mediating and outward radiation from organic life"></canvas></div>
+      <div class="settings">
+        <button id="play" type="button">Pause</button>
+        <label class="scrubber" for="time">Presentation time <input id="time" type="range" min="0" max="16" step=".05" value="4"></label>
+        <span id="clock">0:04</span>
+        <label><input id="same-rates" type="checkbox"> Equalize mark speeds</label>
+        <label><input id="show-labels" type="checkbox" checked> Names</label>
+        <label><input id="show-g02" type="checkbox" checked> Include G02 context</label>
+      </div>
+      <div class="legend" id="legend" aria-label="Actual mark mappings"></div>
+      <p class="setting-note">The optional G02 context shows reception (cyan) and onward terrestrial mediation (green). G03 consists of the three outgoing families. All colors and shapes are artistic codes, not particle identities.</p>
+    </section>
+    <aside class="panel" aria-labelledby="readout-heading">
+      <h2 id="readout-heading">What the intervention reveals</h2>
+      <div id="interpretation" class="info" aria-live="polite"></div>
+      <div class="metric"><strong>Remains invariant</strong><p>Organic life is the radiating subject; Sun, planetary world, and Moon are distinct recipients. G03 asserts that the required kinds differ.</p></div>
+      <div class="metric"><strong>What changes</strong><p id="what-changes"></p></div>
+      <div class="metric"><strong>What we cannot infer</strong><p>Different glyphs, rhythms or colors do not establish three different physical mechanisms, receiver behaviors, or cosmological frequencies.</p></div>
+      <div class="metric"><strong>Original implementation</strong><p>Three outgoing streams share the same marker-on-a-curve procedure, with different shapes, colors, destinations and arbitrary rates: <code>0.095</code>, <code>0.067</code>, <code>0.083</code> path fractions per second.</p></div>
+      <div class="metric"><strong>Source boundary</strong><p>G02 = planetary reception and terrestrial mediation. G03 = outgoing differentiated radiation. G04 = lunar nourishment, not demonstrated by arrival alone.</p></div>
+    </aside>
+    <section class="panel wide" aria-labelledby="results-heading">
+      <h2 id="results-heading">What the current scene actually encodes</h2>
+      <div class="analysis">
+        <section><h3>Source claim versus image</h3>
+          <table><thead><tr><th>Claimed relation</th><th>Current scene</th></tr></thead><tbody>
+          <tr><td>G02 · Planets → organic life → Earth</td><td>Two successive directed motions, cyan and green; same generic moving-mark idiom</td></tr>
+          <tr><td>G03 · Organic life → Sun / planets / Moon; types differ</td><td>Three endpoints and distinct glyph families, with no source-specified distinct mechanics</td></tr>
+          <tr><td>G04 · Ongoing lunar nourishment</td><td><span class="tag">Not depicted</span> Moonward arrival alone does not show maintenance</td></tr>
+          </tbody></table>
+        </section>
+        <section><h3>Recommended artistic response</h3><ul>
+          <li>Keep distinctive marks when communicating the source's <em>different kinds</em>; do not make them falsely scientific.</li>
+          <li>Standardize arbitrary rate differences unless intentionally exploring presentation rhythm.</li>
+          <li>Develop G02's <em>local organic reception</em>: the source explicitly contrasts a field of grass and a human gathering as different receivers.</li>
+          <li>Do not invent recipient-specific physical reactions for G03 simply to make the animation look mechanistic.</li>
+          <li>Use source-scoped text and optional research keys; keep the film free of an intrusive permanent legend.</li>
+        </ul></section>
+      </div>
+      <details><summary>Sources, distinctions and limits</summary>
+        <p id="source-citations"></p>
+        <p>The research result is a semantic and implementation audit. It does not demonstrate how a new viewer will decode the marks. The uniform and permuted versions are internal counterfactual changes to the drawing, not alternate Gurdjieff doctrines.</p>
+      </details>
+    </section>
+  </div>
+  <footer><a href="009-encoding-audit.json">Read the source-anchored audit record</a> · <a href="../../experiments/009-cosmic-membrane/index.html">Open original interactive scene</a> · <a href="../index.html#case-study">Back to encyclopedia</a></footer>
+</div>
+<script src="009-encoding-audit-data.js"></script>
+<script src="009-encoding-lab.js"></script>
+</body>
+</html>
