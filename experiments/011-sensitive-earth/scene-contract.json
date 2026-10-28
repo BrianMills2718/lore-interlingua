@@ -1,0 +1,24 @@
+{
+  "id": "011-the-sensitive-earth",
+  "title": "The Sensitive Earth",
+  "lore": "Gurdjieff via P. D. Ouspensky",
+  "scope": "The organic-life interval in the Ray of Creation, not Gurdjieff's entire cosmology",
+  "source": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html",
+  "claims": {
+    "G02": "Organic life mediates planetary influences to Earth",
+    "G03": "Organic life radiates differently to Sun, planets and Moon",
+    "010-field-comparison": "Grass and people receive and transmit different kinds of influence in Ouspensky's example"
+  },
+  "visual_roles": [
+    {"mark":"Earth", "role":"recipient", "type":"iconic globe"},
+    {"mark":"plants, trees, animal, people", "role":"heterogeneous mediator", "type":"recognizable figurative silhouettes"},
+    {"mark":"inbound light", "role":"planetary influence arrives at organic life", "type":"travel motion, no physical particle claim"},
+    {"mark":"inward pulses", "role":"mediation toward Earth", "type":"different response/direction from inbound motion"},
+    {"mark":"outbound differentiated families", "role":"distinct kinds of radiation to distinct recipients", "type":"same movement operation, color/shape are conventions"},
+    {"mark":"Earth eye", "role":"metaphor for organ of perception", "type":"selective allegory, not a literal anatomical assertion"}
+  ],
+  "time_semantics": {"domain_time":"continuous represented processes, not a narrated creation history", "presentation_time":"camera focus and source-scoped captions", "manipulation_time":"available in the offline HTML study via scrubber"},
+  "production": {"resolution":"1280x720", "fps":24, "seconds":86, "caption_format":"burned-in English plus external SRT", "audio":"original synthetic ambient score; no TTS"},
+  "limitations": ["no quantified cosmic physics", "exact planet count not source-defined", "not all of Gurdjieff's lore", "illustrated human/grass difference does not identify cosmic substances", "not validated with viewers"],
+  "status":"art-directed film preview, not a settled compositional visual language"
+}
