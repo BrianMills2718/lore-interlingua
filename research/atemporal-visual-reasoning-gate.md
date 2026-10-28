@@ -1,81 +1,92 @@
-# Rescue gate: atemporal structure versus temporal representation
+# First-principles appraisal — atemporal visual reasoning
 
-**Status:** Proposed go/no-go experiment. Owner decision from 2026-10-27 discussion: **continue the bounded research question, stop the current cinematic-diagram pipeline**. This is not a commitment to a general-purpose metaphysical animation compiler.
+**Status:** Revised 2026-10-27 after a project-management correction. This supersedes the earlier benchmark-based *go/no-go gate*, which remains visible in Git history. **Current disposition: continue a bounded architectural investigation; suspend the ineffective slideshow-style production pipeline; do not make the fate of the research program contingent on a small benchmark.**
 
-## Why
-Experiments 001–007 improved semantic specificity and artistic treatment but still primarily delivered sequences of diagrammatic statements or illustrations. The failure mode is repeated: animation of presentation is mistaken for dynamic visual reasoning. The user's key requirement is stronger: represent both things inside and outside time, and help users **represent, manipulate and discover** conceptual relationships.
+## Decision problem: five distinct questions
 
-The next experiment must directly test whether a visible operation can reveal something about a *timeless* relation without implying that the relation itself evolves in time.
+1. **Conceptual coherence:** Can we describe the intended capability without contradiction? What would count as representation, manipulation, and discovery? Do we require complete translation of every metaphysical concept (probably untenable), or useful selective representations?
+2. **Possibility in principle:** Can symbols, spatial relations, motion, text, and interaction convey timeless as well as temporal distinctions? Can exploration of a representation reveal properties without falsely asserting that the represented world changes? A constructive instance establishes **local possibility**, not universal expressive adequacy.
+3. **Tractability:** Can the capability be decomposed into learnable and buildable subproblems using existing ideas and tools? What are the hard unknowns: conceptual translation, visual semantics, aesthetic direction, formal manipulation, and user interpretation?
+4. **Path / intellectual leverage:** Is there a sequence of work in which solving one problem unlocks the next, with discoveries carried forward into a reusable vocabulary? Does any abstraction do useful work rather than becoming a second project?
+5. **Value:** Would a partial system—supporting visual thought, artistic investigation and communication in some domains—be worthwhile? Value is a goal-relative judgment, not a theorem or a score fixed by a benchmark.
 
-## Distinguish three clocks
+**Do not infer impossibility from underperforming examples.** A benchmark compares particular implementations under chosen tasks and viewers. It does not bound all possible representations, establish a universal impossibility, or decide the worth of an open-ended artistic-research program.
 
-1. **Domain/ontological time:** Does the modeled process or entity change in its own world? May be absent.
-2. **Presentation time:** When does a viewer see or attend to a part of the structure?
-3. **Manipulation time:** When does the viewer change an instance, viewpoint, parameter, or representation to inspect invariants?
+## First-principles reasoning
 
-Visual movement need not signify a physical event in the depicted world. A continuous change of representation can expose an invariant relation; a historical change should have a distinctly modeled transition.
+### A. Atemporal subject matter poses no inherent contradiction to dynamic representation
 
-## Two-stage test — no polished film yet
+Separate **domain time** (whether the depicted reality itself changes), **presentation time** (the order in which we encounter the representation), and **manipulation time** (the order in which we modify a representation, instance, or viewpoint).
 
-### Stage A: Calibration on an uncontroversially atemporal formal truth
+An unchanged relationship can be revealed progressively or explored by moving a representation. This does not require assigning a time coordinate to the underlying relationship.
 
-**Example:** The interior angles of a Euclidean triangle sum to 180 degrees for every valid triangle. As the viewer drags a vertex, the particular triangle changes but this relation remains true.
+**Constructive example:** In Euclidean geometry, deforming a valid triangle changes its angles but preserves their sum. The movement is in a sequence of *instances inspected*, not a history of the theorem becoming true. This shows one instance of the needed distinction, not that Catholic eternity or Plotinian dependence is equivalent to geometry.
 
-- Same semantic claim, three treatments: **best static explanation**, **passive reveal/animated slides**, **directly manipulable continuous visual construction**.
-- Make angle measures and sum visible as a stable relation; optionally reconfigure copies of the angles into a straight angle. No gratuitous transitions, decorative star fields, or narrator-led slide sequence.
-- Explicitly separate varying the triangle instance from changing a mathematical law.
-- Viewer tasks: identify what changed and what stayed invariant; manipulate to test an edge case; predict the outcome before seeing it; explain whether the theorem was temporally created.
-- Programmatic invariant checks should cover nondegenerate triangles; test near-degenerate cases for rendering clarity but do not claim the theorem extends to invalid zero-area triangles.
-- Reuse the [visual-language](https://github.com/BrianMills2718/visual-language) repository's notation literacy and freeze-frame/static-comparison framework. Do not build a competing general renderer for this pilot.
+### B. Representation and reasoning are already separable
 
-**Why a math calibration?** We know which statements are true independently of artistic preference. The experiment can fail clearly.
+A visual **depiction** makes a concept perceptible. A visual **reasoning operation** changes a representation according to declared rules, or explores a metaphor to generate hypotheses. A **discovery** can be a new question or structural distinction, not only a proven consequence. Distinguish:
+- rule-preserving transformations (licensed conditional on explicit semantics);
+- analogical exploration (suggestive, not deductive);
+- aesthetic/interpretive discovery (valuable without formal inference).
 
-### Stage B: Transfer to one coherent metaphysical source
+These modes can coexist within one artistic practice.
 
-**Candidate:** Plotinus' One, Intellect and Soul as a single source-scoped *atemporal dependence* account (primary text: *Enneads* V.1/V.2). Do not reinterpret it as a history of three objects being created in sequence merely because the viewer sees them sequentially.
+### C. Generality is graded rather than all-or-nothing
 
-- Use the same distinction between **domain time** and **presentation/manipulation time**, but do not import the triangle's exact pictures or assume metaphysical grounding is mathematically the same relation as an angle sum.
-- Represent the account with supported names, analogical imagery, and artistic freedom.
-- Ask whether a viewer can distinguish **unchanging grounding** from **temporal causal sequence** and whether exploration yields a meaningful question about dependence/source depletion.
-- Document source interpretation separately from rendering and user reception. No claim that the animation proves Plotinus true.
+The weakest goal—*make any single lore film*—is trivial and already partly achieved. A stronger one—*reuse a visual vocabulary across related conceptual relationships*—is plausible but unproven. Stronger still—*systematically compose and manipulate structures to reveal implications*—requires explicit semantic constraints and successful examples. **A universal automatic compiler from arbitrary metaphysics to intuitively legible cinema is not a justified requirement.**
 
-## Predeclared comparison / decision gate
+The project may succeed with a partial, artistically directed, multimodal medium. It must not be judged as failing merely because one metaphysical concept still needs text or a conventional symbol.
 
-Run one small study with **at least six unfamiliar viewers** if recruitment is possible; otherwise explicitly report only a designer/internal pilot and withhold any audience-effectiveness claim.
+### D. A credible path can be identified without pretending the result is guaranteed
 
-Matched tasks compare a strong static representation, a passive animation, and a manipulable dynamic version. Record:
-- correct identification of *what changes* versus *what remains fixed*;
-- unintended temporal-causation or material-transfer readings;
-- explanation/prediction task accuracy and response effort;
-- genuinely new questions or distinctions prompted by manipulating the scene;
-- whether the representation transfers at least one **semantic distinction** to Plotinus without forced equivalence.
+Use proven or plausible building blocks: conceptual source modeling; compositional diagrams; traditional iconography and metaphor; temporal visual notation; typed identities/relations; interactive manipulation; a disciplined research log.
 
-**Pass for further research:** The interactive treatment produces a clear explanatory or reasoning advantage over the best static/slideshow alternative on at least one prespecified task, without a dominant false temporal reading; and Stage B preserves the domain/presentation-time distinction. Interpret six-person data only as a pilot, not general statistical proof.
+**Critical uncertainty:** The cross-domain translation layer may fail to preserve distinctions while producing communicatively useful visuals. We do not currently possess a demonstrated general semantic compiler, and examples from mathematics do not settle that problem.
 
-**Revise once:** If Stage A is promising but Stage B fails through a specific repairable mapping, revise that mapping once and rerun a bounded comparison.
+## Decision rubric — assessed by argument, not scores
 
-**Spike / narrow:** If a reasonable pilot cannot outperform a static representation at *any* specified reasoning task, or if even after one revision the cross-domain concept consistently requires labels that do all explanatory work, stop the *generative visual reasoning language* track. Preserve the **artistic lore film** track as a separate viable creative endeavor; do not pretend its aesthetic value validates a computational visual language.
+| Question | Present assessment | What could change the assessment |
+| --- | --- | --- |
+| Is it coherent to depict atemporal relationships dynamically? | **Yes in principle** if domain time and presentation/manipulation time are separated. | A requirement that insists all animation depicts actual physical/historical change would contradict this, but that is not our goal. |
+| Is some visual reasoning possible? | **Yes for some domains**, as illustrated by standard geometric/diagrammatic constructions. | An argument showing our exact desired class of semantics cannot be mapped meaningfully; no such argument exists. |
+| Can we encompass all metaphysical lore faithfully and intuitively? | **No established justification.** Treat as an open, probably overbroad aspiration. | A rigorous compositional translation framework and many independent cases could improve confidence, never prove unbounded universality. |
+| Is there a meaningful partial architecture? | **Yes, provisional:** source lore → explicit conceptual relations → artistic visual construction ↔ manipulation → questions/insights → source/model revision. | Discovering that each stage necessarily erases distinctions essential to the next would require major revision. |
+| Is the project's value nontrivial even if partial? | **Potentially**, because expression, private visual thought, and cumulative conventions may each be independently valuable. | Artistic goals, opportunity costs, and practical usefulness are decisions by the project owner, informed by examples but not dictated by a benchmark. |
 
-**Do not merge success criteria:** Better art, clear diagrams, accurate theological research, and valid formal manipulation are four different accomplishments.
+**Disposition:** Continue as exploratory artistic and conceptual R&D. Discontinue the current practice of using polished videos or slideshow comparisons as evidence of fundamental project viability. Restrict effort on general automation until reusable semantics appear.
 
-## Scope & effort cap
+## Architecture path, with explicit questions
 
-- One small math construction and one small metaphysical transfer case; no new upper ontology, rendering framework, polished 90-second film, or multi-tradition atlas.
-- Reuse existing static/animation libraries, including Manim if it reduces effort, and existing `visual-language` principles.
-- Maintain a single source-of-truth semantic specification and record interpretation risks.
-- Do not claim a general-purpose grammar or return to Catholic trilogy until this gate is reviewed.
+**Step 1 — specify a minimal distinction, not a complete cosmology:** an entity's identity, its relationship to another, and whether that relationship is temporal, persistent, or atemporal. Do not assume these are all geometrically the same.
 
-## Prior art
+**Step 2 — use a constructive exemplar:** e.g., the existing triangle invariant pilot `experiments/008-atemporal-invariant`. Ask what it *demonstrates logically* about the distinction between changing instances and invariant claims, and what it does not show about metaphysics. The current construction is sufficient as a calibration artifact; further benchmark work is optional.
 
-- [3Blue1Brown — linear transformations](https://www.3blue1brown.com/lessons/linear-transformations/) demonstrates dynamic inspection of mathematically fixed relationships.
-- [Bret Victor — Media for Thinking the Unthinkable / Explorable Explanations](https://worrydream.com/) illustrates interactive representations as reasoning media.
-- [Category-theoretic string-diagram reasoning](https://doi.org/10.1016/j.jlamp.2015.12.004) illustrates visually lawful manipulation of relations.
-- [Visual Language experiments](https://github.com/BrianMills2718/visual-language/tree/main/experiments) already define strong static baselines and notation-literacy tests.
+**Step 3 — translate one metaphysical case:** an explicitly scoped passage from Plotinus or Catholic theology with an atemporal relationship. Specify the tradition's interpretation and where any analogical visual convention is selective, not literal.
 
-## Exit deliverables
+**Step 4 — make one manipulate-and-discover operation:** the viewer can vary viewpoint, arrangement, or hypothesis and inspect what remains constant. We must distinguish exploratory edits of an idea from edits to the tradition's asserted doctrine.
 
-1. Source-grounded explanation and treatment for both cases.
-2. Usable controls for the manipulable construction and a matched static baseline.
-3. Programmatic correctness tests for the mathematical example.
-4. Evidence table of viewer interpretations and discovered questions (or an explicit "not tested").
-5. Written go/no-go decision; no self-certification from an appealing rendering.
+**Step 5 — assess the conceptual gap and dependency chain:** Did the experiment expose a principled obstacle, a representational choice needing art direction, or a missing formal distinction? Identify a *specific next subproblem with an apparent solution path* before investing heavily.
+
+**Step 6 — iterate or narrow based on reasoning:** keep work if there are promising unexplored routes and value in the partial capability. Narrow if generality is overclaimed. Pause or spike a particular technical approach if it depends on impossible conditions, duplicates mature prior art without benefit, or has no credible route forward relative to goals/resources. Poor results from one implementation alone warrant redesigning that implementation, not abandoning the research vision.
+
+## Role of experiments
+
+Experiments and viewer tests are **diagnostic evidence** about interpretation, usability and performance. They can reveal hidden assumptions, provide counterexamples to design claims, expose implementation flaws, or show practical limitations. They are not a constitutional go/no-go vote on possibility or project value.
+
+If tests are run, avoid claiming any universal conclusion. Their role is to sharpen the conceptual model and decide which *local design* to pursue.
+
+## Current constraints and immediate work
+
+- Preserve the `visual-language` research; don't build a duplicate visual-notation framework.
+- No additional full lore movie as an attempted project-validity demonstration.
+- Do not overbuild an ontology to give an illusion of progress.
+- Next substantive analysis: articulate one compelling **atemporal metaphysical relation** and two possible representational mechanisms, reasoning through each mechanism's invariants, ambiguities, and affordances before coding anything else.
+- Explicitly separate what our system **expresses**, what it **licenses us to infer**, and what it merely **suggests**.
+
+## Links
+
+- [Visual reasoning as an instrument](../docs/visual-reasoning-instrument.md)
+- [Communication-first artistic design](../docs/communication-first-design.md)
+- [Existing triangle pilot](../experiments/008-atemporal-invariant/)
+- [Visual Language — notation literacy](https://github.com/BrianMills2718/visual-language/blob/main/experiments/001-notation-literacy.md)
+- [Issue #15](https://github.com/BrianMills2718/lore-interlingua/issues/15)
