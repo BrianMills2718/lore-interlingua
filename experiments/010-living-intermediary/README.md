@@ -2,6 +2,14 @@
 
 **Status:** interactive artistic/semantic research study, not a finished lore film, astronomical simulation, or established visual grammar. Open [index.html](index.html) offline in a browser. No audio, online resources, or dependencies are needed to use the scene.
 
+## Review package on GitHub
+
+- [Download the offline Encyclopedia v0.4 and Experiment 010 ZIP](../../downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip).
+- [View the reviewed bare-ground / grassland / human-gathering comparison](review-comparison.jpg).
+- [Open the exact source HTML](index.html) or the [scene contract](scene-contract.json).
+
+The archive is a fixed review snapshot. Updates to this source tree should receive a separately versioned package.
+
 ## The source problem
 
 P. D. Ouspensky's record of Gurdjieff describes organic life as Earth's sensitive intermediary for influences from the planetary sphere. The text says those influences would not otherwise reach Earth and gives a concrete contrast: the same field receives and transmits different influences when covered in grass versus occupied by a crowd. See [quotations attributed to Ouspensky](https://www.gurdjieff-hawaii.org/?page_id=160) and *In Search of the Miraculous*, the organic-life discussion, commonly in chapter 7 (locators vary by edition).
