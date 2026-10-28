@@ -1,0 +1,105 @@
+{
+  "experiment": "007-trinity-incarnation",
+  "status": "visual-thinking-animatic; provisional, no grammar rule promoted",
+  "tradition": "Catholicism (Catechism, Nicene Creed)",
+  "source_sections": [
+    "CCC 252-255",
+    "CCC 461-483"
+  ],
+  "sources": [
+    "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_one/article_1/paragraph_2_the_father.html",
+    "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/artcile_3.html"
+  ],
+  "subject": "One divine nature, three distinct divine persons; historical assumption of human nature by the same eternal Son",
+  "semantic_claims": [
+    {
+      "id": "shared_nature",
+      "kind": "eternal_identity",
+      "participants": [
+        "Father",
+        "Son",
+        "Holy Spirit"
+      ],
+      "claim": "All three persons are one God; not three gods or portions of divinity"
+    },
+    {
+      "id": "distinct_persons",
+      "kind": "eternal_relation",
+      "participants": [
+        "Father",
+        "Son",
+        "Holy Spirit"
+      ],
+      "claim": "Three distinct divine persons; personal distinction is relational, not temporal creation"
+    },
+    {
+      "id": "incarnation",
+      "kind": "historical_event",
+      "participants": [
+        "Son",
+        "Mary",
+        "Jesus Christ"
+      ],
+      "claim": "The eternal Son assumes human nature by the Spirit from the Virgin Mary"
+    },
+    {
+      "id": "one_person_two_natures",
+      "kind": "identity_preservation",
+      "participants": [
+        "Son",
+        "Jesus Christ",
+        "divine nature",
+        "human nature"
+      ],
+      "claim": "Jesus Christ is one divine person, fully divine and fully human, without confusion or separation"
+    }
+  ],
+  "artistic_conventions": [
+    {
+      "mark": "Continuous enclosing oval",
+      "hypothesis": "Shared nature",
+      "risk": "Looks like persons are parts of God"
+    },
+    {
+      "mark": "Identity bridge across two registers",
+      "hypothesis": "Same Son in eternity and history",
+      "risk": "Looks like physical travel or two separate Sons"
+    },
+    {
+      "mark": "Human figure and cyan human-nature boundary",
+      "hypothesis": "Real assumed human nature",
+      "risk": "Looks like a costume or added shell"
+    },
+    {
+      "mark": "Named Mary silhouette",
+      "hypothesis": "Historically recognizable created person",
+      "risk": "Generic figure cannot communicate actual Annunciation"
+    }
+  ],
+  "controls": [
+    "40-second timeline and play/pause",
+    "identity bridge visibility",
+    "nature boundaries visibility",
+    "inquiry overlay"
+  ],
+  "purposes": [
+    "representation",
+    "manipulation",
+    "discovery"
+  ],
+  "evaluation": {
+    "browser": "Chromium UI smoke test passed",
+    "javascript_errors": 0,
+    "identity_toggle": "passed",
+    "nature_toggle": "passed",
+    "questions_toggle": "passed",
+    "audience_study": "not conducted",
+    "promoted_visual_rules": 0
+  },
+  "notes": [
+    "The animation is a study of one coherent Catholic account, not a finalized explanation.",
+    "The drawing is symbolic, not a spatial map of divine persons.",
+    "Film time introduces the historical Incarnation, not the eternal generation of the Son.",
+    "The controls toggle representation, not the claims of Catholic doctrine."
+  ]
+}
