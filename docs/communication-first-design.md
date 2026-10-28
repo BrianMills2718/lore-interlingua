@@ -93,6 +93,10 @@ This is not merely a concession to artistic license. Catholic tradition itself u
 
 **Design evaluation:** Ask what the metaphor reveals, what relations it invites viewers to explore, what it obscures, and whether the resulting insights or errors are productive. Do not reject an image just because its source phenomenon has properties the target lacks.
 
+## Visual reasoning is bidirectional
+
+The production system is both an expressive language **and a thinking instrument**: it can **represent** ideas, enable **manipulation and rule-bound or analogical reasoning**, and **reveal** gaps and implications that change our conceptual model. These functions feed one another. See [Visual reasoning as an instrument](visual-reasoning-instrument.md). Neither a legal graphic transformation nor an evocative analogy is automatically a theorem or a factual claim.
+
 ## Allocation of communicative work
 
 | Mode | Often best for |
