@@ -44,7 +44,7 @@ python render.py
 
 The `film.html` contains its own locally generated Earth illustration as an embedded JPEG, so it opens without a server. The rendering script uses deterministic timestamps and an MJPEG-to-H.264 pipe. It writes `Gurdjieff_The_Ray_of_Creation_124s.mp4` from the generated score and the video frames. Source and scored audio are project-owned, original and reproducible. The `earth_texture.jpg` is a provenance/reference copy; `film.html` holds the embedded version used in the film. `captions.srt` provides external subtitles in addition to burned-in captions.
 
-The GitHub repository may carry a compressed preview to keep source control manageable; the full-resolution video is provided as a separate review download. An HTML study remains a reproducible rendering source, **not the primary audience deliverable**.
+A directly playable [compressed 480p film preview](Ray_of_Creation_review_480p.mp4) is archived in GitHub (15fps, low bitrate to keep source control manageable). The full 24fps 1280×720 master video is provided as a separate review download and is reproducible from the renderer. An HTML study remains a reproducible rendering source, **not the primary audience deliverable**.
 
 ## What to look at next
 
