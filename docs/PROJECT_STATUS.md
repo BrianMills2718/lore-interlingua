@@ -43,6 +43,10 @@
 
 Do not restructure directories or rename historic assets until downstream links and imports are understood. **Consolidation by indexing and status is safer than destructive deletion.**
 
+## New design reference: encyclopedia v0.1 (2026-10-28)
+
+A browsable [Visual–Semantic Encyclopedia](../encyclopedia/README.md) now brings together twelve connected concepts, source-corpus examples, provisional visual mappings and four small interactive reasoning studies. **It does not create a new upper ontology, verify symbolism, or automate video production.** It is the central index for proposing and criticizing visual choices, not a replacement for the tradition-specific models or the experiment archive. Next, embed a fully scoped *real lore case* (for instance Study 009) with mark-to-meaning links so the atlas does not become detached from artistic work.
+
 ## 4. Recommended development path
 
 ### Phase I — Fix the question and identify one specific operation

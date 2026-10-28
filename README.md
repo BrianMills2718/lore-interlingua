@@ -11,6 +11,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 | Document | Role |
 | --- | --- |
 | **[Project Charter](docs/PROJECT_CHARTER.md)** | Current mission, artistic commitments, semantic boundaries, and project scope |
+| **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [Open interactive atlas](encyclopedia/index.html) | Twelve interconnected concept entries, scoped examples, visual hypotheses, and four manipulable studies |
 | **[Current State / Recovery Plan](docs/PROJECT_STATUS.md)** | Findings, gaps, priorities, and next architectural work |
 | **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Status of Experiments 000–008; what was actually produced and learned |
 | [Decision Record](docs/DECISIONS.md) | Retained, revised and superseded project choices |
@@ -22,6 +23,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 ## What exists
 
+- **Visual-semantic encyclopedia:** [Browse 12 concept entries](encyclopedia/index.html), search an ontology-style navigation graph, inspect existing source-scoped claims and experiment with four proposed visual correspondences. Its data and visual mappings are provisional, not a new universal ontology.
 - **Interlingua research:** [v0.2 corpus](data/v0.2.json) (29 propositions, 15 declared sorts, 39 typed predicates); [JSON Schema](schemas/v0.2.schema.json), [validator](scripts/validate.py) and [unit tests](tests/test_interlingua.py). The earlier [v0.1](data/v0.1.json) includes 12 examples.
 - **Tradition-specific model:** [Catholic source-scoped world model](research/catholic-world-model/README.md) and [typed JSON](research/catholic-world-model/v0.1.json), with its own structure, independent of the v0.2 interlingua.
 - **Visual work:** [experiment index](docs/EXPERIMENT_REGISTRY.md) links Gurdjieff, Bailey, Manichaeism/Catholicism comparisons, a Catholic visual-thinking workbench, a botanical film, a Trinity–Incarnation animatic, and a mathematical interactive demonstration.

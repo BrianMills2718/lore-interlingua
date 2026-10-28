@@ -61,6 +61,10 @@ art-directed visual and verbal compositions  <-->  manipulation
 
 There is **no working general pipeline** converting the v0.2 JSON corpus into finished videos. Current experiments are independently coded/art-directed. That is a documented limitation, not a production failure that a test suite hides.
 
+## Visual–semantic encyclopedia
+
+The [Visual–Semantic Encyclopedia](../encyclopedia/README.md) is the accumulating **research/design index** for conceptual distinctions, their relations, examples from source-scoped lore, candidate visual expressions and unresolved questions. Its twelve-entry v0.1 is intentionally small: it reuses the current interlingua and external visual-language primitives as **references**, not as a second authoritative upper ontology or a production graphics compiler. Every significant proposed visual mark identifies its intended mapping and non-claims; failed alternatives remain research evidence.
+
 ## Repository responsibilities
 
 - **[lore-interlingua](https://github.com/BrianMills2718/lore-interlingua)** owns tradition-specific source models, the candidate conceptual interlingua, lore-specific visual studies, artistic production notes and the project decision record.

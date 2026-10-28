@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Visual–Semantic Encyclopedia · Lore Interlingua</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#entry-heading">Skip to selected concept</a>
+<div class="site">
+  <header class="mast">
+    <div class="brand"><span class="sigil" aria-hidden="true">◈</span><div><div class="eyebrow">LORE INTERLINGUA / RESEARCH LIBRARY</div><strong>Visual–Semantic Encyclopedia</strong></div></div>
+    <div class="mast-right"><span class="status"><span class="status-dot"></span> Working atlas · v0.1</span><a class="repo-link" href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_CHARTER.md">Project charter <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="intro"><div><div class="eyebrow">A BROWSABLE INSTRUMENT FOR THINKING</div><h1>Meaning before marks.</h1><p>Explore concepts, source-bound interpretations, and proposed ways to make relationships visible. The atlas is a research tool—not a universal ontology or a library of approved symbols.</p></div><div class="intro-count"><strong id="total-count">12</strong><span>interconnected entries</span></div></div>
+  <div class="workspace">
+    <nav class="sidebar panel" aria-label="Browse encyclopedia entries">
+      <div class="section-top"><div class="eyebrow">01 / FIND A CONCEPT</div><span id="visible-count" class="count"></span></div>
+      <label class="search-label" for="search">Search by concept, definition or source</label>
+      <input id="search" type="search" placeholder="Search 12 concepts…" autocomplete="off">
+      <div class="facet-list" id="facet-filters" role="group" aria-label="Filter by category"></div>
+      <div id="concept-list" class="concept-list" aria-label="Concepts"></div>
+      <div class="sidebar-foot">Conceptual categories are <strong>navigation facets</strong>, not mutually exclusive types of existence.</div>
+    </nav>
+    <div class="center">
+      <section class="atlas panel" aria-labelledby="atlas-title">
+        <div class="section-top"><div><div class="eyebrow">02 / CONCEPTUAL NEIGHBORHOOD</div><h2 id="atlas-title">Relational atlas</h2></div><span class="minor">Select any node</span></div>
+        <p class="guidance">Connections describe encyclopedia relationships, <em>not</em> causal forces or metaphysical laws. Only the selected concept’s neighborhood is drawn.</p>
+        <svg id="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" role="group" aria-label="Interactive network of twelve concepts"></svg>
+        <p id="graph-caption" class="graph-caption" aria-live="polite"></p>
+      </section>
+      <section class="lab panel" aria-labelledby="lab-title">
+        <div class="section-top"><div><div class="eyebrow">03 / VISUAL THINKING STUDY</div><h2 id="lab-title">Manipulate a correspondence</h2></div><span class="minor">Experimental sketches</span></div>
+        <div id="lab-context" class="guidance"></div>
+        <div class="lab-stage"><canvas id="demo" width="820" height="326" aria-label="Visual hypothesis demonstration"></canvas><div id="lab-overlay" class="lab-overlay" aria-live="polite"></div></div>
+        <div id="demo-controls" class="demo-controls" role="group" aria-label="Manipulate the visual study"></div>
+        <div class="lab-footer"><span class="unvalidated">Candidate mapping · Not an established notation</span><span>What changes in the model, and what only changes on screen?</span></div>
+      </section>
+    </div>
+    <aside class="detail panel" aria-label="Selected concept and its research context">
+      <div class="section-top"><div class="eyebrow">04 / ENTRY RECORD</div><span id="entry-type" class="count"></span></div>
+      <h2 id="entry-heading" tabindex="-1">Dependence</h2>
+      <div id="entry-body"></div>
+      <section class="inquiry" aria-label="Inquiry note">
+        <h3>Research notebook</h3>
+        <p>Record an observation or an unexpected question. Notes are not uploaded or automatically saved.</p>
+        <textarea id="note" rows="3" placeholder="What did this representation reveal or obscure?"></textarea>
+        <button id="copy-note" class="action">Copy note with concept context</button>
+        <p id="note-status" class="note-status" role="status"></p>
+      </section>
+    </aside>
+  </div>
+  <footer>Source claims remain scoped to their traditions. Visual candidates are exploratory. <a href="README.md">Method, provenance and limitations</a> · <a href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/VISUAL_REFERENCE_DIRECTION.md">Visual references</a> · <a href="https://github.com/BrianMills2718/lore-interlingua/blob/main/docs/PROJECT_STATUS.md">Project status</a></footer>
+</div>
+<script src="catalog.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
