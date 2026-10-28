@@ -42,3 +42,6 @@ The frame never replaces the cosmology with a new proposition. The principal vis
 ## Next artistic investigation
 
 Would a layered 3D/2.5D view of the membrane, with real varieties of organism and differentiated paths, communicate the reception/mediation/radiation system more effectively? Could a camera pass from one organism's receptive act outward to the whole Earth to expose scale and nested dependence? Preserve the same doctrine while testing that continuous camera passage.
+## Narration / major visual audit
+
+A source-anchored [16-second narration script, longer alternative and symbol-by-symbol accountability audit](narration-and-audit.md) now accompany this exploratory scene, along with a [timed subtitle draft](narration-16s.srt). These are **production proposals**, not an audio recording or a revised film. The audit identifies prominent nested ellipses and a single-planet outbound endpoint as requiring correction rather than verbal rationalization.
