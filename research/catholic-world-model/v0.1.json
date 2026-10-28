@@ -78,6 +78,16 @@
       "title": "Compendium of the Catechism — Last Things",
       "url": "https://www.vatican.va/content/dam/wss/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html",
       "section": "questions 205–216"
+    },
+    "mary": {
+      "title": "Catechism — Virgin Mary and the Incarnation",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/artcile_3/paragraph_2_conceived_by_the_power_of_the_holy_spirit_and_born_of_the_virgin_mary.html",
+      "section": "§§484–511"
+    },
+    "purgatory": {
+      "title": "Catechism — Purgatory",
+      "url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_three/article_12/iii_the_final_purification%2C_or_purgatory.html",
+      "section": "§§1030–1032"
     }
   },
   "entities": [
@@ -287,6 +297,15 @@
       "definition": "Transformed creation at final fulfillment, not rejection of materiality as intrinsically evil",
       "source_ids": [
         "eschatology"
+      ]
+    },
+    {
+      "id": "mary",
+      "kind": "created_person",
+      "label": "Mary, Mother of Jesus",
+      "definition": "Created human person; mother of the incarnate Son according to his human nature, called Theotokos because Jesus is one divine person; Mary is not a divine person.",
+      "source_ids": [
+        "mary"
       ]
     }
   ],
@@ -626,6 +645,17 @@
         "creation",
         "human"
       ]
+    },
+    {
+      "id": "r31",
+      "predicate": "human_mother_of",
+      "subject": "mary",
+      "object": "jesus",
+      "temporality": "historical",
+      "meaning": "Mary is mother of Jesus who is the incarnate eternal Son; not mother/origin of divine nature",
+      "source_ids": [
+        "mary"
+      ]
     }
   ],
   "processes": [
@@ -768,6 +798,21 @@
         "eschatology",
         "lastthings"
       ]
+    },
+    {
+      "id": "annunciation_and_assent",
+      "kind": "historical_divine_human_cooperation",
+      "claim": "Mary gives free consent at the Annunciation to the Incarnation, by grace and power of the Holy Spirit.",
+      "guardrail": "Mary is created, and her consent does not cause the Son's eternal divine origin.",
+      "participant_ids": [
+        "mary",
+        "spirit",
+        "son",
+        "jesus"
+      ],
+      "source_ids": [
+        "mary"
+      ]
     }
   ],
   "distinction_rules": [
@@ -780,7 +825,9 @@
     "Free creation and continuing divine conservation are distinct from material transfer between creatures.",
     "Grace and the sacraments are not identical to material energy beams; physical water becomes specifically baptismal in a sacramental context.",
     "Resurrection and the new creation affirm transformed embodiment and creation, rather than liberation from intrinsically wicked material existence.",
-    "Do not depict heavenly, purgatorial or infernal states as empirically located astronomical planets."
+    "Do not depict heavenly, purgatorial or infernal states as empirically located astronomical planets.",
+    "Mary is a created human mother of the incarnate Son, not a member of the Trinity and not the source of Christ's divine nature.",
+    "Heaven, hell and purgatory are distinguished states or destinies in Catholic teaching, not interchangeable afterlife planets; purgatory is purification for those destined for heaven."
   ],
   "visual_research_constraints": [
     "Every foreground theological actor, motif or event needs a source-scoped semantic casting entry.",
@@ -790,5 +837,66 @@
     "Never make a golden aura or flow automatically signify God, holiness, grace, goodness and physical energy at once.",
     "Use words, iconography and narration when they outperform unlabeled abstractions.",
     "The formal model is a thinking instrument; it does not automatically generate a work of art."
+  ],
+  "states": [
+    {
+      "id": "communion_with_god",
+      "kind": "relational_condition",
+      "description": "Participation in divine life and friendship with God, not spatial co-location",
+      "source_ids": [
+        "god",
+        "lastthings"
+      ]
+    },
+    {
+      "id": "sin_and_alienation",
+      "kind": "moral_relational_condition",
+      "description": "Moral rupture through created freedom; not an independent divine principle or a concrete dark substance",
+      "source_ids": [
+        "fall"
+      ]
+    },
+    {
+      "id": "graced_transformation",
+      "kind": "spiritual_condition",
+      "description": "Sanctification through God's gift of grace; not a physical energy flow",
+      "source_ids": [
+        "sacraments",
+        "holyspirit"
+      ]
+    },
+    {
+      "id": "purgatory",
+      "kind": "postmortem_purification",
+      "description": "Purification of those who die in God's grace but are not yet fully purified; distinct from hell",
+      "source_ids": [
+        "purgatory"
+      ]
+    },
+    {
+      "id": "heaven",
+      "kind": "eschatological_communion",
+      "description": "Definitive communion with the Trinity and beatific vision, not necessarily a physical location in space",
+      "source_ids": [
+        "lastthings"
+      ]
+    },
+    {
+      "id": "hell",
+      "kind": "eschatological_separation",
+      "description": "Definitive self-exclusion from communion with God through unrepented mortal sin, not a rival divine realm",
+      "source_ids": [
+        "lastthings"
+      ]
+    },
+    {
+      "id": "bodily_resurrection",
+      "kind": "eschatological_transformation",
+      "description": "Final transformation and reunion of body and soul, not permanent disembodied existence",
+      "source_ids": [
+        "lastthings",
+        "eschatology"
+      ]
+    }
   ]
 }
