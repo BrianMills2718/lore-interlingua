@@ -1,0 +1,27 @@
+{
+  "experiment": "006-catholic-creation-providence",
+  "title": "The World That Is Continually Created",
+  "status": "artistic-interpretation; not established visual grammar",
+  "tradition": "Catholicism",
+  "primary_source": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_one/article_1/paragraph_4_the_creator.index.html",
+  "source_sections": ["290-292", "295-296", "299-302", "306-308"],
+  "represented_relations": [
+    {"id":"free_creation","description":"God freely creates, not by transferring pre-existing or divine material"},
+    {"id":"creaturely_causation","description":"Water, sunlight, growth and human action operate within creation"},
+    {"id":"continuous_sustenance","description":"All creatures remain dependent in being on the Creator at each moment"},
+    {"id":"development","description":"The created world develops while preserving distinct created identities"}
+  ],
+  "not_claimed": [
+    "God is a physical field or energy beam",
+    "God is an additional creature in the scene",
+    "Creation is repeated physical manufacture at each moment",
+    "The created entities represent the three persons of the Trinity",
+    "Visual depiction demonstrates the truth of Catholic doctrine",
+    "Real comprehension has been empirically confirmed"
+  ],
+  "composition": "one continuous living landscape with camera progression",
+  "allowed_media": ["iconic art", "process animation", "formal visual conventions", "text", "original ambient music", "human art direction"],
+  "known_visual_misreadings": ["gold contour read as field", "revelation of contour read as arrival of divine presence", "sun radiation conflated with metaphysical sustaining"],
+  "promoted_grammar_rules": [],
+  "next_review": "First-time viewer comprehension and artistic critique"
+}
