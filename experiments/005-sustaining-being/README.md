@@ -1,5 +1,8 @@
 # Visual Thinking Study 005 — Sustaining Being
 
+> **Historical/provisional record.** This file retains earlier examples and proposed next steps; current project decisions are in [Project Charter](../../docs/PROJECT_CHARTER.md), [Current State](../../docs/PROJECT_STATUS.md), and [Experiment Registry](../../docs/EXPERIMENT_REGISTRY.md). Do not treat a past "gate" as a program-level stop rule.
+
+
 **Status:** Exploratory art/research, not a finished theology film or an approved visual-notation rule.
 
 ## Working question
@@ -51,7 +54,7 @@ Primary grounding: [Catechism of the Catholic Church §§293–302](https://www.
 
 This study revises the lesson of failed/provisional Catholicism Experiment 004. It is guided by [communication-first artistic design](../../docs/communication-first-design.md) and may reuse temporal conventions from [Visual Language](https://github.com/BrianMills2718/visual-language), but does not conflate a scene-specific metaphor with a universal notation.
 
-**Deliverable:** the interactive HTML is canonical. A 12-second video preview and static screenshot are companion media, not replacements for the editable study.
+**Deliverable:** the [interactive HTML](index.html) is canonical in this repository. A 12-second video preview and static screenshot were supplied through the original conversation but are **not present in this repository**; do not claim they can be reproduced or downloaded here.
 
 ## Format decision after critique — 2026-10-27
 
