@@ -73,3 +73,7 @@ Per the [recovery plan](docs/PROJECT_STATUS.md): choose one actual metaphysical 
 ## License and publication
 
 No license is currently selected. Do not presume reuse rights over third-party source texts or media. The repository is public and some project histories include selected user-conversation excerpts; review their publication scope before importing further transcripts or private project material.
+
+## Experiment 009 — Visual encoding audit
+
+The encyclopedia now includes a [source-anchored interactive audit](encyclopedia/studies/009-encoding-audit.html) of whether outgoing colors/shapes encode distinct cosmic mechanisms or chiefly distinguish types of radiation and their destinations. Use **Current marks**, **Uniform marks**, **Swap symbols**, and **Equalize mark speeds** to inspect which graphic choices are conventional. The [findings](encyclopedia/studies/009-encoding-audit.md) separate G03's source-asserted differences in kind from unsourced differences in speed or physical mechanism. This is a design investigation, **not** a viewer test or general ontology expansion.
