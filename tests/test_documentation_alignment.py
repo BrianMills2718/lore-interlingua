@@ -43,7 +43,8 @@ class DocumentationAlignmentTests(unittest.TestCase):
         root = read("README.md")
         self.assertIn("docs/NOTATION_AND_COMPREHENSION.md", root)
         self.assertIn("offline ZIP", root)
-        self.assertIn("Experiment 014 is currently proposed", root)
+        self.assertIn("Experiment 014", root)
+        self.assertIn("is merged into `main`", root)
         self.assertIn("v0.4 package", read("downloads/README.md"))
 
 
