@@ -4,22 +4,30 @@
 
 We use source-grounded conceptual models, reusable visual relations, symbolic imagery, motion, text, and artistic interpretation. The goal is **not** to eliminate words or automatically render every doctrine. Visual representation can also support manipulation and discovery: seeing a relation differently may expose new questions and distinctions.
 
-**Current status (October 2026):** exploratory research. The corpus validator works, and there are several hand-directed animations and interactive studies, but **no demonstrated generic pipeline from the conceptual interlingua to finished films**. The previous animated-slideshow workflow is not the recommended next step. The basic ability to represent atemporal ideas is not in dispute. See the [project audit and recovery plan](docs/PROJECT_STATUS.md).
+**Current status (October 2026):** exploratory research. The corpus validator works, and there are several hand-directed animations and interactive studies, but **no demonstrated generic pipeline from the conceptual interlingua to finished films**. The previous animated-slideshow workflow is not the recommended next step. The basic ability to represent atemporal ideas is not in dispute. The immediate research priorities are **viewer comprehension and reusable notation**; the conceptual model remains upstream of any storyboard. See the [current project status](docs/PROJECT_STATUS.md).
 
 ## Start here
 
 | Document | Role |
 | --- | --- |
 | **[Project Charter](docs/PROJECT_CHARTER.md)** | Current mission, artistic commitments, semantic boundaries, and project scope |
-| **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [Open interactive atlas](encyclopedia/index.html) | Thirteen interconnected concepts, four visual hypotheses to manipulate, and the first complete source-linked Gurdjieff case |
+| **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [interactive HTML source](encyclopedia/index.html) · [offline ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) | Thirteen concept entries, four generic interactive sketches, two Gurdjieff cases, and the later three-film imagery comparison; the ZIP is a historical v0.4 snapshot |
 | **[Current State / Recovery Plan](docs/PROJECT_STATUS.md)** | Findings, gaps, priorities, and next architectural work |
-| **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Status of Experiments 000–009; what was actually produced and learned |
+| **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Completed studies 000–013, their deliverables and evidential limits; proposed work is separately marked |
 | [Decision Record](docs/DECISIONS.md) | Retained, revised and superseded project choices |
 | [Communication-First Artistic Design](docs/communication-first-design.md) | Metaphor, text, accessibility, one-lore films and artistic freedom |
 | [Visual Reasoning Instrument](docs/visual-reasoning-instrument.md) | Representation ↔ manipulation ↔ discovery |
+| [Notation and Comprehension Research](docs/NOTATION_AND_COMPREHENSION.md) | Moody's Physics of Notations as a provisional design audit; concept model → notation → explanatory traversal → storyboard |
 | [Relationship to Visual Language](docs/visual-language-crosswalk.md) | Reuse-first boundary with the separate temporal-notation project |
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
+
+## How to open the encyclopedia
+
+- **Quick offline review:** [download the v0.4 review ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip), extract it, and open its `index.html` in a browser. The package is a fixed **historical snapshot through Experiment 010**.
+- **Latest repository version:** download or clone [this repository](https://github.com/BrianMills2718/lore-interlingua) and open `encyclopedia/index.html` locally. It includes the more recent [imagery atlas](encyclopedia/imagery.html) comparing Films 011–013. GitHub's source-code viewer does **not** execute the interactive HTML.
+- No verified GitHub Pages/live-hosted encyclopedia URL is currently documented; see the [encyclopedia instructions](encyclopedia/README.md).
+
 
 ## Latest cumulative film — The Living Interval (Experiment 013)
 
@@ -27,7 +35,7 @@ The [176-second integrated Gurdjieff film](experiments/013-living-interval/READM
 
 ## Cumulative Gurdjieff visual world
 
-The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compare **Films 011, 012, and 013** as actual videos, records which earlier imagery was retained or dropped, and explains key Gurdjieff terms (orders of laws, Law of Three, Law of Seven, organic mediation and radiation). See the now-implemented [integrated film treatment](docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](docs/GURDJIEFF_EXPLANATION_LEDGER.md). The proposed cumulative film is **a plan, not yet a new MP4**; building a shared visual world does not require replaying every old shot.
+The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compare **Films 011, 012, and 013** as actual videos, records which earlier imagery was retained or dropped, and explains key Gurdjieff terms (orders of laws, Law of Three, Law of Seven, organic mediation and radiation). See the now-implemented [integrated film treatment](docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](docs/GURDJIEFF_EXPLANATION_LEDGER.md). **Film 013 has been produced**; this integrated treatment is now a completed film, not a pending proposal. Later extensions may still build on this visual world without replaying every old shot.
 
 ## The Ray of Creation — Experiment 012
 
@@ -37,9 +45,9 @@ The [visual imagery continuity atlas](encyclopedia/imagery.html) lets you compar
 
 **[Experiment 011 — The Sensitive Earth](experiments/011-sensitive-earth/README.md)** is an 86-second continuously animated, source-scoped Gurdjieff lore film, with recognizable vegetation, animal and human figures, directional reception, mediation toward Earth, and differentiated radiation to Sun/planets/Moon. The repository includes [the standalone offline picture viewer](experiments/011-sensitive-earth/film.html), [English subtitles](experiments/011-sensitive-earth/captions.srt), [semantic contract](experiments/011-sensitive-earth/scene-contract.json), a [review storyboard](experiments/011-sensitive-earth/review_storyboard.jpg), and a reproducible 1280×720 H.264/AAC rendering workflow. A directly playable [480p film preview](experiments/011-sensitive-earth/The_Sensitive_Earth_review_480p.mp4) is archived here; the full-resolution 1280×720 MP4 was delivered separately in chat and can be reproduced from the renderer. The current film is an artistic interpretation, not an established generic semantic-to-film pipeline.
 
-## Offline review package
+## Preserved offline review package
 
-The complete **Encyclopedia v0.4 / Experiment 010** review snapshot is [stored on GitHub](downloads/README.md), including a [downloadable ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) and a [three-condition comparison image](experiments/010-living-intermediary/review-comparison.jpg). Source files remain editable in their existing directories. No separate chat attachment is required to obtain the review package.
+The **Encyclopedia v0.4 / Experiment 010** [downloadable ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) is still available, with a [three-condition comparison image](experiments/010-living-intermediary/review-comparison.jpg). It is intentionally not overwritten when later encyclopedia imagery or films change; see [package provenance](downloads/README.md).
 
 ## What exists
 
@@ -88,7 +96,7 @@ The corpus can be regenerated from v0.1 with `python scripts/build_v02.py`, but 
 
 ## What comes next
 
-Per the [recovery plan](docs/PROJECT_STATUS.md): choose one actual metaphysical relation with nontrivial structure; specify source meaning, a visual correspondence, and a potentially illuminating manipulation; produce a *small research study*, not another polished slideshow. Consolidate reusable conventions only after discovering repeated need.
+**Experiment 014 is currently proposed in [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37), not yet merged into `main`.** It defines one G02 conceptual model upstream of five *candidate* notation mappings and two alternative explanatory traversals. After that PR merges, the next step is to design a small inspectable view and **linearize** the same model into two storyboard treatments, then test comprehension and learned reuse. Apply [Moody's Physics of Notations as an evaluation lens](docs/NOTATION_AND_COMPREHENSION.md), not as a claim that any notation is already validated. Do not build dependent work on the unmerged PR.
 
 ## License and publication
 
