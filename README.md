@@ -13,7 +13,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 | **[Project Charter](docs/PROJECT_CHARTER.md)** | Current mission, artistic commitments, semantic boundaries, and project scope |
 | **[Visual–Semantic Encyclopedia](encyclopedia/README.md)** · [interactive HTML source](encyclopedia/index.html) · [offline ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) | Thirteen concept entries, four generic interactive sketches, two Gurdjieff cases, and the later three-film imagery comparison; the ZIP is a historical v0.4 snapshot |
 | **[Current State / Recovery Plan](docs/PROJECT_STATUS.md)** | Findings, gaps, priorities, and next architectural work |
-| **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Completed studies 000–013, their deliverables and evidential limits; proposed work is separately marked |
+| **[Experiment Registry](docs/EXPERIMENT_REGISTRY.md)** | Completed studies 000–014, distinguishing films, interactive studies and the Experiment 014 specification |
 | [Decision Record](docs/DECISIONS.md) | Retained, revised and superseded project choices |
 | [Communication-First Artistic Design](docs/communication-first-design.md) | Metaphor, text, accessibility, one-lore films and artistic freedom |
 | [Visual Reasoning Instrument](docs/visual-reasoning-instrument.md) | Representation ↔ manipulation ↔ discovery |
@@ -96,7 +96,7 @@ The corpus can be regenerated from v0.1 with `python scripts/build_v02.py`, but 
 
 ## What comes next
 
-**Experiment 014 is currently proposed in [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37), not yet merged into `main`.** It defines one G02 conceptual model upstream of five *candidate* notation mappings and two alternative explanatory traversals. After that PR merges, the next step is to design a small inspectable view and **linearize** the same model into two storyboard treatments, then test comprehension and learned reuse. Apply [Moody's Physics of Notations as an evaluation lens](docs/NOTATION_AND_COMPREHENSION.md), not as a claim that any notation is already validated. Do not build dependent work on the unmerged PR.
+**[Experiment 014](experiments/014-conceptual-representation/README.md) is merged into `main` via [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37).** It defines one G02 conceptual model upstream of five *candidate* notation mappings and two alternative explanatory traversals. The next step is to design a small inspectable view and **linearize** the same model into two storyboard treatments, then test comprehension and learned reuse. Apply [Moody's Physics of Notations as an evaluation lens](docs/NOTATION_AND_COMPREHENSION.md), not as a claim that any notation has been validated.
 
 ## License and publication
 
