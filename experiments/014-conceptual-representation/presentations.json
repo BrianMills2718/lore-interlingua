@@ -1,0 +1,98 @@
+{
+  "id": "014-two-explanatory-traversals",
+  "status": "traversal-outlines-not-storyboards-or-films",
+  "model_ref": "concept-model.json",
+  "notation_ref": "notation.json",
+  "contract": "Presentation steps select attention and which existing relation to disclose. They do not redefine concepts, claims, relationships or domain chronology.",
+  "variants": [
+    {
+      "id": "follow-influence",
+      "title": "Follow the influence",
+      "steps": [
+        {
+          "order": 1,
+          "focus": "planetary-world",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [],
+          "intent": "Orient viewers to the source; all three concept anchors already exist."
+        },
+        {
+          "order": 2,
+          "focus": "organic-life",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [
+            "reception"
+          ],
+          "intent": "Identify the distinct reception relationship and living participant."
+        },
+        {
+          "order": 3,
+          "focus": "earth",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [
+            "reception",
+            "mediation"
+          ],
+          "intent": "Distinguish mediated reception by Earth from the incoming planetary relationship."
+        }
+      ]
+    },
+    {
+      "id": "trace-from-earth",
+      "title": "Trace Earth's mediation relationship backward",
+      "steps": [
+        {
+          "order": 1,
+          "focus": "earth",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [],
+          "intent": "Introduce the recipient, not its moment of creation."
+        },
+        {
+          "order": 2,
+          "focus": "organic-life",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [
+            "mediation"
+          ],
+          "intent": "Show a labeled structural relationship to Earth, without playing a physical response before its supposed cause."
+        },
+        {
+          "order": 3,
+          "focus": "planetary-world",
+          "visible_concepts": [
+            "planetary-world",
+            "organic-life",
+            "earth"
+          ],
+          "visible_relationships": [
+            "mediation",
+            "reception"
+          ],
+          "intent": "Reveal the incoming source relation and complete the same conceptual structure."
+        }
+      ]
+    }
+  ],
+  "implementation_note": "A future storyboard may specify camera, duration, motion, words and sound for either traversal; such choices are not semantic claims in this file."
+}
