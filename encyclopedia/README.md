@@ -73,7 +73,7 @@ A **visual candidate** declares an intended mapping, important things it *does n
 - The encyclopedia's copyable notebook has no collaboration, file export or persistent storage.
 - No viewer comprehension study has established that these sketches communicate the intended meaning to new viewers.
 
-**Already completed since the v0.1 plan:** source-linked **cases 009 and 010** have been embedded. **Research proposal:** [Experiment 014 in PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37) defines a conceptual G02 model prior to proposed notation and two explanatory traversals; check merge status before treating its files as part of `main`. A subsequent inspectable view and storyboards should be evaluated for comprehension and notation transfer rather than presented as a generic renderer. See [notation/comprehension guidance](../docs/NOTATION_AND_COMPREHENSION.md).
+**Already completed since the v0.1 plan:** source-linked **cases 009 and 010** have been embedded. **Now merged:** [Experiment 014](../experiments/014-conceptual-representation/README.md), via [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37), defines a conceptual G02 model before candidate notation and two explanatory traversals. A subsequent inspectable view and storyboards should be evaluated for comprehension and notation transfer rather than presented as a generic renderer. See [notation/comprehension guidance](../docs/NOTATION_AND_COMPREHENSION.md).
 
 ## Applied lore case 009 — Organic life as Earth’s cosmic membrane
 
