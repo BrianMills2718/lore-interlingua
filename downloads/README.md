@@ -2,6 +2,8 @@
 
 This directory preserves the **exact offline ZIP supplied for review** after Experiment 010, rather than only the editable source tree. The canonical, editable project remains in [../encyclopedia](../encyclopedia/) and [../experiments/010-living-intermediary](../experiments/010-living-intermediary/).
 
+**Snapshot warning (2026-10-29):** this v0.4 package does **not** include subsequent [Film 011–013 imagery](../encyclopedia/imagery.html) and must not be mistaken for the latest atlas. For the latest repository files, download or clone the [main repository](https://github.com/BrianMills2718/lore-interlingua) and locally open `encyclopedia/index.html`. GitHub's file viewer shows HTML source, not the interactive page; no live-hosted encyclopedia URL has been verified. The historical ZIP and checksums below are intentionally unchanged.
+
 - [Download the complete v0.4 offline package](Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip) — 186,357 bytes.
 - [View the three-condition comparison image](../experiments/010-living-intermediary/review-comparison.jpg).
 - [Open the Experiment 010 source](../experiments/010-living-intermediary/index.html).

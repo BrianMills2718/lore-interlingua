@@ -1,8 +1,12 @@
-# Visual–Semantic Encyclopedia v0.4
+# Visual–Semantic Encyclopedia — current source and historical review snapshots
 
-**Status:** A usable but **provisional** visual-reasoning research atlas for [Lore Interlingua](../README.md), October 2026. It is not a settled philosophical upper ontology, a complete dictionary of metaphysical concepts, a production renderer, or a demonstrated shared visual language.
+**Status (2026-10-29):** A usable but **provisional** visual-reasoning research atlas for [Lore Interlingua](../README.md), with **13 entries**, **two applied Gurdjieff cases (009 and 010)** and a [cumulative imagery comparison through Film 013](imagery.html). The downloadable **v0.4 ZIP is a preserved historical review snapshot**, not the latest repository version. No settled philosophical upper ontology, production renderer or demonstrated shared visual language is claimed.
 
 ## Open the atlas
+
+**Working offline preview:** [download the preserved encyclopedia v0.4 ZIP](../downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip), extract, and open the ZIP's root `index.html`. This opens the Experiment-010-era atlas. The [package provenance](../downloads/README.md) explains why it is not silently updated.
+
+**Latest source version:** download or clone the [repository](https://github.com/BrianMills2718/lore-interlingua), then open `encyclopedia/index.html` directly from the extracted repository. The nearby `imagery.html` compares **011, 012 and 013**. Browsing an `.html` file on GitHub displays its **source**, not the running interface; a hosted GitHub Pages URL is **not verified or documented** at this date.
 
 Open **[`index.html`](index.html)** in a modern desktop or mobile browser. The site is self-contained, runs without a server, internet access, or external JavaScript libraries, and has no analytics, user accounts, or server-side storage. External **source** and **project documentation** links open GitHub and therefore require a connection. The working atlas itself remains usable offline.
 
@@ -69,7 +73,7 @@ A **visual candidate** declares an intended mapping, important things it *does n
 - The encyclopedia's copyable notebook has no collaboration, file export or persistent storage.
 - No viewer comprehension study has established that these sketches communicate the intended meaning to new viewers.
 
-**Recommended next step:** add one **fully cast, tradition-specific visual scene** (e.g., Gurdjieff's organic-life mediation, which already exists as [Experiment 009](../experiments/009-cosmic-membrane/)) as an **embedded encyclopedia case**, linking its major marks, behaviors, source claims, and alternative art directions. Do not fabricate a generic renderer or hundreds of empty entries.
+**Already completed since the v0.1 plan:** source-linked **cases 009 and 010** have been embedded. **Now merged:** [Experiment 014](../experiments/014-conceptual-representation/README.md), via [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37), defines a conceptual G02 model before candidate notation and two explanatory traversals. A subsequent inspectable view and storyboards should be evaluated for comprehension and notation transfer rather than presented as a generic renderer. See [notation/comprehension guidance](../docs/NOTATION_AND_COMPREHENSION.md).
 
 ## Applied lore case 009 — Organic life as Earth’s cosmic membrane
 
@@ -105,9 +109,9 @@ Ouspensky's source passage explicitly states that grassland and a crowd at the s
 
 The new case selector lets readers move between 009 (cosmic envelope and differentiated outgoing radiation) and 010 (the role of the living intermediary). The [source-to-visual contract](../experiments/010-living-intermediary/scene-contract.json) assigns every prominent mark an intended role and non-claim. This addition does **not** promote any cross-tradition notation to established status.
 
-## Cumulative imagery and explanation audit (011–012)
+## Cumulative imagery and explanation audit (011–013)
 
-Open the [visual imagery index](imagery.html) for playable previews of Films 011 and 012, an explicit preservation/reduction record of semantic marks, and source-scoped terms for laws, influences, radiation, and octave intervals. The [proposed integrated treatment](../docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](../docs/GURDJIEFF_EXPLANATION_LEDGER.md) prevent a new same-lore film from silently discarding earlier essential content. The imagery index uses [imagery.json](imagery.json) as its canonical edited data; regenerate its offline companion with `python scripts/build_encyclopedia_imagery.py`. This is not a replacement for the ontology or a claim that the proposed integrated Film 013 has already been produced.
+Open the [visual imagery index](imagery.html) for playable previews of **Films 011, 012 and 013**, with preservation/restoration records for major marks and source-scoped explanations of law orders, planetary influences, outward radiation and octave intervals. The [integrated treatment (now implemented in Film 013)](../docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md) and [explanation ledger](../docs/GURDJIEFF_EXPLANATION_LEDGER.md) preserve the production rationale. The imagery index uses [imagery.json](imagery.json) as its edited data; regenerate its offline companion with `python scripts/build_encyclopedia_imagery.py`. This atlas is neither an ontology replacement nor proof of unfamiliar-viewer comprehension.
 
 ## Film 013 and cumulative imagery v0.6
 
