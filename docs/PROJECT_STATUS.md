@@ -1,19 +1,29 @@
 # Current State and Recovery Plan
 
-**Review date:** 2026-10-27. **Scope:** lore-interlingua's current main branch, significant historical conversation decisions, the related visual-language and inquiry-graph projects. This is a **documentation/architecture audit**, not a revalidation of every theology passage, source link or binary frame.
+**Original architecture audit:** 2026-10-27. **Current-status update:** 2026-10-29. This page preserves the original audit and development options as historical context. The dated current-position section below supersedes obsolete next-step recommendations; this is not a revalidation of every source passage or media asset.
 
 **Decision:** Keep the project. **Retire the slideshow-style production workflow as the default research method.** Do not frame the basic ability to depict timeless relations as an open feasibility question. Do not add another ontology or full renderer before identifying a concrete missing capability.
+
+## Current position — 2026-10-29
+
+- **Available now on `main`:** Experiments 000–013, including the completed [Film 013](../experiments/013-living-interval/README.md); the [visual–semantic encyclopedia](../encyclopedia/README.md) has **13 concepts**, two applied Gurdjieff cases (009/010), four general visual sketches, and a [three-film imagery atlas](../encyclopedia/imagery.html) (011–013). The [v0.4 offline ZIP](../downloads/README.md) is an older fixed snapshot and does not represent the latest imagery.
+- **Proposed, not merged:** [Experiment 014, PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37) defines a *source-scoped* G02 conceptual model, candidate mapping conventions, two explanatory traversals and structural tests. Consult the PR for its current merge state. **Do not treat its contents as existing on `main` before merge or build dependent branches on it.**
+- **Priority:** **comprehension** (can unfamiliar viewers reconstruct a source-asserted relationship?) and **reusable notation** (can trained viewers recognize the same visual convention in a changed example?). A conceptual representation precedes the storyboard; **linearization** arranges its explanatory reveal without changing its semantic relations or converting presentation time into world time.
+- **Methodological guide:** [Notation and Comprehension Research](NOTATION_AND_COMPREHENSION.md) records Daniel L. Moody's *Physics of Notations* (2009) as a **candidate visual-design audit**, not a proof of learner comprehension, universal grammar or animation efficacy. Discussions of subjective “thoughtfeel” may inspire attention to coherent concepts and inspectable detail but do not establish a validated cognitive technique.
+- **Next after 014 merges:** produce one inspectable conceptual view and two storyboard treatments from the **same** model; test semantic fidelity, likely visual misreadings, unfamiliar-viewer comprehension, and learned transfer before claiming the notation is reusable. Avoid another polished film or generic compiler as the initial deliverable.
+
+**Reading order:** [Charter](PROJECT_CHARTER.md) → this current position → [Registry](EXPERIMENT_REGISTRY.md) → [Decisions](DECISIONS.md). The older audit table and phases below document how the strategy evolved; do not treat them as live orders.
 
 ## 1. Current inventory and quality of evidence
 
 - **Research corpus:** v0.1 (12 examples) and v0.2 (29 propositions, 15 sorts and 39 typed predicates). The JSON Schema, structural validator, and corpus tests are real. They check shapes, types, references and declared modalities; they do **not** prove that philosophical translations are accurate.
 - **Research models:** A Catholic world model has a separate typed JSON structure, concept roles and selected Catechism references. It is not ingested by the shared v0.2 interlingua or a generic renderer.
-- **Film/visual assets:** Eight numbered experiments (with 003–004 grouped in one folder) plus an earlier 48-second example, of different types; see [Experiment Registry](EXPERIMENT_REGISTRY.md). Some have video/source checked in, some only semantic descriptions or an interactive HTML.
+- **Film/visual assets (updated 2026-10-29):** Completed research artifacts cover Experiments 000–013 (003–004 share one folder). The works range from source documents and interactive HTML to downloadable MP4 previews; see the [Experiment Registry](EXPERIMENT_REGISTRY.md). Proposed Experiment 014 remains in PR #37 only.
 - **Artistic/semantic practice:** [Communication-first design](communication-first-design.md), [Visual reasoning instrument](visual-reasoning-instrument.md), and [Project Charter](PROJECT_CHARTER.md) articulate the current philosophy, but their historical amendment sequence needs one canonical summary.
 - **Related projects:** `visual-language` has notation primitives, temporal rules, and experimental protocols; it is not a production-ready lore compositor. `inquiry-graph` holds a curated, incomplete source-anchored conversation trajectory (not a full native ChatGPT export).
 - **CI:** v0.2 validation, Python unit tests and scene tests for Experiments 001–002. The broader test directory also contains tests for the Catholic world model and Experiment 008. Passing CI does not establish audience understanding, metaphysical truth, semantic generality or visual elegance.
 
-## 2. Audit findings / dispositions
+## 2. Original audit findings / dispositions (2026-10-27; retained for provenance)
 
 | ID | Priority | Finding and evidence | Disposition |
 | --- | --- | --- | --- |
@@ -43,11 +53,11 @@
 
 Do not restructure directories or rename historic assets until downstream links and imports are understood. **Consolidation by indexing and status is safer than destructive deletion.**
 
-## New design reference: encyclopedia v0.1 (2026-10-28)
+## Historical design reference: encyclopedia v0.1 (2026-10-28)
 
-A browsable [Visual–Semantic Encyclopedia](../encyclopedia/README.md) now brings together twelve connected concepts, source-corpus examples, provisional visual mappings and four small interactive reasoning studies. **It does not create a new upper ontology, verify symbolism, or automate video production.** It is the central index for proposing and criticizing visual choices, not a replacement for the tradition-specific models or the experiment archive. Next, embed a fully scoped *real lore case* (for instance Study 009) with mark-to-meaning links so the atlas does not become detached from artistic work.
+A browsable [Visual–Semantic Encyclopedia](../encyclopedia/README.md) now brings together twelve connected concepts, source-corpus examples, provisional visual mappings and four small interactive reasoning studies. **It does not create a new upper ontology, verify symbolism, or automate video production.** It is the central index for proposing and criticizing visual choices, not a replacement for the tradition-specific models or the experiment archive. This was the next step at that date. **Cases 009 and 010 are now embedded**, and the imagery atlas includes Film 013; see the current-position section above.
 
-## 4. Recommended development path
+## 4. Original recommended development path (historical options, not today's priority)
 
 ### Phase I — Fix the question and identify one specific operation
 
@@ -97,4 +107,4 @@ Build source-grounded positive narratives, retaining recognizability, art direct
 - Which lore case best surfaces both atemporal and temporal relations without spending another sprint on the wrong domain?
 - When is a manipulation a formally licensed inference versus a metaphorically provocative rearrangement?
 
-**Project-manager recommendation:** Continue with narrowly scoped, source-anchored visual thinking. The next deliverable should be a **design/mapping exercise** on one real metaphysical relation—not another film, new ontology release, or benchmark debate.
+**Updated recommendation (2026-10-29):** Follow the current-position section: review/merge Experiment 014, then investigate an inspectable upstream model, alternative storyboard linearizations and notation comprehension. Preserve source fidelity and artistic flexibility; do not treat tests as proof of learning.
