@@ -1,6 +1,6 @@
 # Experiment Registry — What exists, and what it establishes
 
-**Updated:** 2026-10-29. This index records completed work **000–013 on `main`** and identifies proposed work separately. Individual experiment READMEs retain original plans, some now superseded. Preserve artifacts and provenance; do not mistake a PR proposal, a rendering or passing tests for proven viewer comprehension.
+**Updated:** 2026-10-29. This index records work **000–014 on `main`**, identifying each work's actual artifact type and remaining evidence gaps. Individual experiment READMEs retain original plans, some now superseded. Preserve artifacts and provenance; do not mistake a PR proposal, a rendering or passing tests for proven viewer comprehension.
 
 | ID | Subject | Artifact in repository | Status / observed lesson | What remains **unproven** |
 | --- | --- | --- | --- | --- |
@@ -18,9 +18,9 @@
 | 012 | Gurdjieff Ray of Creation — seven worlds and increasing mechanical constraint | [124-second continuous film and semantic audit](../experiments/012-ray-of-creation/README.md) · [source-to-visual case](../encyclopedia/studies/012-ray-of-creation.md) | Reuses 011's artistic language; selected hierarchy differs visually from radiation transfer; text explicitly gives seven law counts, with recurring-motion constraints as a documented metaphor | Universal visual comprehension, literal identification of 96 law types, or complete Gurdjieff cosmology |
 | 013 | Gurdjieff — The Living Interval (cumulative Ray, cosmic octave and living Earth) | [176-second film, review MP4 and source](../experiments/013-living-interval/README.md) · [imagery comparison](../encyclopedia/imagery.html) | Film preserves the seven-world Ray while restoring grass, animal and human imagery, planetary reception, inward mediation and three outward recipients. The Law of Three and the Law of Seven interval are named and schematically visualized; captions distinguish unknown physical mechanisms. | Detailed law-order derivation, complete octave mechanics, exact nature of cosmic influence, demonstrable Moon nourishment, and unfamiliar-viewer comprehension |
 
-## Proposed experiment (not yet on `main`)
+## Experiment 014 — completed specification, visual study pending
 
-**014 — Conceptual representation before storyboard:** [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37) proposes a source-scoped G02 model, five provisional notation mappings and two alternative explanatory traversals. It is **unmerged as of this index update**. It contains neither a storyboard nor a rendered film, has not been studied with viewers, and should not be counted as a completed result until its PR merges.
+**014 — Conceptual representation before storyboard:** [specification and model](../experiments/014-conceptual-representation/README.md), merged through [PR #37](https://github.com/BrianMills2718/lore-interlingua/pull/37). A source-scoped G02 concept model, five provisional notation mappings, two explanatory traversals and four structural tests now exist on `main`. **This is a completed specification only**, not a finished storyboard, inspectable scene, film, validated notation or viewer-comprehension result.
 
 **Cross-experiment result:** No proposed general visual-grammar rule has been promoted as independently established, and no finished film was generated automatically from the shared interlingua. These are **research and artistic prototypes**, not independently validated milestones toward a verified visual compiler.
 
