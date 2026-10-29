@@ -1,0 +1,102 @@
+{
+  "id": "014-organic-mediation",
+  "version": "0.1",
+  "status": "provisional-source-scoped-interpretation",
+  "scope": "Only G02: organic life as intermediary between planetary influences and Earth in Gurdjieff's account as reported by Ouspensky. Not an account of G03, G04, or modern physics.",
+  "sources": [
+    {
+      "id": "ouspensky-organic",
+      "work": "P. D. Ouspensky, In Search of the Miraculous",
+      "locator": "Discussion of organic life as Earth's intermediary, commonly chapter 7 (edition-dependent)",
+      "url": "https://www.globalgreyebooks.com/online-ebooks/p-d-ouspensky_in-search-of-the-miraculous_complete-text.html",
+      "status": "historical-source-reference; no independent textual re-audit in 014"
+    },
+    {
+      "id": "hawaii-excerpt",
+      "work": "Gurdjieff Foundation of Hawaii: organic-life excerpts attributed to Ouspensky",
+      "locator": "Grass-covered field compared with a gathering of people",
+      "url": "https://www.gurdjieff-hawaii.org/?page_id=160",
+      "status": "supporting attributed extract"
+    }
+  ],
+  "claims": [
+    {
+      "id": "G02",
+      "statement": "Terrestrial organic life mediates planetary influences to the Earth.",
+      "epistemic_status": "claim within the reported cosmological account, not verified astrophysics",
+      "source_ids": [
+        "ouspensky-organic",
+        "hawaii-excerpt"
+      ],
+      "local_corpus_reference": "../../data/v0.2.json#G02"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "planetary-world",
+      "label": "Planetary world",
+      "role": "source",
+      "facets": [
+        "Source of the planetary influences in this account."
+      ]
+    },
+    {
+      "id": "organic-life",
+      "label": "Terrestrial organic life",
+      "role": "intermediary",
+      "facets": [
+        "Receives influences attributed to the planetary world.",
+        "Mediates those influences toward Earth."
+      ],
+      "example_variations": [
+        "A grass-covered field",
+        "The same field occupied by a gathering of people"
+      ],
+      "variation_limit": "The excerpt describes different reception by these configurations, but does not identify physical influence classes or a biological mechanism."
+    },
+    {
+      "id": "earth",
+      "label": "Earth",
+      "role": "recipient",
+      "facets": [
+        "Recipient of the relation mediated through organic life."
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "reception",
+      "type": "receives",
+      "source": "planetary-world",
+      "target": "organic-life",
+      "claim_ids": [
+        "G02"
+      ]
+    },
+    {
+      "id": "mediation",
+      "type": "mediates-to",
+      "source": "organic-life",
+      "target": "earth",
+      "claim_ids": [
+        "G02"
+      ],
+      "requires_present": [
+        "organic-life"
+      ],
+      "requirement_scope": "Only this represented mediation relation; no assertion that bare Earth receives no other influences."
+    }
+  ],
+  "interpretive_limits": [
+    "Relations name roles in a reported cosmology, not measured physical transmissions.",
+    "No specific particle, frequency, wavelength, speed, energy budget or conversion mechanism is asserted.",
+    "The grass/people example does not posit exactly two literal influence species.",
+    "A bare-ground counterfactual would be a research control, not a claim about Earth's history or all physical forces.",
+    "Outgoing radiations to Sun, planets and Moon (G03) and lunar nourishment (G04) are deliberately outside this model."
+  ],
+  "time_semantics": {
+    "domain_time": "This model records relations and conditions; it specifies no measured delay, detailed process kinetics, or creation chronology.",
+    "presentation_time": "The order of explanation may change independently of the asserted relationships.",
+    "manipulation_time": "A future inspectable study may vary examples or remove the intermediary as an explicitly marked research counterfactual."
+  }
+}
