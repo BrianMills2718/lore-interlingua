@@ -1,0 +1,70 @@
+{
+  "id": "014-candidate-notation",
+  "version": "0.1",
+  "status": "provisional-untrained-and-unverified",
+  "model_ref": "concept-model.json",
+  "purpose": "Candidate conventions for recognizing source, intermediary, recipient, reception and mediation across presentations; not a universal graphic grammar.",
+  "mappings": [
+    {
+      "id": "source-anchor",
+      "binds": "concept_role",
+      "value": "source",
+      "proposal": "A persistent, recognizable planetary source region with an accessible label.",
+      "intended_meaning": "The source role of the represented relation.",
+      "not_asserted": [
+        "Astronomical proximity",
+        "Higher physical altitude or larger size means greater metaphysical power"
+      ]
+    },
+    {
+      "id": "intermediary-anchor",
+      "binds": "concept_role",
+      "value": "intermediary",
+      "proposal": "Recognizable living subjects in one coherent region; the whole can be inspected to reveal grass or people.",
+      "intended_meaning": "Organic life participates in reception and mediation, rather than serving as decorative terrain.",
+      "not_asserted": [
+        "A literal planet-wide membrane",
+        "One organism with a proven shared physiological mechanism"
+      ]
+    },
+    {
+      "id": "recipient-anchor",
+      "binds": "concept_role",
+      "value": "recipient",
+      "proposal": "A distinct persistent Earth region; recognizable and labeled.",
+      "intended_meaning": "The recipient in the reported relationship, distinct from the intermediary.",
+      "not_asserted": [
+        "A separate planet behind the living terrain",
+        "The relation establishes scientific cosmology"
+      ]
+    },
+    {
+      "id": "reception-contact",
+      "binds": "relationship_type",
+      "value": "receives",
+      "proposal": "An approach/contact indication reaches living subjects and terminates there; any motion is explicitly symbolic.",
+      "intended_meaning": "The planetary relation is received by organic life.",
+      "not_asserted": [
+        "Physical particles, trajectories or velocities",
+        "A known biochemical absorption law"
+      ]
+    },
+    {
+      "id": "mediation-response",
+      "binds": "relationship_type",
+      "value": "mediates-to",
+      "proposal": "A visually different, locally originated response points from the participating living region toward Earth.",
+      "intended_meaning": "Organic life makes the relation receivable by Earth; this differs from the incoming reception role.",
+      "not_asserted": [
+        "A measured output caused by a particular input",
+        "Energy conservation, exact transformation ratio, or a physical pulse"
+      ]
+    }
+  ],
+  "artistic_freedom": [
+    "Recognizable plants, people, textures, atmosphere, narration and captions can supplement the notation.",
+    "Stable concept identities do not require identical geometry or colors across films.",
+    "This proposal does not establish that a viewer can decode any convention without instruction."
+  ],
+  "reuse_gate": "Test recognition after instruction on another source/intermediary/recipient example; do not promote the conventions on the basis of code reuse alone."
+}
