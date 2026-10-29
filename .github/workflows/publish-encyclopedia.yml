@@ -1,0 +1,84 @@
+name: Publish Visual–Semantic Encyclopedia
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: encyclopedia-pages
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble public atlas (do not publish the entire research repository)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p public/experiments
+          cp -R encyclopedia public/encyclopedia
+          for slug in 009-cosmic-membrane 010-living-intermediary 011-sensitive-earth 012-ray-of-creation 013-living-interval; do
+            cp -R "experiments/$slug" "public/experiments/$slug"
+          done
+          mkdir -p public/downloads public/docs public/data public/research/catholic-world-model
+          cp downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip public/downloads/
+          cp docs/GURDJIEFF_CUMULATIVE_FILM_TREATMENT.md public/docs/
+          cp docs/GURDJIEFF_EXPLANATION_LEDGER.md public/docs/
+          cp docs/PROJECT_CHARTER.md public/docs/
+          cp docs/NOTATION_AND_COMPREHENSION.md public/docs/
+          cp data/v0.2.json public/data/
+          cp research/catholic-world-model/v0.1.json public/research/catholic-world-model/
+          cp site/encyclopedia-landing.html public/index.html
+          touch public/.nojekyll
+          python3 - <<'PY'
+          from pathlib import Path
+          site = Path("public")
+          required = [
+              "index.html",
+              "encyclopedia/index.html",
+              "encyclopedia/catalog.js",
+              "encyclopedia/cases.js",
+              "encyclopedia/imagery.html",
+              "encyclopedia/imagery.json",
+              "experiments/009-cosmic-membrane/index.html",
+              "experiments/010-living-intermediary/index.html",
+              "experiments/011-sensitive-earth/The_Sensitive_Earth_review_480p.mp4",
+              "experiments/012-ray-of-creation/Ray_of_Creation_review_480p.mp4",
+              "experiments/013-living-interval/The_Living_Interval_review_480p.mp4",
+              "downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip",
+          ]
+          missing = [path for path in required if not (site / path).is_file()]
+          if missing:
+              raise SystemExit("Required public assets missing: " + ", ".join(missing))
+          print("Verified public atlas and 011–013 review previews.")
+          PY
+      - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy public atlas
+        id: deployment
+        uses: actions/deploy-pages@v4
