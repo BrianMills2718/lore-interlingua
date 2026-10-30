@@ -27,7 +27,8 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 
 - **Quick offline review:** [download the v0.4 review ZIP](downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip), extract it, and open its `index.html` in a browser. The package is a fixed **historical snapshot through Experiment 010**.
 - **Latest repository version:** download or clone [this repository](https://github.com/BrianMills2718/lore-interlingua) and open `encyclopedia/index.html` locally. It includes the more recent [imagery atlas](encyclopedia/imagery.html) comparing Films 011–013. GitHub's source-code viewer does **not** execute the interactive HTML.
-- **Live hosting (in setup):** the [GitHub Pages publishing workflow](docs/ENCYCLOPEDIA_HOSTING.md) prepares the interactive atlas for a public URL. See that document for the one-time Pages setting and how to verify deployment; do not assume the expected address is live until the deployment succeeds.
+- **Current downloadable atlas (works without Pages):** open the [encyclopedia publishing workflow](https://github.com/BrianMills2718/lore-interlingua/actions/workflows/publish-encyclopedia.yml), choose the latest successful run, and download its **`lore-interlingua-current-offline-atlas`** artifact. Extract the ZIP and open the root `index.html`. GitHub may require sign-in to download Actions artifacts; these are retained for 30 days. This package reflects the run's commit, not the older v0.4 archive.
+- **Live hosting (in setup):** [Pages activation instructions](docs/ENCYCLOPEDIA_HOSTING.md) describe the separate site deployment. Do not assume the anticipated public URL is live until verified. [Browser QA and screenshots](docs/ATLAS_BROWSER_QA.md) test the current offline atlas without human participants.
 
 
 ## Latest cumulative film — The Living Interval (Experiment 013)
