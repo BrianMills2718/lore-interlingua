@@ -1,6 +1,6 @@
 # Natural-voice narration draft — The Living Interval
 
-**Status:** unrecorded draft aligned with the finished 176-second picture. The MP4 intentionally has ambient music and burned-in explanatory captions, with no robotic synthesized speech. This draft can support a later human recording. It is a paraphrase of Gurdjieff's teaching as recorded by P. D. Ouspensky, **not a quotation from Ouspensky**. Time ranges follow the baked-in caption cue structure; a narrator would rehearse pacing and edit rather than mechanically force each paragraph into its interval.
+**Status (2026-10-29):** superseded for the narrated preview by the story-told [narration.json](narration.json), recorded with Edge TTS by `narrate.py`; kept as the source-scoped paraphrase. **Original status:** unrecorded draft aligned with the finished 176-second picture. The MP4 intentionally has ambient music and burned-in explanatory captions, with no robotic synthesized speech. This draft can support a later human recording. It is a paraphrase of Gurdjieff's teaching as recorded by P. D. Ouspensky, **not a quotation from Ouspensky**. Time ranges follow the baked-in caption cue structure; a narrator would rehearse pacing and edit rather than mechanically force each paragraph into its interval.
 
 | Approximate time | Proposed narration |
 | --- | --- |
