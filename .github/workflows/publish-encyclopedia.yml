@@ -67,6 +67,14 @@ jobs:
               raise SystemExit("Required public assets missing: " + ", ".join(missing))
           print("Verified public atlas, Experiment 014 workbench, and 011–013 review previews.")
           PY
+      - name: Save a current offline atlas for review (independent of Pages setup)
+        uses: actions/upload-artifact@v4
+        with:
+          name: lore-interlingua-current-offline-atlas
+          path: public/
+          include-hidden-files: true
+          retention-days: 30
+          if-no-files-found: error
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
