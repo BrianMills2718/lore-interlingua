@@ -93,7 +93,7 @@ class Experiment014WorkbenchTests(unittest.TestCase):
         self.assertIn("aria-live=\"polite\"", html)
         self.assertIn('role="img"', html)
         self.assertIn("Dashed and solid relations", html)
-        self.assertIn("not an astronomical model", html.lower())
+        self.assertIn("not an astronomical mechanism", html.lower())
 
     def test_pages_assembly_includes_workbench(self):
         workflow = (ROOT / ".github/workflows/publish-encyclopedia.yml").read_text(encoding="utf-8")
