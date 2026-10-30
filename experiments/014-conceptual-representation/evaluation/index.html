@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Experiment 014 · Comprehension and Notation-Transfer Study</title>
+  <meta name="description" content="A local-only formative study of source-scoped conceptual understanding and proposed notation recognition.">
+  <link rel="stylesheet" href="study.css">
+  <script src="study.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#study-main">Skip to study</a>
+  <header class="topbar">
+    <a href="../index.html" class="brand">LORE INTERLINGUA / EXPERIMENT 014</a>
+    <span class="top-meta">Research instrument · Not a teaching efficacy claim</span>
+  </header>
+  <main id="study-main">
+    <div class="hero">
+      <p class="eyebrow">FORMATIVE VIEWER STUDY · VERSION 1</p>
+      <h1>What did you <em>understand?</em></h1>
+      <p class="lede">This exercise asks whether a conceptual explanation was clear and whether two proposed visual conventions make sense in another context. The question is about <strong>understanding the account</strong>, not believing it.</p>
+      <p class="scope"><strong>Optional and anonymous.</strong> Do not enter your name, contact details or other identifying information. Answers remain in this browser tab until you explicitly download or copy them. Nothing is sent to the project automatically. You may stop or skip any question.</p>
+    </div>
+
+    <div class="progress" aria-label="Study stages">
+      <span id="progress-setup" aria-current="step">1 · View explanation</span>
+      <span id="progress-comprehension">2 · Understand</span>
+      <span id="progress-transfer">3 · Interpret new signs</span>
+      <span id="progress-finish">4 · Save privately</span>
+    </div>
+
+    <section class="panel" id="stage-setup" aria-labelledby="setup-heading">
+      <p class="eyebrow">STAGE 1 / VIEW THE EXPLANATION</p>
+      <h2 id="setup-heading">Learn one conceptual relationship</h2>
+      <p>The source material describes a Gurdjieff cosmological relationship as recorded by P. D. Ouspensky. The visual marks are <strong>candidate notation</strong>, not known physical processes.</p>
+      <label class="field-label" for="condition">Assigned explanatory order</label>
+      <select id="condition">
+        <option value="follow-influence">Source-first (planetary world → organic life → Earth)</option>
+        <option value="trace-from-earth">Earth-first (Earth → intermediary → planetary source, in explanatory order only)</option>
+      </select>
+      <p class="hint">A facilitator may assign alternating conditions. If testing alone, choose one. Do not switch modes during your assigned explanation.</p>
+      <p><a id="lesson-link" class="lesson-link" href="../index.html?mode=follow-influence" target="_blank" rel="noopener noreferrer">Open the assigned Experiment 014 explanation in a new tab</a></p>
+      <div class="instructions">
+        <h3>Instructions</h3>
+        <p>Read all three beats by using the <strong>Next beat</strong> button. Look at the diagram, narration, and its notation key. Return to this tab without looking at the other explanatory order. There is no timer.</p>
+      </div>
+      <label class="check-row"><input type="checkbox" id="exposure-complete"> I have examined all three beats of the assigned explanation.</label>
+      <button id="begin-comprehension" class="primary" type="button" disabled>Continue to understanding questions</button>
+    </section>
+
+    <section class="panel" id="stage-comprehension" hidden aria-labelledby="comprehension-heading">
+      <p class="eyebrow">STAGE 2 / SOURCE-CASE UNDERSTANDING</p>
+      <h2 id="comprehension-heading">Explain the relationship</h2>
+      <p>Answer from the explanation you just viewed. You may select “Not sure.” Avoid returning to the teaching tab while answering, so we can see what remained understandable.</p>
+      <form id="comprehension-form" novalidate>
+        <fieldset data-question="C1">
+          <legend><strong>C1.</strong> Which description matches the source-scoped relationship presented?</legend>
+          <label><input type="radio" name="C1" value="planet_life_earth"> Planetary influences are received by organic life, which mediates them toward Earth.</label>
+          <label><input type="radio" name="C1" value="planet_earth_life"> Planetary influences reach Earth directly and then organic life receives them from Earth.</label>
+          <label><input type="radio" name="C1" value="life_creates_planets"> Organic life creates the planetary influences and sends them into the planetary world.</label>
+          <label><input type="radio" name="C1" value="unsure"> Not sure.</label>
+        </fieldset>
+        <fieldset data-question="C2">
+          <legend><strong>C2.</strong> In this *specific represented relationship*, what is implied if the intermediary is absent?</legend>
+          <label><input type="radio" name="C2" value="all_natural_forces_stop"> All physical forces everywhere stop affecting Earth.</label>
+          <label><input type="radio" name="C2" value="direct_route_preserved"> The same mediated relationship continues directly to Earth, unchanged.</label>
+          <label><input type="radio" name="C2" value="mediated_relation_unavailable"> The represented mediation relation is unavailable; this says nothing general about other forces.</label>
+          <label><input type="radio" name="C2" value="historical_earth"> The source proves Earth once existed without any organic life.</label>
+          <label><input type="radio" name="C2" value="unsure"> Not sure.</label>
+        </fieldset>
+        <fieldset data-question="C3">
+          <legend><strong>C3.</strong> What physical information is established by the dashed and solid marks?</legend>
+          <label><input type="radio" name="C3" value="exact_particles"> They identify real incoming particle species and their exact composition.</label>
+          <label><input type="radio" name="C3" value="measured_rates"> Their lengths and styles encode measured transmission rates.</label>
+          <label><input type="radio" name="C3" value="no_physical_mechanism"> They distinguish conceptual roles; no specific physical mechanism or rate is established.</label>
+          <label><input type="radio" name="C3" value="unsure"> Not sure.</label>
+        </fieldset>
+        <label class="field-label" for="C4"><strong>C4.</strong> In your own words, explain what the planetary world, organic life, and Earth do in the represented account.</label>
+        <textarea id="C4" rows="4" maxlength="900" placeholder="Your reconstruction in one or more sentences; identifying details are not needed."></textarea>
+        <p class="hint">Your responses are not scored or displayed as right/wrong here. They will be locked when you continue.</p>
+        <button type="button" id="begin-transfer" class="primary">Lock these answers and continue</button>
+      </form>
+    </section>
+
+    <section class="panel" id="stage-transfer" hidden aria-labelledby="transfer-heading">
+      <p class="eyebrow">STAGE 3 / NEW CONTEXT</p>
+      <h2 id="transfer-heading">Can you recognize the notation?</h2>
+      <p>This is a <strong>hypothetical communication situation</strong>, not a Gurdjieff teaching. The three participants have arbitrary names. Their roles are intentionally not supplied: use the marks learned in the earlier example. The arrangement is reversed from the previous diagram.</p>
+      <div class="figure-scroll" tabindex="0" aria-label="New-case notation diagram, horizontally scrollable on small screens">
+        <figure>
+          <svg viewBox="0 0 840 282" role="img" aria-labelledby="transfer-title transfer-description" xmlns="http://www.w3.org/2000/svg">
+            <title id="transfer-title">Transfer task with three newly named participants</title>
+            <desc id="transfer-description">Three named participants appear right-to-left along the conceptual connections: Selen at left, Ivo at center, Nara at right. A solid arrow points left from Ivo to Selen. A dashed arrow points left from Nara to Ivo. The relation types and participant roles are not labelled.</desc>
+            <rect width="840" height="282" rx="11" fill="#0c2028"/>
+            <g fill="#1e353b" stroke="#718c8d" stroke-width="2">
+              <rect x="35" y="83" width="193" height="126" rx="13"/>
+              <rect x="323" y="83" width="193" height="126" rx="13"/>
+              <rect x="611" y="83" width="193" height="126" rx="13"/>
+            </g>
+            <g fill="#e8efe9" font-family="system-ui,sans-serif" font-size="25" font-weight="600" text-anchor="middle">
+              <text x="131" y="155">Selen</text>
+              <text x="419" y="155">Ivo</text>
+              <text x="707" y="155">Nara</text>
+            </g>
+            <g stroke="#a5d6b0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M317 154H237"/>
+              <path d="M250 145L235 154L250 163"/>
+            </g>
+            <g stroke="#e3cc9c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M604 154H525" stroke-dasharray="10 8"/>
+              <path d="M539 145L524 154L539 163"/>
+            </g>
+            <text x="420" y="250" font-family="system-ui,sans-serif" text-anchor="middle" fill="#9ebdbb" font-size="13">NEW CONTEXT · NO RELATION LABELS · NOT A PHYSICAL SIMULATION</text>
+          </svg>
+          <figcaption>The colored stroke styles are distinguishable by <strong>pattern</strong> as well as color. Both arrows point toward the left; use their distinct styles rather than assuming that left-to-right is the only source order.</figcaption>
+        </figure>
+      </div>
+
+      <form id="transfer-form" novalidate>
+        <fieldset data-question="T1">
+          <legend><strong>T1.</strong> Which connection represents <em>reception</em> in the notation you learned?</legend>
+          <label><input type="radio" name="T1" value="dashed_nara_ivo"> Dashed arrow from Nara toward Ivo.</label>
+          <label><input type="radio" name="T1" value="solid_ivo_selen"> Solid arrow from Ivo toward Selen.</label>
+          <label><input type="radio" name="T1" value="both"> Both connections mean reception.</label>
+          <label><input type="radio" name="T1" value="unsure"> Not sure.</label>
+        </fieldset>
+        <fieldset data-question="T2">
+          <legend><strong>T2.</strong> Which connection represents <em>mediation</em> in that notation?</legend>
+          <label><input type="radio" name="T2" value="dashed_nara_ivo"> Dashed arrow from Nara toward Ivo.</label>
+          <label><input type="radio" name="T2" value="solid_ivo_selen"> Solid arrow from Ivo toward Selen.</label>
+          <label><input type="radio" name="T2" value="both"> Both connections mean mediation.</label>
+          <label><input type="radio" name="T2" value="unsure"> Not sure.</label>
+        </fieldset>
+        <fieldset data-question="T3">
+          <legend><strong>T3.</strong> Using only the diagram, who is in the intermediary role?</legend>
+          <label><input type="radio" name="T3" value="nara"> Nara.</label>
+          <label><input type="radio" name="T3" value="ivo"> Ivo.</label>
+          <label><input type="radio" name="T3" value="selen"> Selen.</label>
+          <label><input type="radio" name="T3" value="unsure"> Not sure.</label>
+        </fieldset>
+        <fieldset data-question="T4">
+          <legend><strong>T4.</strong> What can you infer about the mechanism from this diagram alone?</legend>
+          <label><input type="radio" name="T4" value="exact_translation"> Exactly which words or signals are translated.</label>
+          <label><input type="radio" name="T4" value="physical_conservation"> That a measured amount of information must be physically conserved.</label>
+          <label><input type="radio" name="T4" value="no_universal_mechanism"> The represented relationship roles, but not an exact mechanism or universal rule for all communication.</label>
+          <label><input type="radio" name="T4" value="unsure"> Not sure.</label>
+        </fieldset>
+        <label class="field-label" for="T5"><strong>T5.</strong> Optional: Which sign or relationship was ambiguous, misleading, or unexpectedly clear?</label>
+        <textarea id="T5" rows="3" maxlength="900" placeholder="Note any possible misreading; do not include personal information."></textarea>
+        <button type="button" id="finish" class="primary">Finish and prepare anonymous response file</button>
+      </form>
+    </section>
+
+    <section class="panel" id="stage-finish" hidden aria-labelledby="finish-heading">
+      <p class="eyebrow">STAGE 4 / LOCAL RESPONSE RECORD</p>
+      <h2 id="finish-heading">Save your answers, if you choose</h2>
+      <p>Nothing has been transmitted. The text below contains your selected answers, your written explanations, and the assigned presentation condition—<strong>no name, device identifier, or timestamp</strong>. A facilitator can score it separately, offline.</p>
+      <label class="field-label" for="response-json">Anonymous response JSON</label>
+      <textarea id="response-json" rows="11" readonly spellcheck="false"></textarea>
+      <div class="action-row">
+        <button type="button" id="download" class="primary">Download response JSON</button>
+        <button type="button" id="copy">Copy JSON</button>
+      </div>
+      <p id="export-status" role="status" aria-live="polite">The response exists only in this tab until you explicitly save or copy it.</p>
+      <p class="hint">You may close the tab without saving. To begin a new session, reload the page; previous answers are not retained.</p>
+    </section>
+
+    <footer>
+      <p>Based on one provisional source-scoped concept model and candidate notation. No participant observations have been recorded by the project simply by publishing this instrument. <a href="README.md">Research protocol and analysis rubric</a> · <a href="../index.html">Teaching workbench</a>.</p>
+    </footer>
+  </main>
+  <noscript><p class="noscript">JavaScript is required to move between the assessment stages and export local responses. No data is transmitted to the site by this form.</p></noscript>
+</body>
+</html>
