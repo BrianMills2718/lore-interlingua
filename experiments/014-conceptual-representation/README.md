@@ -66,13 +66,15 @@ Run the built-in contract checks (Python 3.11+, no extra dependencies for this t
 
 These tests check ID resolution, the required role/relationship chain, notation coverage, and that the two traversals cover the same model despite different reveal orders. Regression cases intentionally corrupt a reference or relationship. **Passing tests does not validate the source interpretation, prove film generation, or establish comprehension.**
 
-## Future manual study (not performed in this PR)
+## Prepared formative study (not yet conducted)
+
+A [local-only participant assessment](evaluation/index.html), [administration protocol](evaluation/README.md) and [offline scorer](evaluation/score_results.py) are now available. **No participant responses or learning outcomes have been collected.**
 
 1. Explain the candidate signs with one example. Present each traversal with equivalent factual language and accessible captions; keep participant identities constant.
 2. Ask unfamiliar participants to identify source/intermediary/recipient, explain why life matters, and distinguish reception from mediation. Collect unintended inferences about physical particles or automatic direct transmission.
 3. Test **transfer** by presenting a second clearly framed, non-Gurdjieff mediation example using the same relationship conventions. Compare correct interpretation against confusing signs or labels. A second example must be separately justified, not assumed doctrinally equivalent.
 4. Record whether the participant reconstructed the relations, not merely whether the animation looked appealing; revise any dominant misleading correspondence. An initial small formative sample can expose problems but cannot establish population-level effectiveness.
 
-**Prototype delivery:** one inspectable view and two storyboard treatments now exist, reusing the same source-scoped data. What is **not yet established** is whether an unfamiliar viewer reconstructs the relation correctly or whether the notation transfers to a different, independently warranted example. Next, perform a formative comprehension and misreading study rather than increasing cinematic polish.
+**Prototype delivery:** one inspectable view and two storyboard treatments now exist, reusing the same source-scoped data. What is **not yet established** is whether an unfamiliar viewer reconstructs the relation correctly or whether the notation transfers to a different, independently warranted example. Next, administer the prepared [formative assessment](evaluation/index.html) with unfamiliar voluntary participants and review their misunderstandings before increasing cinematic polish.
 
 **Project alignment:** [Charter](../../docs/PROJECT_CHARTER.md) · [Current status](../../docs/PROJECT_STATUS.md) · [visual reasoning method](../../docs/visual-reasoning-instrument.md).
