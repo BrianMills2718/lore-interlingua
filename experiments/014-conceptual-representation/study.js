@@ -230,7 +230,7 @@
   renderAudit();
   // Optional entry-mode parameter for the standalone formative study.
   // This selects an explanatory order; it never changes the source model.
-  const requestedMode = /(?:\\?|&)mode=(follow-influence|trace-from-earth)(?:&|$)/
+  const requestedMode = /(?:\?|&)mode=(follow-influence|trace-from-earth)(?:&|$)/
     .exec((window.location && window.location.search) || "");
   if (requestedMode) selectMode(requestedMode[1]);
   else draw();
