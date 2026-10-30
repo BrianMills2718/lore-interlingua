@@ -1,0 +1,98 @@
+{
+  "id": "014-two-storyboard-treatments",
+  "status": "provisional-manual-editorial-linearizations",
+  "model_ref": "concept-model.json",
+  "presentations_ref": "presentations.json",
+  "interpretive_contract": "Camera, narration, captions and seconds are editorial decisions. Every shot must refer to a beat in presentations.json; no shot changes the source-scoped concepts or relations.",
+  "time_semantics": "Suggested shot durations measure presentation time only; they do not represent actual timings of cosmic influences.",
+  "treatments": [
+    {
+      "id": "follow-influence",
+      "title": "From the planetary world toward Earth",
+      "shots": [
+        {
+          "id": "A1",
+          "beat": 1,
+          "focus": "planetary-world",
+          "relation_ids_visible": [],
+          "suggested_seconds": 8,
+          "framing": "Wide view: all three named regions persist, with attention on the planetary source; no process arrow is displayed yet.",
+          "caption": "Begin with the planetary world.",
+          "narration": "In Gurdjieff’s account, recorded by Ouspensky, the planetary world is the source of influences described as reaching organic life.",
+          "nonclaim": "This is not a map of astronomical distances or a ray of literal energy."
+        },
+        {
+          "id": "A2",
+          "beat": 2,
+          "focus": "organic-life",
+          "relation_ids_visible": [
+            "reception"
+          ],
+          "suggested_seconds": 10,
+          "framing": "Keep the same regions. Bring into focus recognizable living subjects and a dashed reception indication that terminates at life.",
+          "caption": "Organic life receives the planetary influences.",
+          "narration": "The account assigns the act of reception to terrestrial organic life—not simply to undifferentiated ground.",
+          "nonclaim": "Dashed marks identify a relationship; their shape and pacing do not describe particles or biological uptake."
+        },
+        {
+          "id": "A3",
+          "beat": 3,
+          "focus": "earth",
+          "relation_ids_visible": [
+            "reception",
+            "mediation"
+          ],
+          "suggested_seconds": 12,
+          "framing": "Keep reception visible and reveal a distinct solid relationship from organic life toward Earth. Preserve all anchors.",
+          "caption": "Organic life mediates their relation to Earth.",
+          "narration": "Within this teaching, organic life is an intermediary that makes the planetary influences receivable by Earth.",
+          "nonclaim": "No physical conversion rate or conserved material stream is specified."
+        }
+      ]
+    },
+    {
+      "id": "trace-from-earth",
+      "title": "From Earth's dependency back to the source",
+      "shots": [
+        {
+          "id": "B1",
+          "beat": 1,
+          "focus": "earth",
+          "relation_ids_visible": [],
+          "suggested_seconds": 8,
+          "framing": "Begin at the terrestrial recipient while leaving the other two named regions perceptibly present.",
+          "caption": "Start with Earth—the recipient.",
+          "narration": "Begin with Earth, whose role we are examining inside the reported cosmological account.",
+          "nonclaim": "Starting here is an explanatory choice, not a claim that Earth existed or acted first."
+        },
+        {
+          "id": "B2",
+          "beat": 2,
+          "focus": "organic-life",
+          "relation_ids_visible": [
+            "mediation"
+          ],
+          "suggested_seconds": 10,
+          "framing": "Reveal a continuous solid mediation relationship from living subjects to Earth; do not animate a physical response occurring before a cause.",
+          "caption": "Earth's relation involves a living intermediary.",
+          "narration": "The account describes terrestrial organic life as an intermediary. This is a structural disclosure, not a time-lapse.",
+          "nonclaim": "The mediation relationship is not an empirically measured material conduit."
+        },
+        {
+          "id": "B3",
+          "beat": 3,
+          "focus": "planetary-world",
+          "relation_ids_visible": [
+            "mediation",
+            "reception"
+          ],
+          "suggested_seconds": 12,
+          "framing": "Reveal the dashed reception relation from the planetary region to organic life while retaining the separate solid mediation relationship.",
+          "caption": "The planetary world supplies what life receives.",
+          "narration": "We can now trace the complete source-scoped structure: planetary influences are received by organic life, which mediates them toward Earth.",
+          "nonclaim": "The reverse order of discovery does not reverse the direction of the claimed relations."
+        }
+      ]
+    }
+  ]
+}
