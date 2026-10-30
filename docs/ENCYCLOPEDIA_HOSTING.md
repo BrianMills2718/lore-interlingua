@@ -2,6 +2,12 @@
 
 **Status:** Deployment workflow prepared for the *public* `main` branch. This document describes how to activate and verify the site; it does **not** claim a live URL until the first successful GitHub Pages deployment.
 
+## Download the current atlas without GitHub Pages
+
+The **Publish Visual–Semantic Encyclopedia** workflow creates a `lore-interlingua-current-offline-atlas` Actions artifact on **pull requests and pushes to `main`**, independent of whether Pages is configured. Open the [workflow runs](https://github.com/BrianMills2718/lore-interlingua/actions/workflows/publish-encyclopedia.yml), choose a successful run, and download this artifact from **Artifacts** (GitHub may require sign-in). Extract the ZIP and open its root `index.html`; the interactive atlas, Experiment 014 workbench and local-only evaluation, and the three video previews are included. The archive is retained for **30 days**, and its contents correspond to that specific commit. Do **not** confuse it with the intentionally unchanged v0.4 historical review snapshot.
+
+The separate [browser QA workflow](ATLAS_BROWSER_QA.md) exercises the encyclopedia, both Experiment 014 explanatory orders, the response form and local download using Chromium and preserves screenshots for review. A passed browser test does not imply participant comprehension or a live hosted site.
+
 ## Intended URL
 
 - Project entry point: `https://brianmills2718.github.io/lore-interlingua/`
