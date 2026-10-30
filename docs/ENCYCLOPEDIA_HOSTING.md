@@ -23,7 +23,7 @@ If the initial run fails because Pages is not configured, select **GitHub Action
 The workflow deliberately publishes **only**:
 
 - `encyclopedia/` (the atlas, scripts, styles and local imagery index),
-- Experiments **009–013** (the cases and three review MP4 previews),
+- Experiments **009–014** (the two applied cases, three review MP4 previews and the Experiment 014 conceptual workbench),
 - selected linked documentation, the v0.2 corpus, the Catholic source-scoped example, and
 - the existing historical **v0.4 offline ZIP**.
 
@@ -33,6 +33,6 @@ It does **not** publish the full research repository, `.git`, workflow internals
 
 The public entry point redirects to `encyclopedia/index.html`; the atlas's **Cumulative imagery** link opens `imagery.html`. Asset paths are relative and preserved by the staging directory's mirrored structure. The workflow checks critical assets for both interactive cases and review videos before attempting a deployment.
 
-On a successful deployment, check the **site directly**, not merely the workflow status: atlas navigation, both interactive cases, the three MP4 previews and the offline ZIP. A passing package test does **not** prove a working public site or viewer comprehension.
+On a successful deployment, check the **site directly**, not merely the workflow status: atlas navigation, both earlier interactive cases, the Experiment 014 workbench's mode and step controls, the three MP4 previews and the offline ZIP. A passing package test does **not** prove a working public site or viewer comprehension.
 
 The historical v0.4 ZIP remains unchanged. The newest hosted site is built from the current `main` commit, not silently merged into the old package.
