@@ -28,7 +28,7 @@
       else progress.removeAttribute("aria-current");
     });
     state.stage = name;
-    get("stage-" + name).scrollIntoView({ block: "start", behavior: "instant" });
+    get("stage-" + name).scrollIntoView({ block: "start", behavior: "auto" });
   }
 
   function updateAssignedCondition() {
@@ -84,7 +84,11 @@
     anchor.click();
     anchor.remove();
     // A locally generated object URL, not a remote endpoint.
-    URL.revokeObjectURL(uri);
+    if (typeof window.setTimeout === "function") {
+      window.setTimeout(function () { URL.revokeObjectURL(uri); }, 5000);
+    } else {
+      URL.revokeObjectURL(uri);
+    }
     get("export-status").textContent = "Download requested. Check the browser's saved files.";
   }
 
@@ -111,6 +115,9 @@
   if (matched) get("condition").value = matched[1];
   updateAssignedCondition();
 
+  ["comprehension-form", "transfer-form"].forEach(function (id) {
+    get(id).addEventListener("submit", function (event) { event.preventDefault(); });
+  });
   get("condition").addEventListener("change", updateAssignedCondition);
   get("exposure-complete").addEventListener("change", function () {
     get("begin-comprehension").disabled = !get("exposure-complete").checked;
