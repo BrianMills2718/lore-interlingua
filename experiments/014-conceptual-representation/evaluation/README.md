@@ -14,7 +14,7 @@ The transfer diagram uses **Nara → Ivo → Selen** as an invented speaker/inte
 ## What to open
 
 - [Participant assessment](index.html) — standalone, offline-friendly HTML/JS; no accounts, analytics, remote services or automatic response transmission.
-- [Experiment 014 teaching/workbench view](../index.html) — concept overview, source-first and Earth-first disclosure. The assessment links to the chosen treatment with a `?mode=` query; in the current implementation, **select the assigned mode manually if the URL does not preselect it**.
+- [Experiment 014 teaching/workbench view](../index.html) — concept overview, source-first and Earth-first disclosure. The assessment links to the chosen treatment with a `?mode=` query; the workbench preselects that explanation mode when opened. Because its mode controls remain accessible, the facilitator should instruct participants not to switch.
 - [Model](../concept-model.json) · [notation](../notation.json) · [explanatory traversals](../presentations.json) · [storyboard treatments](../storyboard-treatments.json).
 
 The study instrument is deliberately **separate** from the upstream conceptual model, notation and storyboard. Answer keys belong in the evaluator's analysis script, not in the participant's graphical legend or transferred-case diagram.
