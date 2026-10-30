@@ -2,6 +2,8 @@
 
 **Primary deliverable:** 176-second continuous **MP4**, 1280×720, 24 fps, original stereo score, readable burned-in English captions; a smaller directly playable preview is also provided.
 
+**Narrated preview:** [The_Living_Interval_narrated_480p.mp4](The_Living_Interval_narrated_480p.mp4) adds a spoken story over the score (Edge TTS, en-US-AndrewNeural; score at 35 % under the voice). The narration in [narration.json](narration.json) tells the lore from inside it, without the attributions and caveats of the [voiceover draft](VOICEOVER_DRAFT.md) (Brian, 2026-10-28: "the only thing that is relevant is a compelling narrative of a coherent lore"). The burned-in captions still carry the draft's hedged wording, so caption and voice differ in phrasing. Rebuild with `python narrate.py` (needs `edge-tts` and `ffmpeg`).
+
 **Scope:** Gurdjieff's Ray of Creation and the organic-life interval as recorded by P. D. Ouspensky. The film combines structural content retained from [Experiment 012](../012-ray-of-creation/README.md) and living-world relationships retained from [Experiment 011](../011-sensitive-earth/README.md). It is **not** a replay or simple concatenation of either film.
 
 ## The integrated narrative
