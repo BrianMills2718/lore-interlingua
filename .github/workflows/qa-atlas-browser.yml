@@ -1,0 +1,35 @@
+name: Browser QA — Encyclopedia and Experiment 014
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Playwright and its Chromium browser
+        run: |
+          python -m pip install "playwright>=1.49,<2"
+          python -m playwright install --with-deps chromium
+      - name: Exercise current encyclopedia and Experiment 014 in a real browser
+        run: python scripts/qa_browser_atlas.py --root . --out artifacts/browser-smoke
+      - name: Upload browser screenshots for visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lore-interlingua-browser-qa
+          path: artifacts/browser-smoke/
+          retention-days: 30
+          if-no-files-found: warn
