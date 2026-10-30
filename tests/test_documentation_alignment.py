@@ -39,6 +39,18 @@ class DocumentationAlignmentTests(unittest.TestCase):
         self.assertIn("Films 011, 012 and 013", docs)
         self.assertNotIn("proposed integrated Film 013 has already been produced", docs)
 
+    def test_current_package_and_browser_qa_are_discoverable(self):
+        workflow = read(".github/workflows/publish-encyclopedia.yml")
+        self.assertIn("actions/upload-artifact@v4", workflow)
+        self.assertIn("lore-interlingua-current-offline-atlas", workflow)
+        self.assertIn("retention-days: 30", workflow)
+        browser_workflow = read(".github/workflows/qa-atlas-browser.yml")
+        self.assertIn("qa_browser_atlas.py", browser_workflow)
+        self.assertIn("lore-interlingua-browser-qa", browser_workflow)
+        self.assertIn("playwright", read("scripts/qa_browser_atlas.py"))
+        docs = read("docs/ENCYCLOPEDIA_HOSTING.md")
+        self.assertIn("lore-interlingua-current-offline-atlas", docs)
+
     def test_current_navigation_links_to_notation_and_snapshots(self):
         root = read("README.md")
         self.assertIn("docs/NOTATION_AND_COMPREHENSION.md", root)
