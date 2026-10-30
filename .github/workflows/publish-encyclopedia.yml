@@ -25,7 +25,7 @@ jobs:
           set -euo pipefail
           mkdir -p public/experiments
           cp -R encyclopedia public/encyclopedia
-          for slug in 009-cosmic-membrane 010-living-intermediary 011-sensitive-earth 012-ray-of-creation 013-living-interval; do
+          for slug in 009-cosmic-membrane 010-living-intermediary 011-sensitive-earth 012-ray-of-creation 013-living-interval 014-conceptual-representation; do
             cp -R "experiments/$slug" "public/experiments/$slug"
           done
           mkdir -p public/downloads public/docs public/data public/research/catholic-world-model
@@ -53,12 +53,16 @@ jobs:
               "experiments/011-sensitive-earth/The_Sensitive_Earth_review_480p.mp4",
               "experiments/012-ray-of-creation/Ray_of_Creation_review_480p.mp4",
               "experiments/013-living-interval/The_Living_Interval_review_480p.mp4",
+              "experiments/014-conceptual-representation/index.html",
+              "experiments/014-conceptual-representation/study-data.js",
+              "experiments/014-conceptual-representation/study.js",
+              "experiments/014-conceptual-representation/study.css",
               "downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip",
           ]
           missing = [path for path in required if not (site / path).is_file()]
           if missing:
               raise SystemExit("Required public assets missing: " + ", ".join(missing))
-          print("Verified public atlas and 011–013 review previews.")
+          print("Verified public atlas, Experiment 014 workbench, and 011–013 review previews.")
           PY
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'

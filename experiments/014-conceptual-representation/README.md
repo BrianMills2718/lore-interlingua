@@ -1,6 +1,6 @@
 # Experiment 014 — Conceptual representation before the storyboard
 
-**Status:** proposed, machine-readable research specification with structural tests; no storyboard, renderer, film, audience evaluation or accepted notation yet.
+**Status (2026-10-29):** working, *provisional* interactive concept view plus **two manual storyboard treatments** grounded in the original Experiment 014 model. This is not a film, a universal rendering engine, a tested teaching method, a validated notation, or an empirical evaluation of viewer comprehension.
 
 **Purpose:** test whether a **single source-scoped concept model** can support distinct explanations while retaining the same relationships, then investigate **comprehension** and **reusable notation**. The model is upstream of the storyboard. A storyboard **linearizes** (orders the explanation of) that model; it does not create its metaphysical claims.
 
@@ -19,7 +19,21 @@
 | --- | --- |
 | [concept-model.json](concept-model.json) | Participants, concept facets, roles, source references, two differently typed relationships, requirements, nonclaims and the three kinds of time. **This is upstream of presentation.** |
 | [notation.json](notation.json) | Five **candidate** visual correspondences for the model's three roles and two relationship types, with intended readings and explicit nonclaims. Conventions are not accepted or viewer-tested. |
-| [presentations.json](presentations.json) | Two **explanatory traversals** referencing IDs in the unchanged model and notation. These are plans to linearize the model, not complete storyboards, produced videos, or an automated compiler. |
+| [presentations.json](presentations.json) | Two **explanatory traversals** referencing IDs in the unchanged model and notation; these encode reveal order, not source-world chronology. |
+| [storyboard-treatments.json](storyboard-treatments.json) | Two **manual editorial storyboard treatments**: three shot beats per traversal, with framing, suggested presentation duration, caption, narration and explicit nonclaims. They are not rendered films. |
+| [index.html](index.html) | An **offline interactive workbench**: whole-model view, source-first reveal, Earth-first reveal, participant inspector, notation audit and two treatments. |
+
+**Open the workbench:** open [`index.html`](index.html) directly in a modern browser after downloading/cloning the repository. It needs no web server, npm, remote CDN or external scripts: [`study-data.js`](study-data.js) is generated from the four JSON records so `file://` access works. Use the mode controls and Previous/Next buttons to compare reveal order; inspect a participant to see its facets without changing the current storyboard beat. The graph is a conceptual relation, not a simulation. The page contains no autoplay and uses text alternatives to describe what is visible.
+
+Regenerate/verify the **derived** offline browser bundle after changing a source record:
+
+```sh
+python scripts/build_experiment_014_study.py
+python scripts/build_experiment_014_study.py --check
+python -m unittest discover -s tests -p 'test_experiment_014_workbench.py' -v
+```
+
+These checks include a dependency-free Node interaction smoke test when Node is available. All browser presentation sources are inspected via static HTML/CSS/JavaScript; the tests are not evidence of viewer comprehension, accessibility certification or a visually polished film.
 
 **Concept whole, then detail:** 'organic-life' remains a single concept with inspectable facets. Grassland and a gathering of people are examples within it, not obligatory atomic graph nodes. This avoids making the viewer reconstruct a whole concept from a pile of unrelated marks. It is a design hypothesis, not a claim that the subjective experience called 'thoughtfeel' has been independently validated as a teaching method.
 
@@ -40,7 +54,7 @@ These are **two role-distinct relationships**, not an automatically conserved st
 | **Follow the influence** | Focus planetary world | Reveal reception at living subjects | Reveal mediation toward Earth |
 | **Trace from Earth** | Focus Earth | Reveal its living intermediary | Trace back to the planetary source |
 
-The same three concept anchors remain present in every beat. Each final beat makes both relationships available. **Reveal order is not domain-event order**: introducing Earth first does not mean Earth caused planetary influences; introducing a connection before its upstream source is a labeled conceptual relation, not an animation of a response preceding its cause. Source roles and claim IDs cannot be overridden inside a traversal.
+The same three concept anchors remain present in every beat. Each final beat makes both relationships available. The workbench implements **selective disclosure** without simulating a physical time course; the storyboard treatments add editorial framing and proposed words but do not alter the G02 model. **Reveal order is not domain-event order**: introducing Earth first does not mean Earth caused planetary influences; introducing a connection before its upstream source is a labeled conceptual relation, not an animation of a response preceding its cause. Source roles and claim IDs cannot be overridden inside a traversal.
 
 ## Notation and validation
 
@@ -59,6 +73,6 @@ These tests check ID resolution, the required role/relationship chain, notation 
 3. Test **transfer** by presenting a second clearly framed, non-Gurdjieff mediation example using the same relationship conventions. Compare correct interpretation against confusing signs or labels. A second example must be separately justified, not assumed doctrinally equivalent.
 4. Record whether the participant reconstructed the relations, not merely whether the animation looked appealing; revise any dominant misleading correspondence. An initial small formative sample can expose problems but cannot establish population-level effectiveness.
 
-**Acceptance gate for the next implementation:** first produce one inspectable view and two storyboard treatments from these records, with explicit source-to-visual traceability and no new semantic assertions. Do **not** claim that the outlines here already accomplish that production or that the notation is transferable.
+**Prototype delivery:** one inspectable view and two storyboard treatments now exist, reusing the same source-scoped data. What is **not yet established** is whether an unfamiliar viewer reconstructs the relation correctly or whether the notation transfers to a different, independently warranted example. Next, perform a formative comprehension and misreading study rather than increasing cinematic polish.
 
 **Project alignment:** [Charter](../../docs/PROJECT_CHARTER.md) · [Current status](../../docs/PROJECT_STATUS.md) · [visual reasoning method](../../docs/visual-reasoning-instrument.md).
