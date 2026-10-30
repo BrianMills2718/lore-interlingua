@@ -18,7 +18,7 @@ We use source-grounded conceptual models, reusable visual relations, symbolic im
 | [Communication-First Artistic Design](docs/communication-first-design.md) | Metaphor, text, accessibility, one-lore films and artistic freedom |
 | [Visual Reasoning Instrument](docs/visual-reasoning-instrument.md) | Representation ↔ manipulation ↔ discovery |
 | [Notation and Comprehension Research](docs/NOTATION_AND_COMPREHENSION.md) | Moody's Physics of Notations as a provisional design audit; concept model → notation → explanatory traversal → storyboard |
-| [Experiment 014 — Inspect the living relation](experiments/014-conceptual-representation/index.html) | Interactive whole-model workbench, source-first and Earth-first reveals, and two manually authored storyboard treatments; no viewer validation yet |
+| [Experiment 014 — Inspect the living relation](experiments/014-conceptual-representation/index.html) · [evaluation instrument](experiments/014-conceptual-representation/evaluation/index.html) | Interactive concept workbench, two storyboard treatments and an offline-only comprehension/notation-transfer assessment; no viewer study has been conducted |
 | [Relationship to Visual Language](docs/visual-language-crosswalk.md) | Reuse-first boundary with the separate temporal-notation project |
 
 **Current instructions:** Charter → Status → Registry. The original [v0.1](docs/v0.1.md) and [v0.2](docs/v0.2.md) semantic specifications document earlier versions; their historic "next gate" sections are not the current project plan.
