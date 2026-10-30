@@ -57,6 +57,9 @@ jobs:
               "experiments/014-conceptual-representation/study-data.js",
               "experiments/014-conceptual-representation/study.js",
               "experiments/014-conceptual-representation/study.css",
+              "experiments/014-conceptual-representation/evaluation/index.html",
+              "experiments/014-conceptual-representation/evaluation/study.js",
+              "experiments/014-conceptual-representation/evaluation/study.css",
               "downloads/Lore_Visual_Semantic_Encyclopedia_v0_4_Living_Intermediary.zip",
           ]
           missing = [path for path in required if not (site / path).is_file()]
