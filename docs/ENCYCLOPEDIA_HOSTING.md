@@ -1,6 +1,6 @@
 # Hosting the encyclopedia on GitHub Pages
 
-**Status:** Deployment workflow prepared for the *public* `main` branch. This document describes how to activate and verify the site; it does **not** claim a live URL until the first successful GitHub Pages deployment.
+**Status:** Live since 2026-10-30. Pages is set to build from GitHub Actions, and the first deployment (run 41154215708) succeeded; the three URLs below returned 200 and the imagery atlas loaded all three videos in a headless browser.
 
 ## Download the current atlas without GitHub Pages
 
@@ -14,7 +14,7 @@ The separate [browser QA workflow](ATLAS_BROWSER_QA.md) exercises the encycloped
 - Full interactive atlas: `https://brianmills2718.github.io/lore-interlingua/encyclopedia/`
 - Three-film imagery comparison: `https://brianmills2718.github.io/lore-interlingua/encyclopedia/imagery.html`
 
-These are **expected** URLs following normal GitHub Pages conventions, **not verified working links** until deployment succeeds.
+All three were checked live on 2026-10-30.
 
 ## One-time Pages settings
 
